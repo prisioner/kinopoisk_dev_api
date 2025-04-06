@@ -11,9 +11,8 @@ module KinopoiskDevApi
       @url = url
     end
 
-    def connection # rubocop:disable Metrics/AbcSize
+    def connection
       @connection ||= Faraday.new(url: url, headers: { "X-API-KEY" => api_key }) do |faraday|
-        faraday.response :logger
         faraday.adapter KinopoiskDevApi.configuration.adapter
         faraday.options.timeout = KinopoiskDevApi.configuration.connection_timeout
         faraday.options.open_timeout = KinopoiskDevApi.configuration.connection_open_timeout
