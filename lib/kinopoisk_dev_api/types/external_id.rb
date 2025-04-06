@@ -5,7 +5,7 @@ module KinopoiskDevApi
     class ExternalId < Base
       attribute? :kpHD, Types::String
       attribute? :imdb, Types::String
-      attribute? :tmdb, Types::Float
+      attribute? :tmdb, Types::Float | Types::Integer
     end
   end
 end

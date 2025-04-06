@@ -5,7 +5,7 @@ module KinopoiskDevApi
     class List < Base
       attribute? :category, Types::String
       attribute? :slug, Types::String
-      attribute? :moviesCount, Types::Float
+      attribute? :moviesCount, Types::Float | Types::Integer
       attribute? :cover, ShortImage
       attribute :name, Types::String
       attribute :updatedAt, Types::String

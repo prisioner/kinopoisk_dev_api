@@ -6,7 +6,7 @@ module KinopoiskDevApi
       attribute? :url, Types::String
       attribute? :name, Types::String
       attribute? :site, Types::String
-      attribute? :size, Types::Float
+      attribute? :size, Types::Float | Types::Integer
       attribute? :type, Types::String
     end
   end

@@ -7,7 +7,7 @@ module KinopoiskDevApi
       attribute? :winning, Types::Bool
       attribute? :updatedAt, Types::String
       attribute? :createdAt, Types::String
-      attribute :personId, Types::Float
+      attribute :personId, Types::Float | Types::Integer
       attribute? :movie, Movie
     end
   end

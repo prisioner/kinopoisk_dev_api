@@ -3,8 +3,8 @@
 module KinopoiskDevApi
   module Types
     class YearRange < Base
-      attribute? :start, Types::Float
-      attribute? :end, Types::Float
+      attribute? :start, Types::Float | Types::Integer
+      attribute? :end, Types::Float | Types::Integer
     end
   end
 end

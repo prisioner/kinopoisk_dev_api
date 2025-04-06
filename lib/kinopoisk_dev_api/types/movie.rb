@@ -3,9 +3,9 @@
 module KinopoiskDevApi
   module Types
     class Movie < Base
-      attribute :id, Types::Float
+      attribute :id, Types::Float | Types::Integer
       attribute? :name, Types::String
-      attribute? :rating, Types::Float
+      attribute? :rating, Types::Float | Types::Integer
     end
   end
 end

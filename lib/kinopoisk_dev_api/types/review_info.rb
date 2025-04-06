@@ -3,8 +3,8 @@
 module KinopoiskDevApi
   module Types
     class ReviewInfo < Base
-      attribute? :count, Types::Float
-      attribute? :positiveCount, Types::Float
+      attribute? :count, Types::Float | Types::Integer
+      attribute? :positiveCount, Types::Float | Types::Integer
       attribute? :percentage, Types::String
     end
   end

@@ -5,15 +5,15 @@ module KinopoiskDevApi
     ## Just for classes consistency
     # rubocop:disable Naming/ClassAndModuleCamelCase
     class SearchMovieDtoV1_4 < Base
-      attribute :id, Types::Float
+      attribute :id, Types::Float | Types::Integer
       attribute? :name, Types::String
       attribute? :alternativeName, Types::String
       attribute? :enName, Types::String
       attribute? :type, Types::String
-      attribute? :year, Types::Float
+      attribute? :year, Types::Float | Types::Integer
       attribute? :description, Types::String
       attribute? :shortDescription, Types::String
-      attribute? :movieLength, Types::Float
+      attribute? :movieLength, Types::Float | Types::Integer
       attribute? :names, Types::Array.of(Name)
       attribute? :externalId, ExternalId
       attribute? :logo, Logo
@@ -26,13 +26,13 @@ module KinopoiskDevApi
       attribute? :releaseYears, Types::Array.of(YearRange)
       attribute? :isSeries, Types::Bool
       attribute? :ticketsOnSale, Types::Bool
-      attribute? :totalSeriesLength, Types::Float
-      attribute? :seriesLength, Types::Float
+      attribute? :totalSeriesLength, Types::Float | Types::Integer
+      attribute? :seriesLength, Types::Float | Types::Integer
       attribute? :ratingMpaa, Types::String
-      attribute? :ageRating, Types::Float
-      attribute? :top10, Types::Float
-      attribute? :top250, Types::Float
-      attribute? :typeNumber, Types::Float
+      attribute? :ageRating, Types::Float | Types::Integer
+      attribute? :top10, Types::Float | Types::Integer
+      attribute? :top250, Types::Float | Types::Integer
+      attribute? :typeNumber, Types::Float | Types::Integer
       attribute? :status, Types::String
     end
     # rubocop:enable Naming/ClassAndModuleCamelCase

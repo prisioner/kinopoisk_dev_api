@@ -40,7 +40,7 @@ task :rebuild_types do
 end
 
 def build_empty_type(name, attributes)
-  attributes = attributes[:type].join(" |\n        ")
+  attributes = attributes[:type].join(" |\n      ")
   File.write "#{__dir__}/../lib/kinopoisk_dev_api/types/#{underscore(name)}.rb",
              ERB.new(File.read("#{__dir__}/templates/empty_type.erb")).result(binding).gsub(/^\s+\n/, '')
 end
@@ -72,7 +72,7 @@ def apply_min_max(attributes, attr_name, properties)
 end
 
 def add_module_types(type)
-  return 'Types::Float' if type == 'number'
+  return 'Types::Float | Types::Integer' if type == 'number'
 
   DRY_TYPES.include?(type) ? "Types::#{type.capitalize}" : type
 end
