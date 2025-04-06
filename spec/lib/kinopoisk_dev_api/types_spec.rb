@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'json'
+require "json"
 
 file = File.read("#{__dir__}/../../../data/type_attributes.json")
 parsed_types = JSON.parse(file)
@@ -13,7 +13,7 @@ RSpec.describe KinopoiskDevApi::Types do
       # empty classes exception
       # next if described_class.const_get(class_name, false).instance_of?(Dry::Struct::Sum)
 
-      it 'has correct attributes' do
+      it "has correct attributes" do
         expect(klass.schema.keys.map(&:name)).to eq(attributes.keys.map(&:to_sym))
       end
     end
