@@ -9,6 +9,8 @@ module KinopoiskDevApi
       attribute? :filmCritics, Types::Float | Types::Integer.optional
       attribute? :russianFilmCritics, Types::Float | Types::Integer.optional
       attribute? :await, Types::Float | Types::Integer.optional
+      alias film_critics filmCritics
+      alias russian_film_critics russianFilmCritics
     end
   end
 end

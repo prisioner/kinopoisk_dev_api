@@ -6,6 +6,7 @@ module KinopoiskDevApi
       attribute? :count, Types::Float | Types::Integer.optional
       attribute? :positiveCount, Types::Float | Types::Integer.optional
       attribute? :percentage, Types::Coercible::String.optional
+      alias positive_count positiveCount
     end
   end
 end

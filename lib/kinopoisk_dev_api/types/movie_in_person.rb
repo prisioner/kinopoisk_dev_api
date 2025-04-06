@@ -10,6 +10,8 @@ module KinopoiskDevApi
       attribute? :general, Types::Bool.optional
       attribute? :description, Types::Coercible::String.optional
       attribute? :enProfession, Types::Coercible::String.optional
+      alias alternative_name alternativeName
+      alias en_profession enProfession
     end
   end
 end

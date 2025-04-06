@@ -10,6 +10,7 @@ module KinopoiskDevApi
       attribute? :sex, Types::Coercible::String
       attribute? :children, Types::Float | Types::Integer
       attribute? :relation, Types::Coercible::String
+      alias divorced_reason divorcedReason
     end
   end
 end

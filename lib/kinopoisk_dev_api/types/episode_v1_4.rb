@@ -13,6 +13,9 @@ module KinopoiskDevApi
       attribute? :still, ShortImage
       attribute? :airDate, Types::Coercible::String
       attribute? :enDescription, Types::Coercible::String
+      alias en_name enName
+      alias air_date airDate
+      alias en_description enDescription
     end
     # rubocop:enable Naming/ClassAndModuleCamelCase
   end

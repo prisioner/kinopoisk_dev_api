@@ -10,6 +10,9 @@ module KinopoiskDevApi
       attribute? :name, Types::Coercible::String
       attribute? :updatedAt, Types::Coercible::String
       attribute? :createdAt, Types::Coercible::String
+      alias movies_count moviesCount
+      alias updated_at updatedAt
+      alias created_at createdAt
     end
   end
 end

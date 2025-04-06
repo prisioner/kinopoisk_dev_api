@@ -21,6 +21,12 @@ module KinopoiskDevApi
       attribute? :movies, Types::Array.of(MovieInPerson)
       attribute? :updatedAt, Types::Coercible::String
       attribute? :createdAt, Types::Coercible::String
+      alias en_name enName
+      alias birth_place birthPlace
+      alias death_place deathPlace
+      alias count_awards countAwards
+      alias updated_at updatedAt
+      alias created_at createdAt
     end
   end
 end

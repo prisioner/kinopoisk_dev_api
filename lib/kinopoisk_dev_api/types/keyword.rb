@@ -8,6 +8,8 @@ module KinopoiskDevApi
       attribute? :movies, Types::Array.of(MovieFromKeyword)
       attribute? :updatedAt, Types::Coercible::String
       attribute? :createdAt, Types::Coercible::String
+      alias updated_at updatedAt
+      alias created_at createdAt
     end
   end
 end

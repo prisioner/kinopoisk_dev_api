@@ -12,6 +12,10 @@ module KinopoiskDevApi
       attribute? :width, Types::Float | Types::Integer
       attribute? :updatedAt, Types::Coercible::String
       attribute? :createdAt, Types::Coercible::String
+      alias movie_id movieId
+      alias preview_url previewUrl
+      alias updated_at updatedAt
+      alias created_at createdAt
     end
   end
 end

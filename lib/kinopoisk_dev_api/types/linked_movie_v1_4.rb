@@ -13,6 +13,8 @@ module KinopoiskDevApi
       attribute? :poster, ShortImage.optional
       attribute? :rating, Rating.optional
       attribute? :year, Types::Float | Types::Integer.optional
+      alias en_name enName
+      alias alternative_name alternativeName
     end
     # rubocop:enable Naming/ClassAndModuleCamelCase
   end

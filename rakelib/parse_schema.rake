@@ -2,6 +2,8 @@
 
 require "openapi3_parser"
 
+INCONSISTENT_TYPES = %w[Keyword Studio].freeze
+
 # rubocop:disable Metrics/BlockLength
 desc "Parse types from public json, should be up to date https://api.kinopoisk.dev/documentation-json"
 task :parse_schema do
@@ -42,8 +44,8 @@ task :parse_schema do
       end
 
       # FIXME: dirty hack in case of https://github.com/mdwitr0/kinopoiskdev/issues/173
-      attribute[:nullable] = true if type_name == 'Person' && property_name == 'countAwards'
-      if %w[Studio Keyword].include?(type_name) && property_name == 'movies'
+      attribute[:nullable] = true if type_name == "Person" && property_name == "countAwards"
+      if INCONSISTENT_TYPES.include?(type_name) && property_name == "movies"
         attribute[:items] = attribute[:type]
         attribute[:type] = "array"
       end

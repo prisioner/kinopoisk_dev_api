@@ -17,6 +17,9 @@ module KinopoiskDevApi
       attribute? :birthPlace, Types::Array.of(BirthPlace)
       attribute? :deathPlace, Types::Array.of(DeathPlace)
       attribute? :profession, Types::Array.of(Profession)
+      alias en_name enName
+      alias birth_place birthPlace
+      alias death_place deathPlace
     end
     # rubocop:enable Naming/ClassAndModuleCamelCase
   end

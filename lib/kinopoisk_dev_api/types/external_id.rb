@@ -6,6 +6,7 @@ module KinopoiskDevApi
       attribute? :kpHD, Types::Coercible::String.optional
       attribute? :imdb, Types::Coercible::String.optional
       attribute? :tmdb, Types::Float | Types::Integer.optional
+      alias kp_hd kpHD
     end
   end
 end

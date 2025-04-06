@@ -18,6 +18,13 @@ module KinopoiskDevApi
       attribute? :airDate, Types::Coercible::String
       attribute? :updatedAt, Types::Coercible::String.optional
       attribute? :createdAt, Types::Coercible::String.optional
+      alias movie_id movieId
+      alias episodes_count episodesCount
+      alias en_name enName
+      alias en_description enDescription
+      alias air_date airDate
+      alias updated_at updatedAt
+      alias created_at createdAt
     end
     # rubocop:enable Naming/ClassAndModuleCamelCase
   end

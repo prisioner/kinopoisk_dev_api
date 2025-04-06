@@ -16,6 +16,13 @@ module KinopoiskDevApi
       attribute? :reviewDislikes, Types::Float | Types::Integer
       attribute? :updatedAt, Types::Coercible::String
       attribute? :createdAt, Types::Coercible::String
+      alias movie_id movieId
+      alias user_rating userRating
+      alias author_id authorId
+      alias review_likes reviewLikes
+      alias review_dislikes reviewDislikes
+      alias updated_at updatedAt
+      alias created_at createdAt
     end
   end
 end

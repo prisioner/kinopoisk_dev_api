@@ -34,6 +34,19 @@ module KinopoiskDevApi
       attribute? :top250, Types::Float | Types::Integer.optional
       attribute? :typeNumber, Types::Float | Types::Integer.optional
       attribute? :status, Types::Coercible::String.optional
+      alias alternative_name alternativeName
+      alias en_name enName
+      alias short_description shortDescription
+      alias movie_length movieLength
+      alias external_id externalId
+      alias release_years releaseYears
+      alias is_series isSeries
+      alias tickets_on_sale ticketsOnSale
+      alias total_series_length totalSeriesLength
+      alias series_length seriesLength
+      alias rating_mpaa ratingMpaa
+      alias age_rating ageRating
+      alias type_number typeNumber
     end
     # rubocop:enable Naming/ClassAndModuleCamelCase
   end

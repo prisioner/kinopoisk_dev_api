@@ -10,6 +10,9 @@ module KinopoiskDevApi
       attribute? :movies, Types::Array.of(MovieFromStudio)
       attribute? :updatedAt, Types::Coercible::String
       attribute? :createdAt, Types::Coercible::String
+      alias sub_type subType
+      alias updated_at updatedAt
+      alias created_at createdAt
     end
   end
 end

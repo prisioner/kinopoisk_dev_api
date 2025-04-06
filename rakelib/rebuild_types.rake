@@ -10,6 +10,7 @@ task :rebuild_types do
   types = JSON.parse(File.read("#{__dir__}/../data/type_attributes.json"), symbolize_names: true)
 
   types.each_pair do |name, attributes|
+    # currently there is no empty types
     next build_empty_type(name, attributes) if attributes[:type].instance_of?(Array)
 
     attributes.each_pair do |attr_name, properties|
