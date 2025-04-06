@@ -66,7 +66,12 @@ end
 
 def parse_initial_type(property_schema, property_name)
   case property_schema.type
-  when nil then property_name.capitalize.gsub(/_(\w)/) { Regexp.last_match(1).upcase }
+  when nil
+    if property_schema.all_of.nil?
+      property_name.capitalize.gsub(/_(\w)/) { Regexp.last_match(1).upcase }
+    else
+      parse_initial_type(property_schema.all_of.first, property_schema.all_of.first.name)
+    end
   when "object" then property_schema.name
   else property_schema.type
   end

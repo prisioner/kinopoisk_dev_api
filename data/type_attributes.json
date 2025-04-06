@@ -217,7 +217,7 @@
       "type": "string"
     },
     "poster": {
-      "type": "Poster"
+      "type": "ShortImage"
     },
     "rating": {
       "type": "Rating"
@@ -280,7 +280,7 @@
       "type": "number"
     },
     "externalId": {
-      "type": "Externalid"
+      "type": "ExternalId"
     },
     "name": {
       "type": "string"
@@ -417,7 +417,7 @@
       "items": "string"
     },
     "networks": {
-      "type": "Networks"
+      "type": "NetworksV1_4"
     },
     "updatedAt": {
       "type": "string"
@@ -525,16 +525,16 @@
       "items": "Name"
     },
     "externalId": {
-      "type": "Externalid"
+      "type": "ExternalId"
     },
     "logo": {
       "type": "Logo"
     },
     "poster": {
-      "type": "Poster"
+      "type": "ShortImage"
     },
     "backdrop": {
-      "type": "Backdrop"
+      "type": "ShortImage"
     },
     "rating": {
       "type": "Rating"
@@ -618,7 +618,7 @@
   },
   "Nomination": {
     "award": {
-      "type": "Award"
+      "type": "NominationAward"
     },
     "title": {
       "type": "string"
@@ -1282,7 +1282,7 @@
       "type": "number"
     },
     "cover": {
-      "type": "Cover"
+      "type": "ShortImage"
     },
     "name": {
       "type": "string",
