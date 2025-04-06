@@ -1,0 +1,1323 @@
+{
+  "ExternalId": {
+    "kpHD": {
+      "type": "string"
+    },
+    "imdb": {
+      "type": "string"
+    },
+    "tmdb": {
+      "type": "number"
+    }
+  },
+  "Name": {
+    "name": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    }
+  },
+  "FactInMovie": {
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string"
+    },
+    "spoiler": {
+      "type": "boolean"
+    }
+  },
+  "Rating": {
+    "kp": {
+      "type": "number"
+    },
+    "imdb": {
+      "type": "number"
+    },
+    "tmdb": {
+      "type": "number"
+    },
+    "filmCritics": {
+      "type": "number"
+    },
+    "russianFilmCritics": {
+      "type": "number"
+    },
+    "await": {
+      "type": "number"
+    }
+  },
+  "Votes": {
+    "kp": {
+      "type": "string"
+    },
+    "imdb": {
+      "type": "number"
+    },
+    "tmdb": {
+      "type": "number"
+    },
+    "filmCritics": {
+      "type": "number"
+    },
+    "russianFilmCritics": {
+      "type": "number"
+    },
+    "await": {
+      "type": "number"
+    }
+  },
+  "Logo": {
+    "url": {
+      "type": "string"
+    }
+  },
+  "ShortImage": {
+    "url": {
+      "type": "string"
+    },
+    "previewUrl": {
+      "type": "string"
+    }
+  },
+  "Video": {
+    "url": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "site": {
+      "type": "string"
+    },
+    "size": {
+      "type": "number"
+    },
+    "type": {
+      "type": "string"
+    }
+  },
+  "VideoTypes": {
+    "trailers": {
+      "type": "array",
+      "items": "Video"
+    }
+  },
+  "ItemName": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "PersonInMovie": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "photo": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "enName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "profession": {
+      "type": "string"
+    },
+    "enProfession": {
+      "type": "string"
+    }
+  },
+  "ReviewInfo": {
+    "count": {
+      "type": "number"
+    },
+    "positiveCount": {
+      "type": "number"
+    },
+    "percentage": {
+      "type": "string"
+    }
+  },
+  "SeasonInfo": {
+    "number": {
+      "type": "number"
+    },
+    "episodesCount": {
+      "type": "number"
+    }
+  },
+  "CurrencyValue": {
+    "value": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "string"
+    }
+  },
+  "Fees": {
+    "world": {
+      "type": "CurrencyValue"
+    },
+    "russia": {
+      "type": "CurrencyValue"
+    },
+    "usa": {
+      "type": "CurrencyValue"
+    }
+  },
+  "Premiere": {
+    "country": {
+      "type": "string"
+    },
+    "world": {
+      "type": "string"
+    },
+    "russia": {
+      "type": "string"
+    },
+    "digital": {
+      "type": "string"
+    },
+    "cinema": {
+      "type": "string"
+    },
+    "bluray": {
+      "type": "string"
+    },
+    "dvd": {
+      "type": "string"
+    }
+  },
+  "LinkedMovieV1_4": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "enName": {
+      "type": "string"
+    },
+    "alternativeName": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "poster": {
+      "type": "Poster"
+    },
+    "rating": {
+      "type": "Rating"
+    },
+    "year": {
+      "type": "number"
+    }
+  },
+  "WatchabilityItem": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "Logo",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "Watchability": {
+    "items": {
+      "type": "array",
+      "items": "WatchabilityItem"
+    }
+  },
+  "YearRange": {
+    "start": {
+      "type": "number"
+    },
+    "end": {
+      "type": "number"
+    }
+  },
+  "Audience": {
+    "count": {
+      "type": "number"
+    },
+    "country": {
+      "type": "string"
+    }
+  },
+  "NetworkItemV1_4": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "Logo"
+    }
+  },
+  "NetworksV1_4": {
+    "items": {
+      "type": "array",
+      "items": "NetworkItemV1_4"
+    }
+  },
+  "MovieDtoV1_4": {
+    "id": {
+      "type": "number"
+    },
+    "externalId": {
+      "type": "Externalid"
+    },
+    "name": {
+      "type": "string"
+    },
+    "alternativeName": {
+      "type": "string"
+    },
+    "enName": {
+      "type": "string"
+    },
+    "names": {
+      "type": "array",
+      "items": "Name"
+    },
+    "type": {
+      "type": "string"
+    },
+    "typeNumber": {
+      "type": "number"
+    },
+    "year": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "slogan": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "facts": {
+      "type": "array",
+      "items": "FactInMovie"
+    },
+    "rating": {
+      "type": "Rating"
+    },
+    "votes": {
+      "type": "Votes"
+    },
+    "movieLength": {
+      "type": "number"
+    },
+    "ratingMpaa": {
+      "type": "string"
+    },
+    "ageRating": {
+      "type": "number"
+    },
+    "logo": {
+      "type": "Logo"
+    },
+    "poster": {
+      "type": "ShortImage"
+    },
+    "backdrop": {
+      "type": "ShortImage"
+    },
+    "videos": {
+      "type": "VideoTypes"
+    },
+    "genres": {
+      "type": "array",
+      "items": "ItemName"
+    },
+    "countries": {
+      "type": "array",
+      "items": "ItemName"
+    },
+    "persons": {
+      "type": "array",
+      "items": "PersonInMovie"
+    },
+    "reviewInfo": {
+      "type": "ReviewInfo"
+    },
+    "seasonsInfo": {
+      "type": "array",
+      "items": "SeasonInfo"
+    },
+    "budget": {
+      "type": "CurrencyValue"
+    },
+    "fees": {
+      "type": "Fees"
+    },
+    "premiere": {
+      "type": "Premiere"
+    },
+    "similarMovies": {
+      "type": "array",
+      "items": "LinkedMovieV1_4"
+    },
+    "sequelsAndPrequels": {
+      "type": "array",
+      "items": "LinkedMovieV1_4"
+    },
+    "watchability": {
+      "type": "Watchability"
+    },
+    "releaseYears": {
+      "type": "array",
+      "items": "YearRange"
+    },
+    "top10": {
+      "type": "number"
+    },
+    "top250": {
+      "type": "number"
+    },
+    "ticketsOnSale": {
+      "type": "boolean"
+    },
+    "totalSeriesLength": {
+      "type": "number"
+    },
+    "seriesLength": {
+      "type": "number"
+    },
+    "isSeries": {
+      "type": "boolean"
+    },
+    "audience": {
+      "type": "array",
+      "items": "Audience"
+    },
+    "lists": {
+      "type": "array",
+      "items": "string"
+    },
+    "networks": {
+      "type": "Networks"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    }
+  },
+  "UnauthorizedErrorResponseDto": {
+    "statusCode": {
+      "type": "number",
+      "required": true
+    },
+    "message": {
+      "type": "string",
+      "required": true
+    },
+    "error": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "ForbiddenErrorResponseDto": {
+    "statusCode": {
+      "type": "number",
+      "required": true
+    },
+    "message": {
+      "type": "string",
+      "required": true
+    },
+    "error": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "ErrorResponseDto": {
+    "statusCode": {
+      "type": "number",
+      "required": true
+    },
+    "message": {
+      "type": "string",
+      "required": true
+    },
+    "error": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "MovieDocsResponseDtoV1_4": {
+    "docs": {
+      "type": "array",
+      "required": true,
+      "items": "MovieDtoV1_4"
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "limit": {
+      "type": "number",
+      "required": true
+    },
+    "page": {
+      "type": "number",
+      "required": true
+    },
+    "pages": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "SearchMovieDtoV1_4": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "alternativeName": {
+      "type": "string"
+    },
+    "enName": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "year": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "movieLength": {
+      "type": "number"
+    },
+    "names": {
+      "type": "array",
+      "items": "Name"
+    },
+    "externalId": {
+      "type": "Externalid"
+    },
+    "logo": {
+      "type": "Logo"
+    },
+    "poster": {
+      "type": "Poster"
+    },
+    "backdrop": {
+      "type": "Backdrop"
+    },
+    "rating": {
+      "type": "Rating"
+    },
+    "votes": {
+      "type": "Votes"
+    },
+    "genres": {
+      "type": "array",
+      "items": "ItemName"
+    },
+    "countries": {
+      "type": "array",
+      "items": "ItemName"
+    },
+    "releaseYears": {
+      "type": "array",
+      "items": "YearRange"
+    },
+    "isSeries": {
+      "type": "boolean"
+    },
+    "ticketsOnSale": {
+      "type": "boolean"
+    },
+    "totalSeriesLength": {
+      "type": "number"
+    },
+    "seriesLength": {
+      "type": "number"
+    },
+    "ratingMpaa": {
+      "type": "string"
+    },
+    "ageRating": {
+      "type": "number"
+    },
+    "top10": {
+      "type": "number"
+    },
+    "top250": {
+      "type": "number"
+    },
+    "typeNumber": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "SearchMovieResponseDtoV1_4": {
+    "docs": {
+      "type": "array",
+      "required": true,
+      "items": "SearchMovieDtoV1_4"
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "limit": {
+      "type": "number",
+      "required": true
+    },
+    "page": {
+      "type": "number",
+      "required": true
+    },
+    "pages": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "NominationAward": {
+    "title": {
+      "type": "string"
+    },
+    "year": {
+      "type": "number"
+    }
+  },
+  "Nomination": {
+    "award": {
+      "type": "Award"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "MovieAward": {
+    "nomination": {
+      "type": "Nomination"
+    },
+    "winning": {
+      "type": "boolean"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "movieId": {
+      "type": "number"
+    }
+  },
+  "MovieAwardDocsResponseDto": {
+    "docs": {
+      "type": "array",
+      "required": true,
+      "items": "MovieAward"
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "limit": {
+      "type": "number",
+      "required": true
+    },
+    "page": {
+      "type": "number",
+      "required": true
+    },
+    "pages": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "PossibleValueDto": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  },
+  "EpisodeV1_4": {
+    "number": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
+    "enName": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "still": {
+      "type": "ShortImage"
+    },
+    "airDate": {
+      "type": "string"
+    },
+    "enDescription": {
+      "type": "string"
+    }
+  },
+  "SeasonV1_4": {
+    "movieId": {
+      "type": "number",
+      "required": true
+    },
+    "number": {
+      "type": "number"
+    },
+    "episodesCount": {
+      "type": "number"
+    },
+    "episodes": {
+      "type": "array",
+      "items": "EpisodeV1_4"
+    },
+    "poster": {
+      "type": "ShortImage"
+    },
+    "name": {
+      "type": "string"
+    },
+    "enName": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "enDescription": {
+      "type": "string"
+    },
+    "airDate": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    }
+  },
+  "SeasonDocsResponseDtoV1_4": {
+    "docs": {
+      "type": "array",
+      "required": true,
+      "items": "SeasonV1_4"
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "limit": {
+      "type": "number",
+      "required": true
+    },
+    "page": {
+      "type": "number",
+      "required": true
+    },
+    "pages": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "Review": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "movieId": {
+      "type": "number",
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "review": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "userRating": {
+      "type": "number"
+    },
+    "authorId": {
+      "type": "number",
+      "required": true
+    },
+    "reviewLikes": {
+      "type": "number",
+      "required": true
+    },
+    "reviewDislikes": {
+      "type": "number",
+      "required": true
+    },
+    "updatedAt": {
+      "type": "string",
+      "required": true
+    },
+    "createdAt": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "ReviewDocsResponseDtoV1_4": {
+    "docs": {
+      "type": "array",
+      "required": true,
+      "items": "Review"
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "limit": {
+      "type": "number",
+      "required": true
+    },
+    "page": {
+      "type": "number",
+      "required": true
+    },
+    "pages": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "BirthPlace": {
+    "value": {
+      "type": "string"
+    }
+  },
+  "DeathPlace": {
+    "value": {
+      "type": "string"
+    }
+  },
+  "Spouses": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "divorced": {
+      "type": "boolean"
+    },
+    "divorcedReason": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "children": {
+      "type": "number"
+    },
+    "relation": {
+      "type": "string"
+    }
+  },
+  "Profession": {
+    "value": {
+      "type": "string"
+    }
+  },
+  "FactInPerson": {
+    "value": {
+      "type": "string"
+    }
+  },
+  "MovieInPerson": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "alternativeName": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "general": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "string"
+    },
+    "enProfession": {
+      "type": "string"
+    }
+  },
+  "Person": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "enName": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "growth": {
+      "type": "number"
+    },
+    "birthday": {
+      "type": "string"
+    },
+    "death": {
+      "type": "string"
+    },
+    "age": {
+      "type": "number"
+    },
+    "birthPlace": {
+      "type": "array",
+      "items": "BirthPlace"
+    },
+    "deathPlace": {
+      "type": "array",
+      "items": "DeathPlace"
+    },
+    "spouses": {
+      "type": "array",
+      "items": "Spouses"
+    },
+    "countAwards": {
+      "type": "number"
+    },
+    "profession": {
+      "type": "array",
+      "items": "Profession"
+    },
+    "facts": {
+      "type": "array",
+      "items": "FactInPerson"
+    },
+    "movies": {
+      "type": "array",
+      "items": "MovieInPerson"
+    },
+    "updatedAt": {
+      "type": "string",
+      "required": true
+    },
+    "createdAt": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "PersonDocsResponseDtoV1_4": {
+    "docs": {
+      "type": "array",
+      "required": true,
+      "items": "Person"
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "limit": {
+      "type": "number",
+      "required": true
+    },
+    "page": {
+      "type": "number",
+      "required": true
+    },
+    "pages": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "MeiliPersonEntityV1_4": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "enName": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "growth": {
+      "type": "number"
+    },
+    "birthday": {
+      "type": "string"
+    },
+    "death": {
+      "type": "string"
+    },
+    "age": {
+      "type": "number"
+    },
+    "birthPlace": {
+      "type": "array",
+      "items": "BirthPlace"
+    },
+    "deathPlace": {
+      "type": "array",
+      "items": "DeathPlace"
+    },
+    "profession": {
+      "type": "array",
+      "items": "Profession"
+    }
+  },
+  "SearchPersonResponseDtoV1_4": {
+    "docs": {
+      "type": "array",
+      "required": true,
+      "items": "MeiliPersonEntityV1_4"
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "limit": {
+      "type": "number",
+      "required": true
+    },
+    "page": {
+      "type": "number",
+      "required": true
+    },
+    "pages": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "Movie": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    }
+  },
+  "PersonAward": {
+    "nomination": {
+      "type": "Nomination"
+    },
+    "winning": {
+      "type": "boolean"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "personId": {
+      "type": "number",
+      "required": true
+    },
+    "movie": {
+      "type": "Movie"
+    }
+  },
+  "PersonAwardDocsResponseDto": {
+    "docs": {
+      "type": "array",
+      "required": true,
+      "items": "PersonAward"
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "limit": {
+      "type": "number",
+      "required": true
+    },
+    "page": {
+      "type": "number",
+      "required": true
+    },
+    "pages": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "MovieFromStudio": {
+    "id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "Studio": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "subType": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "movies": {
+      "type": "MovieFromStudio"
+    },
+    "updatedAt": {
+      "type": "string",
+      "required": true
+    },
+    "createdAt": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "StudioDocsResponseDtoV1_4": {
+    "docs": {
+      "type": "array",
+      "required": true,
+      "items": "Studio"
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "limit": {
+      "type": "number",
+      "required": true
+    },
+    "page": {
+      "type": "number",
+      "required": true
+    },
+    "pages": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "MovieFromKeyword": {
+    "id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "Keyword": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "movies": {
+      "type": "MovieFromKeyword"
+    },
+    "updatedAt": {
+      "type": "string",
+      "required": true
+    },
+    "createdAt": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "KeywordDocsResponseDtoV1_4": {
+    "docs": {
+      "type": "array",
+      "required": true,
+      "items": "Keyword"
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "limit": {
+      "type": "number",
+      "required": true
+    },
+    "page": {
+      "type": "number",
+      "required": true
+    },
+    "pages": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "Image": {
+    "movieId": {
+      "type": "number",
+      "required": true
+    },
+    "type": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "previewUrl": {
+      "type": "string"
+    },
+    "height": {
+      "type": "number"
+    },
+    "width": {
+      "type": "number"
+    },
+    "updatedAt": {
+      "type": "string",
+      "required": true
+    },
+    "createdAt": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "ImageDocsResponseDtoV1_4": {
+    "docs": {
+      "type": "array",
+      "required": true,
+      "items": "Image"
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "limit": {
+      "type": "number",
+      "required": true
+    },
+    "page": {
+      "type": "number",
+      "required": true
+    },
+    "pages": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "List": {
+    "category": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "moviesCount": {
+      "type": "number"
+    },
+    "cover": {
+      "type": "Cover"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "updatedAt": {
+      "type": "string",
+      "required": true
+    },
+    "createdAt": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "ListDocsResponseDtoV1_4": {
+    "docs": {
+      "type": "array",
+      "required": true,
+      "items": "List"
+    },
+    "total": {
+      "type": "number",
+      "required": true
+    },
+    "limit": {
+      "type": "number",
+      "required": true
+    },
+    "page": {
+      "type": "number",
+      "required": true
+    },
+    "pages": {
+      "type": "number",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+# frozen_string_literal: true
+
+module KinopoiskDevApi
+  module Types
+    <% if name.to_s.include?('_') %>
+    ## Just for classes consistency
+    # rubocop:disable Naming/ClassAndModuleCamelCase
+    <% end %>
+    class <%= name %> < Base
+    <% attributes.each_pair do |name, properties| %>
+      <%= "#{properties[:required] ? 'attribute' : 'attribute?'} :#{name}, #{properties[:type]}" %>
+    <% end %>
+    end
+    <% if name.to_s.include?('_') %>
+    # rubocop:enable Naming/ClassAndModuleCamelCase
+    <% end %>
+  end
+end

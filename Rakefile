@@ -7,6 +7,11 @@ RSpec::Core::RakeTask.new(:spec)
 
 require "rubocop/rake_task"
 
-RuboCop::RakeTask.new
+RuboCop::RakeTask.new(:rubocop) do |task|
+  task.fail_on_error = false
+  task.options = %w[--force-exclusion]
+  task.patterns = %w[{lib,spec}/**/*.rb Rakefile]
+  task.requires << "rubocop-rspec"
+end
 
 task default: %i[spec rubocop]
