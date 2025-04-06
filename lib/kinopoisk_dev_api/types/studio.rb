@@ -3,13 +3,13 @@
 module KinopoiskDevApi
   module Types
     class Studio < Base
-      attribute :id, Types::String
-      attribute? :subType, Types::String
-      attribute? :title, Types::String
-      attribute? :type, Types::String
+      attribute :id, Types::Coercible::String
+      attribute? :subType, Types::Coercible::String.optional
+      attribute? :title, Types::Coercible::String.optional
+      attribute? :type, Types::Coercible::String
       attribute? :movies, MovieFromStudio
-      attribute :updatedAt, Types::String
-      attribute :createdAt, Types::String
+      attribute :updatedAt, Types::Coercible::String
+      attribute :createdAt, Types::Coercible::String
     end
   end
 end

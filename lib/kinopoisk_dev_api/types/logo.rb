@@ -3,7 +3,7 @@
 module KinopoiskDevApi
   module Types
     class Logo < Base
-      attribute? :url, Types::String
+      attribute? :url, Types::Coercible::String.optional
     end
   end
 end

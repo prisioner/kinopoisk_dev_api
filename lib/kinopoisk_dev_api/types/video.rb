@@ -3,11 +3,11 @@
 module KinopoiskDevApi
   module Types
     class Video < Base
-      attribute? :url, Types::String
-      attribute? :name, Types::String
-      attribute? :site, Types::String
-      attribute? :size, Types::Float | Types::Integer
-      attribute? :type, Types::String
+      attribute? :url, Types::Coercible::String.optional
+      attribute? :name, Types::Coercible::String.optional
+      attribute? :site, Types::Coercible::String.optional
+      attribute? :size, Types::Float | Types::Integer.optional
+      attribute? :type, Types::Coercible::String.optional
     end
   end
 end

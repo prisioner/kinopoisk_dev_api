@@ -6,34 +6,34 @@ module KinopoiskDevApi
     # rubocop:disable Naming/ClassAndModuleCamelCase
     class SearchMovieDtoV1_4 < Base
       attribute :id, Types::Float | Types::Integer
-      attribute? :name, Types::String
-      attribute? :alternativeName, Types::String
-      attribute? :enName, Types::String
-      attribute? :type, Types::String
-      attribute? :year, Types::Float | Types::Integer
-      attribute? :description, Types::String
-      attribute? :shortDescription, Types::String
-      attribute? :movieLength, Types::Float | Types::Integer
-      attribute? :names, Types::Array.of(Name)
-      attribute? :externalId, ExternalId
-      attribute? :logo, Logo
-      attribute? :poster, ShortImage
-      attribute? :backdrop, ShortImage
-      attribute? :rating, Rating
-      attribute? :votes, Votes
-      attribute? :genres, Types::Array.of(ItemName)
-      attribute? :countries, Types::Array.of(ItemName)
-      attribute? :releaseYears, Types::Array.of(YearRange)
-      attribute? :isSeries, Types::Bool
-      attribute? :ticketsOnSale, Types::Bool
-      attribute? :totalSeriesLength, Types::Float | Types::Integer
-      attribute? :seriesLength, Types::Float | Types::Integer
-      attribute? :ratingMpaa, Types::String
-      attribute? :ageRating, Types::Float | Types::Integer
-      attribute? :top10, Types::Float | Types::Integer
-      attribute? :top250, Types::Float | Types::Integer
-      attribute? :typeNumber, Types::Float | Types::Integer
-      attribute? :status, Types::String
+      attribute? :name, Types::Coercible::String.optional
+      attribute? :alternativeName, Types::Coercible::String.optional
+      attribute? :enName, Types::Coercible::String.optional
+      attribute? :type, Types::Coercible::String.optional
+      attribute? :year, Types::Float | Types::Integer.optional
+      attribute? :description, Types::Coercible::String.optional
+      attribute? :shortDescription, Types::Coercible::String.optional
+      attribute? :movieLength, Types::Float | Types::Integer.optional
+      attribute? :names, Types::Array.of(Name).optional
+      attribute? :externalId, ExternalId.optional
+      attribute? :logo, Logo.optional
+      attribute? :poster, ShortImage.optional
+      attribute? :backdrop, ShortImage.optional
+      attribute? :rating, Rating.optional
+      attribute? :votes, Votes.optional
+      attribute? :genres, Types::Array.of(ItemName).optional
+      attribute? :countries, Types::Array.of(ItemName).optional
+      attribute? :releaseYears, Types::Array.of(YearRange).optional
+      attribute? :isSeries, Types::Bool.optional
+      attribute? :ticketsOnSale, Types::Bool.optional
+      attribute? :totalSeriesLength, Types::Float | Types::Integer.optional
+      attribute? :seriesLength, Types::Float | Types::Integer.optional
+      attribute? :ratingMpaa, Types::Coercible::String.optional
+      attribute? :ageRating, Types::Float | Types::Integer.optional
+      attribute? :top10, Types::Float | Types::Integer.optional
+      attribute? :top250, Types::Float | Types::Integer.optional
+      attribute? :typeNumber, Types::Float | Types::Integer.optional
+      attribute? :status, Types::Coercible::String.optional
     end
     # rubocop:enable Naming/ClassAndModuleCamelCase
   end

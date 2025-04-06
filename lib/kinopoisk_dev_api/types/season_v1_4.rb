@@ -10,14 +10,14 @@ module KinopoiskDevApi
       attribute? :episodesCount, Types::Float | Types::Integer
       attribute? :episodes, Types::Array.of(EpisodeV1_4)
       attribute? :poster, ShortImage
-      attribute? :name, Types::String
-      attribute? :enName, Types::String
+      attribute? :name, Types::Coercible::String
+      attribute? :enName, Types::Coercible::String
       attribute? :duration, Types::Float | Types::Integer
-      attribute? :description, Types::String
-      attribute? :enDescription, Types::String
-      attribute? :airDate, Types::String
-      attribute? :updatedAt, Types::String
-      attribute? :createdAt, Types::String
+      attribute? :description, Types::Coercible::String
+      attribute? :enDescription, Types::Coercible::String
+      attribute? :airDate, Types::Coercible::String
+      attribute? :updatedAt, Types::Coercible::String.optional
+      attribute? :createdAt, Types::Coercible::String.optional
     end
     # rubocop:enable Naming/ClassAndModuleCamelCase
   end

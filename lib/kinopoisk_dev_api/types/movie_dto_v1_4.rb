@@ -5,25 +5,25 @@ module KinopoiskDevApi
     ## Just for classes consistency
     # rubocop:disable Naming/ClassAndModuleCamelCase
     class MovieDtoV1_4 < Base
-      attribute? :id, Types::Float | Types::Integer
-      attribute? :externalId, ExternalId
-      attribute? :name, Types::String
-      attribute? :alternativeName, Types::String
-      attribute? :enName, Types::String
-      attribute? :names, Types::Array.of(Name)
-      attribute? :type, Types::String
-      attribute? :typeNumber, Types::Float | Types::Integer
-      attribute? :year, Types::Float | Types::Integer
-      attribute? :description, Types::String
-      attribute? :shortDescription, Types::String
-      attribute? :slogan, Types::String
-      attribute? :status, Types::String
-      attribute? :facts, Types::Array.of(FactInMovie)
+      attribute? :id, Types::Float | Types::Integer.optional
+      attribute? :externalId, ExternalId.optional
+      attribute? :name, Types::Coercible::String.optional
+      attribute? :alternativeName, Types::Coercible::String.optional
+      attribute? :enName, Types::Coercible::String.optional
+      attribute? :names, Types::Array.of(Name).optional
+      attribute? :type, Types::Coercible::String.optional
+      attribute? :typeNumber, Types::Float | Types::Integer.optional
+      attribute? :year, Types::Float | Types::Integer.optional
+      attribute? :description, Types::Coercible::String.optional
+      attribute? :shortDescription, Types::Coercible::String.optional
+      attribute? :slogan, Types::Coercible::String.optional
+      attribute? :status, Types::Coercible::String.optional
+      attribute? :facts, Types::Array.of(FactInMovie).optional
       attribute? :rating, Rating
       attribute? :votes, Votes
-      attribute? :movieLength, Types::Float | Types::Integer
-      attribute? :ratingMpaa, Types::String
-      attribute? :ageRating, Types::Float | Types::Integer
+      attribute? :movieLength, Types::Float | Types::Integer.optional
+      attribute? :ratingMpaa, Types::Coercible::String.optional
+      attribute? :ageRating, Types::Float | Types::Integer.optional
       attribute? :logo, Logo
       attribute? :poster, ShortImage
       attribute? :backdrop, ShortImage
@@ -36,21 +36,21 @@ module KinopoiskDevApi
       attribute? :budget, CurrencyValue
       attribute? :fees, Fees
       attribute? :premiere, Premiere
-      attribute? :similarMovies, Types::Array.of(LinkedMovieV1_4)
-      attribute? :sequelsAndPrequels, Types::Array.of(LinkedMovieV1_4)
+      attribute? :similarMovies, Types::Array.of(LinkedMovieV1_4).optional
+      attribute? :sequelsAndPrequels, Types::Array.of(LinkedMovieV1_4).optional
       attribute? :watchability, Watchability
       attribute? :releaseYears, Types::Array.of(YearRange)
-      attribute? :top10, Types::Float | Types::Integer
-      attribute? :top250, Types::Float | Types::Integer
-      attribute? :ticketsOnSale, Types::Bool
-      attribute? :totalSeriesLength, Types::Float | Types::Integer
-      attribute? :seriesLength, Types::Float | Types::Integer
-      attribute? :isSeries, Types::Bool
-      attribute? :audience, Types::Array.of(Audience)
-      attribute? :lists, Types::Array.of(Types::String)
-      attribute? :networks, NetworksV1_4
-      attribute? :updatedAt, Types::String
-      attribute? :createdAt, Types::String
+      attribute? :top10, Types::Float | Types::Integer.optional
+      attribute? :top250, Types::Float | Types::Integer.optional
+      attribute? :ticketsOnSale, Types::Bool.optional
+      attribute? :totalSeriesLength, Types::Float | Types::Integer.optional
+      attribute? :seriesLength, Types::Float | Types::Integer.optional
+      attribute? :isSeries, Types::Bool.optional
+      attribute? :audience, Types::Array.of(Audience).optional
+      attribute? :lists, Types::Array.of(Types::Coercible::String).optional
+      attribute? :networks, NetworksV1_4.optional
+      attribute? :updatedAt, Types::Coercible::String.optional
+      attribute? :createdAt, Types::Coercible::String.optional
     end
     # rubocop:enable Naming/ClassAndModuleCamelCase
   end

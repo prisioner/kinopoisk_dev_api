@@ -1,1280 +1,1621 @@
 {
   "ExternalId": {
     "kpHD": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "imdb": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "tmdb": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     }
   },
   "Name": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "language": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "type": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "FactInMovie": {
     "value": {
       "type": "string",
+      "nullable": false,
       "required": true
     },
     "type": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "spoiler": {
-      "type": "boolean"
+      "type": "boolean",
+      "nullable": true
     }
   },
   "Rating": {
     "kp": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "imdb": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "tmdb": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "filmCritics": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "russianFilmCritics": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "await": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     }
   },
   "Votes": {
     "kp": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "imdb": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "tmdb": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "filmCritics": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "russianFilmCritics": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "await": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     }
   },
   "Logo": {
     "url": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "ShortImage": {
     "url": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "previewUrl": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "Video": {
     "url": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "site": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "size": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "type": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "VideoTypes": {
     "trailers": {
       "type": "array",
+      "nullable": true,
       "items": "Video"
     }
   },
   "ItemName": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     }
   },
   "PersonInMovie": {
     "id": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "photo": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "enName": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "profession": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "enProfession": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "ReviewInfo": {
     "count": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "positiveCount": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "percentage": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "SeasonInfo": {
     "number": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "episodesCount": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     }
   },
   "CurrencyValue": {
     "value": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "currency": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "Fees": {
     "world": {
-      "type": "CurrencyValue"
+      "type": "CurrencyValue",
+      "nullable": false
     },
     "russia": {
-      "type": "CurrencyValue"
+      "type": "CurrencyValue",
+      "nullable": false
     },
     "usa": {
-      "type": "CurrencyValue"
+      "type": "CurrencyValue",
+      "nullable": false
     }
   },
   "Premiere": {
     "country": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "world": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "russia": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "digital": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "cinema": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "bluray": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "dvd": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "LinkedMovieV1_4": {
     "id": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "enName": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "alternativeName": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "type": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "poster": {
-      "type": "ShortImage"
+      "type": "ShortImage",
+      "nullable": true
     },
     "rating": {
-      "type": "Rating"
+      "type": "Rating",
+      "nullable": true
     },
     "year": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     }
   },
   "WatchabilityItem": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "logo": {
       "type": "Logo",
+      "nullable": false,
       "required": true
     },
     "url": {
       "type": "string",
+      "nullable": false,
       "required": true
     }
   },
   "Watchability": {
     "items": {
       "type": "array",
+      "nullable": false,
       "items": "WatchabilityItem"
     }
   },
   "YearRange": {
     "start": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "end": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     }
   },
   "Audience": {
     "count": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "country": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "NetworkItemV1_4": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "logo": {
-      "type": "Logo"
+      "type": "Logo",
+      "nullable": true
     }
   },
   "NetworksV1_4": {
     "items": {
       "type": "array",
+      "nullable": true,
       "items": "NetworkItemV1_4"
     }
   },
   "MovieDtoV1_4": {
     "id": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "externalId": {
-      "type": "ExternalId"
+      "type": "ExternalId",
+      "nullable": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "alternativeName": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "enName": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "names": {
       "type": "array",
+      "nullable": true,
       "items": "Name"
     },
     "type": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "typeNumber": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "year": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "shortDescription": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "slogan": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "status": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "facts": {
       "type": "array",
+      "nullable": true,
       "items": "FactInMovie"
     },
     "rating": {
-      "type": "Rating"
+      "type": "Rating",
+      "nullable": false
     },
     "votes": {
-      "type": "Votes"
+      "type": "Votes",
+      "nullable": false
     },
     "movieLength": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "ratingMpaa": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "ageRating": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "logo": {
-      "type": "Logo"
+      "type": "Logo",
+      "nullable": false
     },
     "poster": {
-      "type": "ShortImage"
+      "type": "ShortImage",
+      "nullable": false
     },
     "backdrop": {
-      "type": "ShortImage"
+      "type": "ShortImage",
+      "nullable": false
     },
     "videos": {
-      "type": "VideoTypes"
+      "type": "VideoTypes",
+      "nullable": false
     },
     "genres": {
       "type": "array",
+      "nullable": false,
       "items": "ItemName"
     },
     "countries": {
       "type": "array",
+      "nullable": false,
       "items": "ItemName"
     },
     "persons": {
       "type": "array",
+      "nullable": false,
       "items": "PersonInMovie"
     },
     "reviewInfo": {
-      "type": "ReviewInfo"
+      "type": "ReviewInfo",
+      "nullable": false
     },
     "seasonsInfo": {
       "type": "array",
+      "nullable": false,
       "items": "SeasonInfo"
     },
     "budget": {
-      "type": "CurrencyValue"
+      "type": "CurrencyValue",
+      "nullable": false
     },
     "fees": {
-      "type": "Fees"
+      "type": "Fees",
+      "nullable": false
     },
     "premiere": {
-      "type": "Premiere"
+      "type": "Premiere",
+      "nullable": false
     },
     "similarMovies": {
       "type": "array",
+      "nullable": true,
       "items": "LinkedMovieV1_4"
     },
     "sequelsAndPrequels": {
       "type": "array",
+      "nullable": true,
       "items": "LinkedMovieV1_4"
     },
     "watchability": {
-      "type": "Watchability"
+      "type": "Watchability",
+      "nullable": false
     },
     "releaseYears": {
       "type": "array",
+      "nullable": false,
       "items": "YearRange"
     },
     "top10": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "top250": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "ticketsOnSale": {
-      "type": "boolean"
+      "type": "boolean",
+      "nullable": true
     },
     "totalSeriesLength": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "seriesLength": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "isSeries": {
-      "type": "boolean"
+      "type": "boolean",
+      "nullable": true
     },
     "audience": {
       "type": "array",
+      "nullable": true,
       "items": "Audience"
     },
     "lists": {
       "type": "array",
+      "nullable": true,
       "items": "string"
     },
     "networks": {
-      "type": "NetworksV1_4"
+      "type": "NetworksV1_4",
+      "nullable": true
     },
     "updatedAt": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "createdAt": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "MovieDocsResponseDtoV1_4": {
     "docs": {
       "type": "array",
+      "nullable": false,
       "required": true,
       "items": "MovieDtoV1_4"
     },
     "total": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "limit": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "page": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "pages": {
       "type": "number",
+      "nullable": false,
       "required": true
     }
   },
   "SearchMovieDtoV1_4": {
     "id": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "alternativeName": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "enName": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "type": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "year": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "shortDescription": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "movieLength": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "names": {
       "type": "array",
+      "nullable": true,
       "items": "Name"
     },
     "externalId": {
-      "type": "ExternalId"
+      "type": "ExternalId",
+      "nullable": true
     },
     "logo": {
-      "type": "Logo"
+      "type": "Logo",
+      "nullable": true
     },
     "poster": {
-      "type": "ShortImage"
+      "type": "ShortImage",
+      "nullable": true
     },
     "backdrop": {
-      "type": "ShortImage"
+      "type": "ShortImage",
+      "nullable": true
     },
     "rating": {
-      "type": "Rating"
+      "type": "Rating",
+      "nullable": true
     },
     "votes": {
-      "type": "Votes"
+      "type": "Votes",
+      "nullable": true
     },
     "genres": {
       "type": "array",
+      "nullable": true,
       "items": "ItemName"
     },
     "countries": {
       "type": "array",
+      "nullable": true,
       "items": "ItemName"
     },
     "releaseYears": {
       "type": "array",
+      "nullable": true,
       "items": "YearRange"
     },
     "isSeries": {
-      "type": "boolean"
+      "type": "boolean",
+      "nullable": true
     },
     "ticketsOnSale": {
-      "type": "boolean"
+      "type": "boolean",
+      "nullable": true
     },
     "totalSeriesLength": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "seriesLength": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "ratingMpaa": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "ageRating": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "top10": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "top250": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "typeNumber": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "status": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "SearchMovieResponseDtoV1_4": {
     "docs": {
       "type": "array",
+      "nullable": false,
       "required": true,
       "items": "SearchMovieDtoV1_4"
     },
     "total": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "limit": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "page": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "pages": {
       "type": "number",
+      "nullable": false,
       "required": true
     }
   },
   "NominationAward": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "year": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     }
   },
   "Nomination": {
     "award": {
-      "type": "NominationAward"
+      "type": "NominationAward",
+      "nullable": true
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "MovieAward": {
     "nomination": {
-      "type": "Nomination"
+      "type": "Nomination",
+      "nullable": true
     },
     "winning": {
-      "type": "boolean"
+      "type": "boolean",
+      "nullable": true
     },
     "updatedAt": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "createdAt": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "movieId": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     }
   },
   "MovieAwardDocsResponseDto": {
     "docs": {
       "type": "array",
+      "nullable": false,
       "required": true,
       "items": "MovieAward"
     },
     "total": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "limit": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "page": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "pages": {
       "type": "number",
+      "nullable": false,
       "required": true
     }
   },
   "PossibleValueDto": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "slug": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "EpisodeV1_4": {
     "number": {
-      "type": "number"
+      "type": "number",
+      "nullable": false
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "enName": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "date": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "still": {
-      "type": "ShortImage"
+      "type": "ShortImage",
+      "nullable": false
     },
     "airDate": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "enDescription": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     }
   },
   "SeasonV1_4": {
     "movieId": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "number": {
-      "type": "number"
+      "type": "number",
+      "nullable": false
     },
     "episodesCount": {
-      "type": "number"
+      "type": "number",
+      "nullable": false
     },
     "episodes": {
       "type": "array",
+      "nullable": false,
       "items": "EpisodeV1_4"
     },
     "poster": {
-      "type": "ShortImage"
+      "type": "ShortImage",
+      "nullable": false
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "enName": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "duration": {
-      "type": "number"
+      "type": "number",
+      "nullable": false
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "enDescription": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "airDate": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "updatedAt": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "createdAt": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "SeasonDocsResponseDtoV1_4": {
     "docs": {
       "type": "array",
+      "nullable": false,
       "required": true,
       "items": "SeasonV1_4"
     },
     "total": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "limit": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "page": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "pages": {
       "type": "number",
+      "nullable": false,
       "required": true
     }
   },
   "Review": {
     "id": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "movieId": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "type": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "review": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "date": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "author": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "userRating": {
-      "type": "number"
+      "type": "number",
+      "nullable": false
     },
     "authorId": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "reviewLikes": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "reviewDislikes": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "updatedAt": {
       "type": "string",
+      "nullable": false,
       "required": true
     },
     "createdAt": {
       "type": "string",
+      "nullable": false,
       "required": true
     }
   },
   "ReviewDocsResponseDtoV1_4": {
     "docs": {
       "type": "array",
+      "nullable": false,
       "required": true,
       "items": "Review"
     },
     "total": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "limit": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "page": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "pages": {
       "type": "number",
+      "nullable": false,
       "required": true
     }
   },
   "BirthPlace": {
     "value": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     }
   },
   "DeathPlace": {
     "value": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     }
   },
   "Spouses": {
     "id": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "divorced": {
-      "type": "boolean"
+      "type": "boolean",
+      "nullable": false
     },
     "divorcedReason": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "sex": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "children": {
-      "type": "number"
+      "type": "number",
+      "nullable": false
     },
     "relation": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     }
   },
   "Profession": {
     "value": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     }
   },
   "FactInPerson": {
     "value": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     }
   },
   "MovieInPerson": {
     "id": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "alternativeName": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "rating": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "general": {
-      "type": "boolean"
+      "type": "boolean",
+      "nullable": true
     },
     "description": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "enProfession": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "Person": {
     "id": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "enName": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "photo": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "sex": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "growth": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "birthday": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "death": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "age": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "birthPlace": {
       "type": "array",
+      "nullable": false,
       "items": "BirthPlace"
     },
     "deathPlace": {
       "type": "array",
+      "nullable": false,
       "items": "DeathPlace"
     },
     "spouses": {
       "type": "array",
+      "nullable": false,
       "items": "Spouses"
     },
     "countAwards": {
-      "type": "number"
+      "type": "number",
+      "nullable": false
     },
     "profession": {
       "type": "array",
+      "nullable": false,
       "items": "Profession"
     },
     "facts": {
       "type": "array",
+      "nullable": false,
       "items": "FactInPerson"
     },
     "movies": {
       "type": "array",
+      "nullable": false,
       "items": "MovieInPerson"
     },
     "updatedAt": {
       "type": "string",
+      "nullable": false,
       "required": true
     },
     "createdAt": {
       "type": "string",
+      "nullable": false,
       "required": true
     }
   },
   "PersonDocsResponseDtoV1_4": {
     "docs": {
       "type": "array",
+      "nullable": false,
       "required": true,
       "items": "Person"
     },
     "total": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "limit": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "page": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "pages": {
       "type": "number",
+      "nullable": false,
       "required": true
     }
   },
   "MeiliPersonEntityV1_4": {
     "id": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "enName": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "photo": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "sex": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "growth": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "birthday": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "death": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "age": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "birthPlace": {
       "type": "array",
+      "nullable": false,
       "items": "BirthPlace"
     },
     "deathPlace": {
       "type": "array",
+      "nullable": false,
       "items": "DeathPlace"
     },
     "profession": {
       "type": "array",
+      "nullable": false,
       "items": "Profession"
     }
   },
   "SearchPersonResponseDtoV1_4": {
     "docs": {
       "type": "array",
+      "nullable": false,
       "required": true,
       "items": "MeiliPersonEntityV1_4"
     },
     "total": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "limit": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "page": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "pages": {
       "type": "number",
+      "nullable": false,
       "required": true
     }
   },
   "Movie": {
     "id": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "rating": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     }
   },
   "PersonAward": {
     "nomination": {
-      "type": "Nomination"
+      "type": "Nomination",
+      "nullable": true
     },
     "winning": {
-      "type": "boolean"
+      "type": "boolean",
+      "nullable": true
     },
     "updatedAt": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "createdAt": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "personId": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "movie": {
-      "type": "Movie"
+      "type": "Movie",
+      "nullable": true
     }
   },
   "PersonAwardDocsResponseDto": {
     "docs": {
       "type": "array",
+      "nullable": false,
       "required": true,
       "items": "PersonAward"
     },
     "total": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "limit": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "page": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "pages": {
       "type": "number",
+      "nullable": false,
       "required": true
     }
   },
   "MovieFromStudio": {
     "id": {
       "type": "number",
+      "nullable": false,
       "required": true
     }
   },
   "Studio": {
     "id": {
       "type": "string",
+      "nullable": false,
       "required": true
     },
     "subType": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "type": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "movies": {
-      "type": "MovieFromStudio"
+      "type": "MovieFromStudio",
+      "nullable": false
     },
     "updatedAt": {
       "type": "string",
+      "nullable": false,
       "required": true
     },
     "createdAt": {
       "type": "string",
+      "nullable": false,
       "required": true
     }
   },
   "StudioDocsResponseDtoV1_4": {
     "docs": {
       "type": "array",
+      "nullable": false,
       "required": true,
       "items": "Studio"
     },
     "total": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "limit": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "page": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "pages": {
       "type": "number",
+      "nullable": false,
       "required": true
     }
   },
   "MovieFromKeyword": {
     "id": {
       "type": "number",
+      "nullable": false,
       "required": true
     }
   },
   "Keyword": {
     "id": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "movies": {
-      "type": "MovieFromKeyword"
+      "type": "MovieFromKeyword",
+      "nullable": false
     },
     "updatedAt": {
       "type": "string",
+      "nullable": false,
       "required": true
     },
     "createdAt": {
       "type": "string",
+      "nullable": false,
       "required": true
     }
   },
   "KeywordDocsResponseDtoV1_4": {
     "docs": {
       "type": "array",
+      "nullable": false,
       "required": true,
       "items": "Keyword"
     },
     "total": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "limit": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "page": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "pages": {
       "type": "number",
+      "nullable": false,
       "required": true
     }
   },
   "Image": {
     "movieId": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "type": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "language": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "url": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "previewUrl": {
-      "type": "string"
+      "type": "string",
+      "nullable": false
     },
     "height": {
-      "type": "number"
+      "type": "number",
+      "nullable": false
     },
     "width": {
-      "type": "number"
+      "type": "number",
+      "nullable": false
     },
     "updatedAt": {
       "type": "string",
+      "nullable": false,
       "required": true
     },
     "createdAt": {
       "type": "string",
+      "nullable": false,
       "required": true
     }
   },
   "ImageDocsResponseDtoV1_4": {
     "docs": {
       "type": "array",
+      "nullable": false,
       "required": true,
       "items": "Image"
     },
     "total": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "limit": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "page": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "pages": {
       "type": "number",
+      "nullable": false,
       "required": true
     }
   },
   "List": {
     "category": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "slug": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "moviesCount": {
-      "type": "number"
+      "type": "number",
+      "nullable": true
     },
     "cover": {
-      "type": "ShortImage"
+      "type": "ShortImage",
+      "nullable": true
     },
     "name": {
       "type": "string",
+      "nullable": false,
       "required": true
     },
     "updatedAt": {
       "type": "string",
+      "nullable": false,
       "required": true
     },
     "createdAt": {
       "type": "string",
+      "nullable": false,
       "required": true
     }
   },
   "ListDocsResponseDtoV1_4": {
     "docs": {
       "type": "array",
+      "nullable": false,
       "required": true,
       "items": "List"
     },
     "total": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "limit": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "page": {
       "type": "number",
+      "nullable": false,
       "required": true
     },
     "pages": {
       "type": "number",
+      "nullable": false,
       "required": true
     }
   }

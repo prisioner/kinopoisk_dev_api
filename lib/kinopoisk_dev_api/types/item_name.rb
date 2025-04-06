@@ -3,7 +3,7 @@
 module KinopoiskDevApi
   module Types
     class ItemName < Base
-      attribute? :name, Types::String
+      attribute? :name, Types::Coercible::String
     end
   end
 end

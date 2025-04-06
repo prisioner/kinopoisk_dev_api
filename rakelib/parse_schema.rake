@@ -16,6 +16,8 @@ task :parse_schema do
 
       attribute[:type] = attribute[:type].join if attribute[:type]&.length == 1
 
+      attribute[:nullable] = property_schema.nullable?
+
       attribute[:required] = true if required_keys(schema).include?(property_name)
 
       # getting required values from the description, no values in json 😔

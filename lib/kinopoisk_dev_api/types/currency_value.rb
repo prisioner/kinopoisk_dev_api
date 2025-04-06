@@ -3,8 +3,8 @@
 module KinopoiskDevApi
   module Types
     class CurrencyValue < Base
-      attribute? :value, Types::Float | Types::Integer
-      attribute? :currency, Types::String
+      attribute? :value, Types::Float | Types::Integer.optional
+      attribute? :currency, Types::Coercible::String.optional
     end
   end
 end

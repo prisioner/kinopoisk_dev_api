@@ -3,8 +3,8 @@
 module KinopoiskDevApi
   module Types
     class ShortImage < Base
-      attribute? :url, Types::String
-      attribute? :previewUrl, Types::String
+      attribute? :url, Types::Coercible::String.optional
+      attribute? :previewUrl, Types::Coercible::String.optional
     end
   end
 end

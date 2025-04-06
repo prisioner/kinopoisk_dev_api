@@ -32,6 +32,7 @@ task :rebuild_types do
 
       attributes[attr_name][:type] = 'Types::True' if attributes[attr_name][:type] == 'Types::Boolean.default(true)'
       attributes[attr_name][:type] = attributes[attr_name][:type].gsub('Types::Boolean', 'Types::Bool')
+      attributes[attr_name][:type] += '.optional' if properties[:nullable]
     end
 
     File.write "#{__dir__}/../lib/kinopoisk_dev_api/types/#{underscore(name)}.rb",
@@ -72,7 +73,8 @@ def apply_min_max(attributes, attr_name, properties)
 end
 
 def add_module_types(type)
-  return 'Types::Float | Types::Integer' if type == 'number'
+  return %w[Types::Float Types::Integer] if type == 'number'
+  return 'Types::Coercible::String' if type == 'string'
 
   DRY_TYPES.include?(type) ? "Types::#{type.capitalize}" : type
 end
@@ -86,5 +88,5 @@ def underscore(camel_cased_word)
 end
 
 def typecast(type, obj)
-  type == 'Types::String' ? "'#{obj}'" : obj
+  type == 'Types::Coercible::String' ? "'#{obj}'" : obj
 end

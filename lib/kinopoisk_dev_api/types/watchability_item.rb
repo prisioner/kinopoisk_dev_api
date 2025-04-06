@@ -3,9 +3,9 @@
 module KinopoiskDevApi
   module Types
     class WatchabilityItem < Base
-      attribute? :name, Types::String
+      attribute? :name, Types::Coercible::String.optional
       attribute :logo, Logo
-      attribute :url, Types::String
+      attribute :url, Types::Coercible::String
     end
   end
 end

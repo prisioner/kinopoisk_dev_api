@@ -3,13 +3,13 @@
 module KinopoiskDevApi
   module Types
     class List < Base
-      attribute? :category, Types::String
-      attribute? :slug, Types::String
-      attribute? :moviesCount, Types::Float | Types::Integer
-      attribute? :cover, ShortImage
-      attribute :name, Types::String
-      attribute :updatedAt, Types::String
-      attribute :createdAt, Types::String
+      attribute? :category, Types::Coercible::String.optional
+      attribute? :slug, Types::Coercible::String.optional
+      attribute? :moviesCount, Types::Float | Types::Integer.optional
+      attribute? :cover, ShortImage.optional
+      attribute :name, Types::Coercible::String
+      attribute :updatedAt, Types::Coercible::String
+      attribute :createdAt, Types::Coercible::String
     end
   end
 end

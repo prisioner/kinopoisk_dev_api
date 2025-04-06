@@ -3,7 +3,7 @@
 module KinopoiskDevApi
   module Types
     class BirthPlace < Base
-      attribute? :value, Types::String
+      attribute? :value, Types::Coercible::String
     end
   end
 end

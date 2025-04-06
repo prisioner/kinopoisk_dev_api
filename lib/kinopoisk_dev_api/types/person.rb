@@ -4,14 +4,14 @@ module KinopoiskDevApi
   module Types
     class Person < Base
       attribute :id, Types::Float | Types::Integer
-      attribute? :name, Types::String
-      attribute? :enName, Types::String
-      attribute? :photo, Types::String
-      attribute? :sex, Types::String
-      attribute? :growth, Types::Float | Types::Integer
-      attribute? :birthday, Types::String
-      attribute? :death, Types::String
-      attribute? :age, Types::Float | Types::Integer
+      attribute? :name, Types::Coercible::String.optional
+      attribute? :enName, Types::Coercible::String.optional
+      attribute? :photo, Types::Coercible::String.optional
+      attribute? :sex, Types::Coercible::String.optional
+      attribute? :growth, Types::Float | Types::Integer.optional
+      attribute? :birthday, Types::Coercible::String.optional
+      attribute? :death, Types::Coercible::String.optional
+      attribute? :age, Types::Float | Types::Integer.optional
       attribute? :birthPlace, Types::Array.of(BirthPlace)
       attribute? :deathPlace, Types::Array.of(DeathPlace)
       attribute? :spouses, Types::Array.of(Spouses)
@@ -19,8 +19,8 @@ module KinopoiskDevApi
       attribute? :profession, Types::Array.of(Profession)
       attribute? :facts, Types::Array.of(FactInPerson)
       attribute? :movies, Types::Array.of(MovieInPerson)
-      attribute :updatedAt, Types::String
-      attribute :createdAt, Types::String
+      attribute :updatedAt, Types::Coercible::String
+      attribute :createdAt, Types::Coercible::String
     end
   end
 end

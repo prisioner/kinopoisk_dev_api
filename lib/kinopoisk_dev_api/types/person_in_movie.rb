@@ -4,12 +4,12 @@ module KinopoiskDevApi
   module Types
     class PersonInMovie < Base
       attribute :id, Types::Float | Types::Integer
-      attribute? :photo, Types::String
-      attribute? :name, Types::String
-      attribute? :enName, Types::String
-      attribute? :description, Types::String
-      attribute? :profession, Types::String
-      attribute? :enProfession, Types::String
+      attribute? :photo, Types::Coercible::String.optional
+      attribute? :name, Types::Coercible::String.optional
+      attribute? :enName, Types::Coercible::String.optional
+      attribute? :description, Types::Coercible::String.optional
+      attribute? :profession, Types::Coercible::String.optional
+      attribute? :enProfession, Types::Coercible::String.optional
     end
   end
 end
