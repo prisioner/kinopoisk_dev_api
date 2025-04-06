@@ -60,7 +60,7 @@ module KinopoiskDevApi
 
       params.transform_keys! do |key|
         words = key.to_s.split("_")
-        words.drop(1).map(&:camelize!)
+        words.drop(1).map(&:capitalize!)
         words.join
       end
 
@@ -83,15 +83,13 @@ module KinopoiskDevApi
       when Array
         raw_value.map { |e| transform_value(e) }
       when String
-        raw_value = raw_value.sub("!", "%21") if raw_value.start_with?("!")
-        raw_value = raw_value.sub("+", "%2B") if raw_value.start_with?("+")
         raw_value
       when Date, Time, DateTime
         raw_value.strftime("%d.%m.%Y")
       when TrueClass, FalseClass
         raw_value ? "true" : "false"
       when Range
-        transform_value([raw_value.start, raw_value.end]).join("-")
+        transform_value([raw_value.begin, raw_value.end]).join("-")
       else
         raw_value.to_s
       end
