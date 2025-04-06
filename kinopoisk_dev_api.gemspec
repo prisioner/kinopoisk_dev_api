@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://github.com/prisioner/kinopoisk_dev_api"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.7"
+  spec.metadata['rubygems_mfa_required'] = 'true'
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/prisioner/kinopoisk_dev_api"
@@ -30,4 +31,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "dry-struct", "~> 1.6"
+  spec.add_dependency 'faraday', '~> 2.0'
+  spec.add_dependency 'zeitwerk', '~> 2.6'
 end
