@@ -1,0 +1,114 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kinopoisk.dev/v1.4/movie/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.20.1
+      date:
+      - Sun, 06 Apr 2025 19:20:38 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';font-src ''self'' https: data:;form-action
+        ''self'';frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      cross-origin-opener-policy:
+      - same-origin
+      cross-origin-resource-policy:
+      - same-origin
+      origin-agent-cluster:
+      - "?1"
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - '0'
+      access-control-allow-origin:
+      - "*"
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '1'
+      vary:
+      - accept-encoding
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"id":1206630,"type":"movie","externalId":{"imdb":"tt9080976","kpHD":null},"name":null,"rating":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"description":null,"votes":{"kp":1,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"distributors":{"distributor":null,"distributorRelease":null},"premiere":{"world":"2018-10-06T00:00:00.000Z","bluray":null,"cinema":null,"digital":null,"dvd":null,"russia":null},"slogan":"When
+        a blind woman with heightened senses pursues her dream of becoming a Master
+        Sommelier, she discovers a family secret that could keep her from ever reaching
+        her goal.","year":2018,"poster":{"url":null,"previewUrl":null},"facts":[],"genres":[{"name":"короткометражка"}],"countries":[{"name":"США"}],"seasonsInfo":[],"persons":[{"id":4451791,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_4451791.jpg","name":"Николь
+        Берри","enName":"Nicole Berry","description":"Brianna Aria","profession":"актеры","enProfession":"actor"},{"id":4613890,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_4613890.jpg","name":null,"enName":"Elizabeth
+        Anne Springett","description":"Master Sommelier Rose","profession":"актеры","enProfession":"actor"},{"id":5402655,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402655.jpg","name":null,"enName":"Kristen
+        Klemin","description":"Isabel Aria","profession":"актеры","enProfession":"actor"},{"id":5402652,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402652.jpg","name":null,"enName":"Oona
+        Zoe Albert-Berry","description":"Young Brianna","profession":"актеры","enProfession":"actor"},{"id":2637923,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_2637923.jpg","name":null,"enName":"Kalaine
+        Lee","description":"Iris","profession":"актеры","enProfession":"actor"},{"id":4995202,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_4995202.jpg","name":null,"enName":"Ernest
+        Vestito","description":"Papa Aria","profession":"актеры","enProfession":"actor"},{"id":5402665,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402665.jpg","name":null,"enName":"Nolan
+        J. Turner","description":"Violinist","profession":"актеры","enProfession":"actor"},{"id":5402664,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402664.jpg","name":null,"enName":"Mathew
+        Trammel","description":"Master Sommelier Dame","profession":"актеры","enProfession":"actor"},{"id":3808135,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_3808135.jpg","name":null,"enName":"Natasha
+        Toolate","description":"Potatoe Candidate","profession":"актеры","enProfession":"actor"},{"id":2464287,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_2464287.jpg","name":null,"enName":"Dan
+        L. Walters","description":"Bruised Apple Candidate","profession":"актеры","enProfession":"actor"},{"id":3558873,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_3558873.jpg","name":null,"enName":"Janine
+        Romney","description":"Cat P---urine Candidate","profession":"актеры","enProfession":"actor"},{"id":5402657,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402657.jpg","name":null,"enName":"Andrea
+        L. Lockett","description":"Sweet Honey Candidate","profession":"актеры","enProfession":"actor"},{"id":4830939,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_4830939.jpg","name":null,"enName":"Navjit
+        Bansi","description":"Cow Leather Candidate","profession":"актеры","enProfession":"actor"},{"id":5340906,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5340906.jpg","name":null,"enName":"Latasharose
+        Keys","description":"Dame Girl #1","profession":"актеры","enProfession":"actor"},{"id":5402661,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402661.jpg","name":null,"enName":"Bernadette
+        Rose","description":"Dame Girl #2","profession":"актеры","enProfession":"actor"},{"id":3061446,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_3061446.jpg","name":null,"enName":"Bunny
+        Stewart","description":"Dame Girl #3","profession":"актеры","enProfession":"actor"},{"id":5401157,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5401157.jpg","name":null,"enName":"Maxine
+        Stahl","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5402663,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402663.jpg","name":null,"enName":"Stephanie
+        D. Smith","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5402662,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402662.jpg","name":null,"enName":"Stephanie
+        C. Smith","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5387776,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5387776.jpg","name":null,"enName":"Olivia
+        Ruelas","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5387775,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5387775.jpg","name":null,"enName":"Mercedes
+        Ruelas","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5402660,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402660.jpg","name":null,"enName":"Ralph
+        R. Peck","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5402659,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402659.jpg","name":null,"enName":"Linda
+        J. Peck","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5387773,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5387773.jpg","name":null,"enName":"Patricia
+        Arisiaga Payan","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5402658,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402658.jpg","name":null,"enName":"Deb
+        Beauvais Matthews","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5402656,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402656.jpg","name":null,"enName":"Chris
+        Laird","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5387766,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5387766.jpg","name":null,"enName":"Bianca
+        Jeanette","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5387761,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5387761.jpg","name":null,"enName":"Alma
+        B. Godines","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5387760,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5387760.jpg","name":null,"enName":"Charmaine
+        Garcia","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5402654,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402654.jpg","name":null,"enName":"Bruce
+        B. Fields","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5402653,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402653.jpg","name":null,"enName":"Christina
+        Dyer","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5402651,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402651.jpg","name":null,"enName":"Fox
+        Albert-Berry","description":"Extra","profession":"актеры","enProfession":"actor"},{"id":5340904,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5340904.jpg","name":null,"enName":"Kristen
+        Spradley","description":"Isabel","profession":"актеры","enProfession":"actor"},{"id":256511,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_256511.jpg","name":"Доун
+        Спинелла","enName":"Dawn Spinella","description":null,"profession":"режиссеры","enProfession":"director"},{"id":4951950,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_4951950.jpg","name":null,"enName":"Britton
+        Thomas","description":null,"profession":"монтажеры","enProfession":"editor"},{"id":5402666,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402666.jpg","name":null,"enName":"Michael
+        Thygesen","description":null,"profession":"операторы","enProfession":"operator"},{"id":5402650,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402650.jpg","name":null,"enName":"Danya
+        Barrows","description":null,"profession":"продюсеры","enProfession":"producer"},{"id":256511,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_256511.jpg","name":"Доун
+        Спинелла","enName":"Dawn Spinella","description":null,"profession":"продюсеры","enProfession":"producer"},{"id":5402650,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_5402650.jpg","name":null,"enName":"Danya
+        Barrows","description":null,"profession":"сценаристы","enProfession":"writer"}],"images":{"framesCount":0},"lists":[],"spokenLanguages":[],"productionCompanies":[],"typeNumber":1,"sequelsAndPrequels":[],"updatedAt":"2025-04-03T12:39:30.335Z","alternativeName":"Tono
+        Sommesso","enName":null,"movieLength":10,"names":[{"name":"Tono Sommesso"}],"ratingMpaa":null,"shortDescription":null,"technology":{"hasImax":false,"has3D":false},"ticketsOnSale":false,"similarMovies":[],"fees":{"world":{},"russia":{},"usa":{}},"budget":{},"ageRating":null,"backdrop":{"url":null,"previewUrl":null},"logo":{"url":null},"top10":null,"top250":null,"status":null,"isSeries":false,"seriesLength":null,"totalSeriesLength":null,"deletedAt":null,"networks":null,"isTmdbChecked":false,"watchability":{"items":[]}}'
+  recorded_at: Sun, 06 Apr 2025 19:20:39 GMT
+recorded_with: VCR 6.3.1

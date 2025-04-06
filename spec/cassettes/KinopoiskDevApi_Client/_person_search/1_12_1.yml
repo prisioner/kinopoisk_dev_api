@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kinopoisk.dev/v1.4/person/search
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.20.1
+      date:
+      - Sun, 06 Apr 2025 19:55:49 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';font-src ''self'' https: data:;form-action
+        ''self'';frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      cross-origin-opener-policy:
+      - same-origin
+      cross-origin-resource-policy:
+      - same-origin
+      origin-agent-cluster:
+      - "?1"
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - '0'
+      access-control-allow-origin:
+      - "*"
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '1'
+      vary:
+      - accept-encoding
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"docs":[{"id":7178282,"name":"","enName":"Vera Vávrová","photo":"","sex":"Женский","growth":0,"birthday":"","death":"","age":0},{"id":7178280,"name":"","enName":"Zuzana
+        Faková","photo":"","sex":"Женский","growth":0,"birthday":"","death":"","age":0},{"id":7178281,"name":"","enName":"Vojtech
+        Knap","photo":"","sex":"Мужской","growth":0,"birthday":"","death":"","age":0},{"id":7178279,"name":"","enName":"Emil
+        Fako","photo":"","sex":"Мужской","growth":0,"birthday":"","death":"","age":0},{"id":7178278,"name":"","enName":"Nikolas
+        Cina","photo":"","sex":"Мужской","growth":0,"birthday":"","death":"","age":0},{"id":7178277,"name":"","enName":"Rafael
+        Tokar","photo":"","sex":"Мужской","growth":0,"birthday":"","death":"","age":0},{"id":7178276,"name":"","enName":"Nicolas
+        Rafel","photo":"","sex":"Мужской","growth":0,"birthday":"","death":"","age":0},{"id":7178275,"name":"","enName":"Jaroslav
+        Baca","photo":"","sex":"Мужской","growth":0,"birthday":"","death":"","age":0},{"id":7178274,"name":"","enName":"Marek
+        Grundza","photo":"","sex":"Мужской","growth":0,"birthday":"","death":"","age":0},{"id":7178273,"name":"","enName":"Jirí
+        Jandejsek","photo":"","sex":"Мужской","growth":0,"birthday":"","death":"","age":0}],"total":1000,"limit":10,"page":1,"pages":100}'
+  recorded_at: Sun, 06 Apr 2025 19:55:50 GMT
+recorded_with: VCR 6.3.1

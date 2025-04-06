@@ -1,0 +1,224 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kinopoisk.dev/v1.4/person/1514
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.20.1
+      date:
+      - Sun, 06 Apr 2025 19:27:18 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';font-src ''self'' https: data:;form-action
+        ''self'';frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      cross-origin-opener-policy:
+      - same-origin
+      cross-origin-resource-policy:
+      - same-origin
+      origin-agent-cluster:
+      - "?1"
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - '0'
+      access-control-allow-origin:
+      - "*"
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '1'
+      vary:
+      - accept-encoding
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"id":1514,"name":"Джейсон Стэйтем","enName":"Jason Statham","photo":"https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/958b0a05-f3f0-4755-8ff7-995137af84fc/orig","sex":"Мужской","growth":178,"birthday":"1967-07-26T00:00:00.000Z","death":null,"age":57,"birthPlace":[{"value":"Ширбрук"},{"value":"Дербишир"},{"value":"Англия"},{"value":"Великобритания"}],"deathPlace":[],"spouses":[],"countAwards":null,"profession":[],"facts":[{"value":"Полное
+        имя — Джейсон Майкл Стэйтем."},{"value":"Отец Джейсона — певец, а мать — танцовщица."},{"value":"В
+        молодости профессионально занимался плаванием."},{"value":"У Джейсона двое
+        детей от <a href=\"/name/1574168/\" class=\"all\">Роузи Хантингтон-Уайтли</a>."}],"movies":[{"id":1082327,"name":null,"alternativeName":"Untitled
+        Hong Kong Action Thriller","rating":null,"general":false,"description":"Straw","enProfession":"actor"},{"id":5450039,"name":null,"alternativeName":"Small
+        Dark Look","rating":null,"general":false,"description":"слухи","enProfession":"actor"},{"id":5582050,"name":null,"alternativeName":"Mutiny","rating":null,"general":false,"description":"Cole
+        Reed","enProfession":"actor"},{"id":6548103,"name":null,"alternativeName":"Untitled
+        Jason Statham thriller","rating":null,"general":false,"description":"Mason","enProfession":"actor"},{"id":7293756,"name":"Пчеловод
+        2","alternativeName":"The Beekeeper 2","rating":null,"general":false,"description":null,"enProfession":"actor"},{"id":5309715,"name":null,"alternativeName":"Fast
+        X: Part 2","rating":null,"general":false,"description":"Deckard Shaw","enProfession":"actor"},{"id":5450038,"name":"Мастер","alternativeName":"A
+        Working Man","rating":6.271,"general":false,"description":"Levon Cade","enProfession":"actor"},{"id":4626783,"name":"Пчеловод","alternativeName":"The
+        Beekeeper","rating":7.213,"general":false,"description":"Adam Clay","enProfession":"actor"},{"id":959062,"name":"Форсаж
+        10","alternativeName":"Fast X","rating":5.983,"general":false,"description":"Shaw","enProfession":"actor"},{"id":1208708,"name":"Мег
+        2: Бездна","alternativeName":"Meg 2: The Trench","rating":5.53,"general":false,"description":"Jonas
+        Taylor","enProfession":"actor"},{"id":806964,"name":"Неудержимые 4","alternativeName":"Expend4bles","rating":5.314,"general":false,"description":"Christmas","enProfession":"actor"},{"id":1405508,"name":"Операция
+        «Фортуна»: Искусство побеждать","alternativeName":"Operation Fortune: Ruse
+        de Guerre","rating":7.129,"general":false,"description":"Orson","enProfession":"actor"},{"id":1318972,"name":"Гнев
+        человеческий","alternativeName":"Wrath of Man","rating":7.67,"general":false,"description":"H","enProfession":"actor"},{"id":1044450,"name":"Форсаж:
+        Хоббс и Шоу","alternativeName":"Fast & Furious Presents: Hobbs & Shaw","rating":6.324,"general":false,"description":"Shaw","enProfession":"actor"},{"id":918627,"name":"Мег:
+        Монстр глубины","alternativeName":"The Meg","rating":5.933,"general":false,"description":"Jonas
+        Taylor","enProfession":"actor"},{"id":894027,"name":"Форсаж 8","alternativeName":"The
+        Fate of the Furious","rating":6.236,"general":false,"description":"Deckard","enProfession":"actor"},{"id":1087458,"name":"Хранители
+        боевых искусств","alternativeName":"Gong shou dao","rating":5.363,"general":false,"description":"cameo","enProfession":"actor"},{"id":1228085,"name":null,"alternativeName":"Wix.com
+        Big Game Ad with Jason Statham & Gal Gadot","rating":6.432,"general":false,"description":null,"enProfession":"actor"},{"id":837525,"name":"Механик:
+        Воскрешение","alternativeName":"Mechanic: Resurrection","rating":5.973,"general":false,"description":"Arthur
+        Bishop","enProfession":"actor"},{"id":1363577,"name":null,"alternativeName":"The
+        Malaysian Prison","rating":null,"general":false,"description":"Self","enProfession":"actor"},{"id":754481,"name":"Форсаж
+        7","alternativeName":"Fast & Furious 7","rating":7.033,"general":false,"description":"Deckard
+        Shaw","enProfession":"actor"},{"id":782792,"name":"Шпион","alternativeName":"Spy","rating":7.119,"general":false,"description":"Rick
+        Ford","enProfession":"actor"},{"id":666928,"name":"Шальная карта","alternativeName":"Wild
+        Card","rating":5.829,"general":false,"description":"Nick Wild","enProfession":"actor"},{"id":696813,"name":"Неудержимые
+        3","alternativeName":"The Expendables 3","rating":6.12,"general":false,"description":"Lee
+        Christmas","enProfession":"actor"},{"id":683766,"name":"Последний рубеж","alternativeName":"Homefront","rating":6.453,"general":false,"description":"Phil
+        Broker","enProfession":"actor"},{"id":1363578,"name":null,"alternativeName":"Who
+        Is ''Parker''?","rating":null,"general":false,"description":"Self","enProfession":"actor"},{"id":1363579,"name":null,"alternativeName":"Bringing
+        the Hunter to Life: The Making of «Parker»","rating":null,"general":false,"description":"Self","enProfession":"actor"},{"id":523057,"name":"Защитник","alternativeName":"Safe","rating":6.751,"general":false,"description":"Luke
+        Wright","enProfession":"actor"},{"id":571288,"name":"Неудержимые 2","alternativeName":"The
+        Expendables 2","rating":6.982,"general":false,"description":"Lee Christmas","enProfession":"actor"},{"id":586475,"name":"Паркер","alternativeName":"Parker","rating":6.735,"general":false,"description":"Parker","enProfession":"actor"},{"id":607288,"name":"Эффект
+        колибри","alternativeName":"Hummingbird","rating":6.367,"general":false,"description":"Joey","enProfession":"actor"},{"id":261819,"name":"Гномео
+        и Джульетта","alternativeName":"Gnomeo & Juliet","rating":6.078,"general":false,"description":"Tybalt","enProfession":"actor"},{"id":464020,"name":"Без
+        компромиссов","alternativeName":"Blitz","rating":6.779,"general":false,"description":"Brant","enProfession":"actor"},{"id":467166,"name":"Профессионал","alternativeName":"Killer
+        Elite","rating":6.805,"general":false,"description":"Danny","enProfession":"actor"},{"id":1361200,"name":null,"alternativeName":"Tools
+        of the Trade: Inside the Action of «The Mechanic»","rating":null,"general":false,"description":"Self","enProfession":"actor"},{"id":1363576,"name":null,"alternativeName":"Action:
+        «The Expendables»","rating":null,"general":false,"description":"Self","enProfession":"actor"},{"id":195615,"name":"Механик","alternativeName":"The
+        Mechanic","rating":6.772,"general":false,"description":"Arthur Bishop","enProfession":"actor"},{"id":432550,"name":"Неудержимые","alternativeName":"The
+        Expendables","rating":6.906,"general":false,"description":"Lee Christmas","enProfession":"actor"},{"id":255394,"name":"13","alternativeName":"13","rating":6.837,"general":false,"description":"Jasper","enProfession":"actor"},{"id":397541,"name":"Адреналин:
+        Высокое напряжение","alternativeName":"Crank: High Voltage","rating":6.307,"general":false,"description":"Chev
+        Chelios","enProfession":"actor"},{"id":77649,"name":"Ограбление на Бейкер-Стрит","alternativeName":"The
+        Bank Job","rating":7.423,"general":false,"description":"Terry Leather","enProfession":"actor"},{"id":102136,"name":"Смертельная
+        гонка","alternativeName":"Death Race","rating":7.078,"general":false,"description":"Jensen
+        Ames","enProfession":"actor"},{"id":409159,"name":"Перевозчик 3","alternativeName":"Transporter
+        3","rating":6.688,"general":false,"description":"Frank Martin","enProfession":"actor"},{"id":261106,"name":"Война","alternativeName":"War","rating":6.939,"general":false,"description":"Crawford","enProfession":"actor"},{"id":104994,"name":"Во
+        имя короля: История осады подземелья","alternativeName":"In the Name of the
+        King: A Dungeon Siege Tale","rating":4.82,"general":false,"description":"Farmer","enProfession":"actor"},{"id":180609,"name":"Адреналин","alternativeName":"Crank","rating":7.256,"general":false,"description":"Chev
+        Chelios","enProfession":"actor"},{"id":18973,"name":"Револьвер","alternativeName":"Revolver","rating":7.347,"general":false,"description":"Jake
+        Green","enProfession":"actor"},{"id":77588,"name":"Перевозчик 2","alternativeName":"Le
+        Transporteur II","rating":6.952,"general":false,"description":"Frank Martin","enProfession":"actor"},{"id":81101,"name":"Хаос","alternativeName":"Chaos","rating":7.187,"general":false,"description":"Quentin
+        Conners","enProfession":"actor"},{"id":102199,"name":"Лондон","alternativeName":"London","rating":6.942,"general":false,"description":"Bateman","enProfession":"actor"},{"id":61325,"name":"Соучастник","alternativeName":"Collateral","rating":7.456,"general":false,"description":"Airport
+        Man","enProfession":"actor"},{"id":63778,"name":"Сотовый","alternativeName":"Cellular","rating":7.144,"general":false,"description":"Ethan","enProfession":"actor"},{"id":318,"name":"Ограбление
+        по-итальянски","alternativeName":"The Italian Job","rating":7.575,"general":false,"description":"Handsome
+        Rob","enProfession":"actor"},{"id":6206,"name":"Перевозчик","alternativeName":"The
+        Transporter","rating":7.424,"general":false,"description":"Frank Martin","enProfession":"actor"},{"id":1259295,"name":null,"alternativeName":"Knoc-Turn''Al
+        Feat. Samuel Christian: Muzik","rating":5.8,"general":false,"description":"Jason
+        Statham","enProfession":"actor"},{"id":749,"name":"Костолом","alternativeName":"Mean
+        Machine","rating":7.246,"general":false,"description":"Monk","enProfession":"actor"},{"id":3849,"name":"Призраки
+        Марса","alternativeName":"Ghosts of Mars","rating":5.267,"general":false,"description":"Sgt
+        Jericho Butler","enProfession":"actor"},{"id":3997,"name":"Противостояние","alternativeName":"The
+        One","rating":6.891,"general":false,"description":"Funsch","enProfession":"actor"},{"id":526,"name":"Большой
+        куш","alternativeName":"Snatch","rating":8.555,"general":false,"description":"Turkish","enProfession":"actor"},{"id":4910,"name":"Сделай
+        погромче","alternativeName":"Turn It Up","rating":5.579,"general":false,"description":"Mr.
+        B","enProfession":"actor"},{"id":522,"name":"Карты, деньги, два ствола","alternativeName":"Lock,
+        Stock and Two Smoking Barrels","rating":8.559,"general":false,"description":"Bacon","enProfession":"actor"},{"id":1292721,"name":null,"alternativeName":"Yello:
+        To the Sea","rating":5.411,"general":false,"description":"Swimmer","enProfession":"actor"},{"id":1102683,"name":null,"alternativeName":"Erasure:
+        Run to the Sun","rating":5.304,"general":false,"description":"Silver-painted
+        Dancer","enProfession":"actor"},{"id":4428465,"name":null,"alternativeName":"The
+        Shamen: Comin'' On","rating":5.351,"general":false,"description":"Background
+        Dancer","enProfession":"actor"},{"id":1082327,"name":null,"alternativeName":"Untitled
+        Hong Kong Action Thriller","rating":null,"general":false,"description":null,"enProfession":"producer"},{"id":5582050,"name":null,"alternativeName":"Mutiny","rating":null,"general":false,"description":null,"enProfession":"producer"},{"id":6548103,"name":null,"alternativeName":"Untitled
+        Jason Statham thriller","rating":null,"general":false,"description":null,"enProfession":"producer"},{"id":5450038,"name":"Мастер","alternativeName":"A
+        Working Man","rating":6.271,"general":false,"description":null,"enProfession":"producer"},{"id":4626783,"name":"Пчеловод","alternativeName":"The
+        Beekeeper","rating":7.213,"general":false,"description":null,"enProfession":"producer"},{"id":1208708,"name":"Мег
+        2: Бездна","alternativeName":"Meg 2: The Trench","rating":5.53,"general":false,"description":null,"enProfession":"producer"},{"id":806964,"name":"Неудержимые
+        4","alternativeName":"Expend4bles","rating":5.314,"general":false,"description":null,"enProfession":"producer"},{"id":1405508,"name":"Операция
+        «Фортуна»: Искусство побеждать","alternativeName":"Operation Fortune: Ruse
+        de Guerre","rating":7.129,"general":false,"description":null,"enProfession":"producer"},{"id":1044450,"name":"Форсаж:
+        Хоббс и Шоу","alternativeName":"Fast & Furious Presents: Hobbs & Shaw","rating":6.324,"general":false,"description":null,"enProfession":"producer"},{"id":807951,"name":"Вива
+        безумие!","alternativeName":"Viva La Madness","rating":null,"general":false,"description":null,"enProfession":"producer"},{"id":5388722,"name":"Жан-Клод
+        Ван Дамм, один за другим","alternativeName":"Jean-Claude Van Damme, coup sur
+        coup","rating":null,"general":false,"description":null,"enProfession":"cameo"},{"id":5399285,"name":"Слай
+        Сталлоне","alternativeName":"Sly","rating":7.377,"general":false,"description":null,"enProfession":"cameo"},{"id":4669798,"name":"Hollywood
+        Insider","alternativeName":null,"rating":null,"general":false,"description":null,"enProfession":"cameo"},{"id":4648899,"name":"IMDb
+        on the Scene — Interviews","alternativeName":null,"rating":null,"general":false,"description":null,"enProfession":"cameo"},{"id":956498,"name":"73-я
+        церемония вручения премии «Золотой глобус»","alternativeName":"73rd Golden
+        Globe Awards","rating":6.435,"general":false,"description":null,"enProfession":"cameo"},{"id":958564,"name":"21-я
+        ежегодная церемония вручения премии Critics'' Choice Awards","alternativeName":"21st
+        Annual Critics'' Choice Awards","rating":null,"general":false,"description":null,"enProfession":"cameo"},{"id":5592840,"name":null,"alternativeName":"DAZN
+        Boxing","rating":null,"general":false,"description":null,"enProfession":"cameo"},{"id":820516,"name":"Ночное
+        шоу с Джимми Фэллоном","alternativeName":"The Tonight Show Starring Jimmy
+        Fallon","rating":7.886,"general":false,"description":null,"enProfession":"cameo"},{"id":648826,"name":"Ток-шоу
+        Куин Латифы","alternativeName":"The Queen Latifah Show","rating":5.02,"general":false,"description":null,"enProfession":"cameo"},{"id":730894,"name":"70-я
+        церемония вручения премии «Золотой глобус»","alternativeName":"70th Golden
+        Globe Awards","rating":6.964,"general":false,"description":null,"enProfession":"cameo"},{"id":1112141,"name":null,"alternativeName":"Ok!
+        TV","rating":null,"general":false,"description":null,"enProfession":"cameo"},{"id":675211,"name":"Вечерний
+        Ургант","alternativeName":null,"rating":7.312,"general":false,"description":null,"enProfession":"cameo"},{"id":687130,"name":"Вся
+        правда о 24-часовой гонке II: Каждая секунда на счету","alternativeName":"Truth
+        in 24 II: Every Second Counts","rating":7.361,"general":false,"description":null,"enProfession":"cameo"},{"id":754983,"name":"Кэти","alternativeName":"Katie","rating":4.855,"general":false,"description":null,"enProfession":"cameo"},{"id":780336,"name":"Боги
+        войны: Сбор самых могущественных антигероев Земли","alternativeName":"Gods
+        of War: Assembling Earth''s Mightiest Anti-Heroes","rating":null,"general":false,"description":null,"enProfession":"cameo"},{"id":592107,"name":"Большой
+        утренний гул в прямом эфире","alternativeName":"Big Morning Buzz Live","rating":6.403,"general":false,"description":null,"enProfession":"cameo"},{"id":532951,"name":"Выбор
+        ребят","alternativeName":"Guys Choice","rating":7.785,"general":false,"description":null,"enProfession":"cameo"},{"id":678537,"name":"Разговор","alternativeName":"The
+        Talk","rating":5.624,"general":false,"description":null,"enProfession":"cameo"},{"id":730932,"name":"Окно
+        во двор","alternativeName":"Janela Indiscreta","rating":6.66,"general":false,"description":null,"enProfession":"cameo"},{"id":780213,"name":"Ад:
+        Создание фильма «Неудержимые»","alternativeName":"Inferno: The Making of «The
+        Expendables»","rating":6.152,"general":false,"description":null,"enProfession":"cameo"},{"id":590313,"name":"Вечер
+        с Джимми Фэллоном","alternativeName":"Late Night with Jimmy Fallon","rating":7.653,"general":false,"description":null,"enProfession":"cameo"},{"id":682354,"name":"Прямой
+        эфир из пятой студии","alternativeName":"Live from Studio Five","rating":6.603,"general":false,"description":null,"enProfession":"cameo"},{"id":741607,"name":"ES.TV
+        HD","alternativeName":"ES.TV HD","rating":5.245,"general":false,"description":null,"enProfession":"cameo"},{"id":433349,"name":"Создание
+        фильма «Ограбление на Бейкер-Стрит»","alternativeName":"Inside the Bank Job","rating":6.441,"general":false,"description":null,"enProfession":"cameo"},{"id":433350,"name":"О
+        съёмках фильма «Ограбление на Бейкер-Стрит»","alternativeName":"Making of
+        «The Bank Job»","rating":5.84,"general":false,"description":null,"enProfession":"cameo"},{"id":500266,"name":"Шоу
+        с Кэрри Киган","alternativeName":"Up Close with Carrie Keagan","rating":6.771,"general":false,"description":null,"enProfession":"cameo"},{"id":811166,"name":"Киноман","alternativeName":"Reel
+        Junkie","rating":5.138,"general":false,"description":null,"enProfession":"cameo"},{"id":647813,"name":"9
+        утра с Дэвидом и Ким","alternativeName":"9am with David & Kim","rating":null,"general":false,"description":null,"enProfession":"cameo"},{"id":666732,"name":"Сделано
+        в Голливуде","alternativeName":"Made in Hollywood","rating":7.553,"general":false,"description":null,"enProfession":"cameo"},{"id":727132,"name":"Шоу
+        атакует!","alternativeName":"Attack of the Show!","rating":5.811,"general":false,"description":null,"enProfession":"cameo"},{"id":510066,"name":"Великий
+        журнал Канала+","alternativeName":"Le grand journal de Canal+","rating":6.016,"general":false,"description":null,"enProfession":"cameo"},{"id":407338,"name":"Джимми
+        Киммел в прямом эфире","alternativeName":"Jimmy Kimmel Live!","rating":7.616,"general":false,"description":null,"enProfession":"cameo"},{"id":839828,"name":null,"alternativeName":"UFC
+        44: Undisputed","rating":null,"general":false,"description":null,"enProfession":"cameo"},{"id":404940,"name":"Рекламное
+        пространство","alternativeName":"HypaSpace","rating":6.852,"general":false,"description":null,"enProfession":"cameo"},{"id":679725,"name":"Последний
+        звонок с Карсоном Дэйли","alternativeName":"Last Call with Carson Daly","rating":5.844,"general":false,"description":null,"enProfession":"cameo"},{"id":798097,"name":"Создание
+        фильма «Большой куш»","alternativeName":"Making «Snatch»","rating":5.92,"general":false,"description":null,"enProfession":"cameo"},{"id":738800,"name":"Фокс
+        и друзья","alternativeName":"Fox & Friends","rating":4.578,"general":false,"description":null,"enProfession":"cameo"},{"id":703018,"name":"Экстра","alternativeName":"Extra","rating":6.315,"general":false,"description":null,"enProfession":"cameo"},{"id":1261627,"name":"Утренние
+        новости WGN","alternativeName":"WGN Morning News","rating":null,"general":false,"description":null,"enProfession":"cameo"},{"id":409154,"name":"Поздняя
+        ночь с Конаном О’Брайеном","alternativeName":"Late Night with Conan O''Brien","rating":7.349,"general":false,"description":null,"enProfession":"cameo"},{"id":401130,"name":"HBO:
+        Первый взгляд","alternativeName":"HBO First Look","rating":8.021,"general":false,"description":null,"enProfession":"cameo"},{"id":408362,"name":"Ночное
+        шоу с Джейем Лено","alternativeName":"The Tonight Show with Jay Leno","rating":7.209,"general":false,"description":null,"enProfession":"cameo"},{"id":469190,"name":"В
+        прямом эфире с Риджесом и Кэти Ли","alternativeName":"Live with Regis and
+        Kathie Lee","rating":7.164,"general":false,"description":null,"enProfession":"cameo"},{"id":587593,"name":"Развлечения
+        сегодня вечером","alternativeName":"Entertainment Tonight","rating":7.133,"general":false,"description":null,"enProfession":"cameo"},{"id":594789,"name":"Доброе
+        утро, Америка","alternativeName":"Good Morning America","rating":6.776,"general":false,"description":null,"enProfession":"cameo"},{"id":756628,"name":"Фильм
+        ''72","alternativeName":"Film ''72","rating":6.336,"general":false,"description":null,"enProfession":"cameo"},{"id":574711,"name":"Это
+        ваша жизнь","alternativeName":"This Is Your Life","rating":null,"general":false,"description":null,"enProfession":"cameo"},{"id":667205,"name":"Сегодня","alternativeName":"Today","rating":6.835,"general":false,"description":null,"enProfession":"cameo"},{"id":5402010,"name":"Формула
+        1","alternativeName":"Formula 1","rating":null,"general":false,"description":null,"enProfession":"cameo"},{"id":964318,"name":"Форсаж
+        9","alternativeName":"F9","rating":5.704,"general":false,"description":"Deckard
+        Shaw","enProfession":"uncredited"},{"id":939792,"name":null,"alternativeName":"Ivy
+        Levan: Who Can You Trust","rating":null,"general":false,"description":"хроника","enProfession":"uncredited"},{"id":594736,"name":"Форсаж
+        6","alternativeName":"Furious 6","rating":6.995,"general":false,"description":"Deckard
+        Shaw","enProfession":"uncredited"},{"id":464326,"name":"Перевозчик 3 – срочная
+        доставка: Перевозчики в реальном мире","alternativeName":"Transporter 3 Special
+        Delivery: Transporters in the Real World","rating":7.315,"general":false,"description":"Frank
+        Martin","enProfession":"uncredited"},{"id":70944,"name":"Розовая пантера","alternativeName":"The
+        Pink Panther","rating":6.313,"general":false,"description":"Yves Gluant","enProfession":"uncredited"},{"id":295639,"name":"Лучшие
+        сцены единоборств в фильмах","alternativeName":"Ultimate Fights from the Movies","rating":6.992,"general":false,"description":"Turkish
+        (Snatch)","enProfession":"uncredited"}],"createdAt":"2024-04-13T01:36:07.951Z","updatedAt":"2025-04-03T06:35:41.761Z"}'
+  recorded_at: Sun, 06 Apr 2025 19:27:19 GMT
+recorded_with: VCR 6.3.1

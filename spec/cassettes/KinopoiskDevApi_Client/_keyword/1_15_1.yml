@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kinopoisk.dev/v1.4/keyword
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.20.1
+      date:
+      - Sun, 06 Apr 2025 20:15:15 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';font-src ''self'' https: data:;form-action
+        ''self'';frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      cross-origin-opener-policy:
+      - same-origin
+      cross-origin-resource-policy:
+      - same-origin
+      origin-agent-cluster:
+      - "?1"
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - '0'
+      access-control-allow-origin:
+      - "*"
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '1'
+      vary:
+      - accept-encoding
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"docs":[{"id":39867,"title":"Подружка невесты","movies":[{"id":5394738}],"createdAt":"2025-04-04T16:30:24.954Z","updatedAt":"2025-04-04T16:30:24.954Z"},{"id":113,"title":"Сплэттер","movies":[{"id":5429916}],"createdAt":"2025-04-04T16:29:31.364Z","updatedAt":"2025-04-04T16:29:31.364Z"},{"id":10707,"title":"Смертельная
+        ловушка","movies":[{"id":5429916}],"createdAt":"2025-04-04T16:29:31.094Z","updatedAt":"2025-04-04T16:29:31.094Z"},{"id":39964,"title":"1989
+        год","movies":[{"id":5429916}],"createdAt":"2025-04-04T16:29:29.724Z","updatedAt":"2025-04-04T16:29:29.724Z"},{"id":12287,"title":"Жилет","movies":[{"id":4412449}],"createdAt":"2025-04-04T16:24:01.132Z","updatedAt":"2025-04-04T16:24:01.132Z"},{"id":18912,"title":"Безымянный
+        персонаж","movies":[{"id":4412449}],"createdAt":"2025-04-04T16:23:58.690Z","updatedAt":"2025-04-04T16:23:58.690Z"},{"id":33272,"title":"Китаянка","movies":[{"id":7316635}],"createdAt":"2025-04-04T16:20:13.321Z","updatedAt":"2025-04-04T16:20:13.321Z"},{"id":15225737,"title":"Человек,
+        превращающийся в животное","movies":[{"id":7327377}],"createdAt":"2025-04-04T16:20:12.081Z","updatedAt":"2025-04-04T16:20:12.081Z"},{"id":13948,"title":"Кляп","movies":[{"id":7327377}],"createdAt":"2025-04-04T16:20:09.848Z","updatedAt":"2025-04-04T16:20:09.848Z"},{"id":14506,"title":"Борьба
+        за выживание","movies":[{"id":7327377}],"createdAt":"2025-04-04T16:20:09.206Z","updatedAt":"2025-04-04T16:20:09.206Z"}],"total":44940,"limit":10,"page":1,"pages":4494}'
+  recorded_at: Sun, 06 Apr 2025 20:15:16 GMT
+recorded_with: VCR 6.3.1

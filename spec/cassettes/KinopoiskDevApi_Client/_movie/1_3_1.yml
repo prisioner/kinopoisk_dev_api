@@ -1,0 +1,102 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kinopoisk.dev/v1.4/movie
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.20.1
+      date:
+      - Sun, 06 Apr 2025 19:13:35 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';font-src ''self'' https: data:;form-action
+        ''self'';frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      cross-origin-opener-policy:
+      - same-origin
+      cross-origin-resource-policy:
+      - same-origin
+      origin-agent-cluster:
+      - "?1"
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - '0'
+      access-control-allow-origin:
+      - "*"
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '1'
+      vary:
+      - accept-encoding
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"docs":[{"id":6612727,"name":null,"alternativeName":"Queen: Who Wants
+        to Live Forever","enName":null,"type":"movie","typeNumber":1,"year":1986,"description":null,"shortDescription":null,"status":null,"rating":{"kp":0,"imdb":7.7,"filmCritics":0,"russianFilmCritics":0,"await":0},"votes":{"kp":8,"imdb":192,"filmCritics":0,"russianFilmCritics":0,"await":0},"movieLength":4,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":null,"ageRating":null,"genres":[{"name":"короткометражка"},{"name":"музыка"}],"countries":[{"name":"Великобритания"}],"top10":null,"top250":null,"isSeries":false,"ticketsOnSale":false},{"id":7539785,"name":"Полюби
+        меня снова","alternativeName":null,"type":"tv-series","typeNumber":2,"year":null,"description":"В
+        жизни Люды Куприяновой есть всё, о чем можно мечтать: любимый муж Павел, успешный
+        бизнес и надёжные друзья — Влад Кожухов с супругой Оксаной. После трагической
+        потери ребёнка супруги решают усыновить мальчика Федю. Когда мальчику исполняется
+        семь лет, женщина узнаёт, что беременна вновь — она ждёт девочку. С появлением
+        дочери отношения между супругами портятся. Мать Павла Раиса откровенно недолюбливает
+        приёмного мальчика. Случайная ссора кардинально меняет жизнь Куприяновых:
+        Федя пропадает, а сами супруги оказываются в центре криминальной истории.
+        Дело ведет следователь Алексей, которому нужно помочь Люде найти сына и снова
+        поверить в любовь.","shortDescription":null,"status":null,"rating":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"votes":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"movieLength":null,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":null,"ageRating":null,"genres":[{"name":"мелодрама"}],"countries":[{"name":"Россия"}],"releaseYears":[{"start":null,"end":null}],"top10":null,"top250":null,"isSeries":true,"ticketsOnSale":false},{"id":7538142,"name":null,"alternativeName":"Pasahero","enName":null,"type":"movie","typeNumber":1,"year":2024,"description":null,"shortDescription":null,"status":null,"rating":{"kp":0,"imdb":5.8,"filmCritics":0,"russianFilmCritics":0,"await":0},"votes":{"kp":0,"imdb":22,"filmCritics":0,"russianFilmCritics":0,"await":0},"movieLength":120,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":null,"ageRating":null,"genres":[{"name":"ужасы"}],"countries":[{"name":"Филиппины"}],"top10":null,"top250":null,"isSeries":false,"ticketsOnSale":false},{"id":7539786,"name":"Земля
+        людей. Вепсы. Танцы с медведем","alternativeName":null,"enName":null,"type":"movie","typeNumber":1,"year":2020,"description":"Говорят,
+        что вепсами построено пол-Петербурга — они действительно прекрасные каменщики:
+        умеют «слышать» камень. Раньше они звались чудь или весь — и были когда-то
+        расселены по всему Межозерью: от Ладоги до Онеги. Ещё в конце XIX века вепсов
+        было более 25 тысяч, однако к началу XXI века дошло до того, что вепсский
+        язык оказался включён ЮНЕСКО в «Атлас языков, находящихся под угрозой исчезновения».
+        Но в Карелии, на юго-западном берегу Онежского озера, вепсы и сегодня сохраняют
+        традиции предков, поют свои удивительные песни — а на похоронах «веселят»
+        усопших.","shortDescription":null,"status":null,"rating":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"votes":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"movieLength":14,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":null,"ageRating":null,"genres":[{"name":"документальный"},{"name":"короткометражка"}],"countries":[{"name":"Россия"}],"top10":null,"top250":null,"isSeries":false,"ticketsOnSale":false},{"id":7540679,"name":"Особенности
+        национального бездорожья","alternativeName":null,"enName":null,"type":"movie","typeNumber":1,"year":2024,"description":"Три
+        друга впервые за долгое время отправляются на рыбалку. Робкий и мягкий Валя
+        окончательно пропитался городом и его настроением суеты и карьеризма, поэтому
+        даже на отдыхе он все время в ноутбуке и телефоне. Петрович пытается выглядеть
+        брутальнее всех, консервативным в выборе напитков и занятий, но при встрече
+        с опасностью трусит первым. \nСемён Стругачёв отправляется с друзьями на рыбалку,
+        и с этого момента с ними начинают происходить приключения.","shortDescription":null,"status":null,"rating":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"votes":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"movieLength":8,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":null,"ageRating":12,"poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/10592371/6950bee7-bf8c-4416-91dc-2304add3938e/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/10592371/6950bee7-bf8c-4416-91dc-2304add3938e/x1000"},"backdrop":{"url":"https://image.openmoviedb.com/kinopoisk-ott-images/200035/2a0000019600c2b308ea5d64a3b04b2130cf/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-ott-images/200035/2a0000019600c2b308ea5d64a3b04b2130cf/x1000"},"genres":[{"name":"короткометражка"}],"countries":[{"name":"Россия"}],"top10":null,"top250":null,"isSeries":false,"ticketsOnSale":false},{"id":7537948,"name":null,"alternativeName":"Occupation","enName":null,"type":"movie","typeNumber":1,"year":null,"description":null,"shortDescription":null,"status":"pre-production","rating":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"votes":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"movieLength":null,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":null,"ageRating":null,"genres":[{"name":"военный"}],"countries":[{"name":"Украина"}],"top10":null,"top250":null,"isSeries":false,"ticketsOnSale":false},{"id":7537945,"name":null,"alternativeName":"Fight
+        for Your Life","enName":null,"type":"movie","typeNumber":1,"year":null,"description":null,"shortDescription":null,"status":"pre-production","rating":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"votes":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"movieLength":null,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":null,"ageRating":null,"genres":[{"name":"боевик"}],"top10":null,"top250":null,"isSeries":false,"ticketsOnSale":false},{"id":7537947,"name":null,"alternativeName":"Untitled
+        Martin Scorsese/Jesus film","enName":null,"type":"movie","typeNumber":1,"year":null,"description":null,"shortDescription":null,"status":null,"rating":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"votes":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"movieLength":null,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":null,"ageRating":null,"top10":null,"top250":null,"isSeries":false,"ticketsOnSale":false},{"id":7537949,"name":null,"alternativeName":"Untitled
+        Martin Scorsese Hawaiian Event","enName":null,"type":"movie","typeNumber":1,"year":null,"description":null,"shortDescription":null,"status":null,"rating":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"votes":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"movieLength":null,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":null,"ageRating":null,"genres":[{"name":"триллер"},{"name":"криминал"}],"countries":[{"name":"США"}],"top10":null,"top250":null,"isSeries":false,"ticketsOnSale":false},{"id":7539390,"name":null,"alternativeName":"Demolition
+        Man 2","enName":null,"type":"movie","typeNumber":1,"year":null,"description":null,"shortDescription":null,"status":"pre-production","rating":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"votes":{"kp":0,"imdb":0,"filmCritics":0,"russianFilmCritics":0,"await":0},"movieLength":null,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":null,"ageRating":null,"genres":[{"name":"фантастика"},{"name":"боевик"},{"name":"триллер"}],"countries":[{"name":"США"}],"top10":null,"top250":null,"isSeries":false,"ticketsOnSale":false}],"total":1077989,"limit":10,"page":1,"pages":107799}'
+  recorded_at: Sun, 06 Apr 2025 19:13:36 GMT
+recorded_with: VCR 6.3.1

@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kinopoisk.dev/v1.4/image
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.20.1
+      date:
+      - Sun, 06 Apr 2025 20:15:15 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';font-src ''self'' https: data:;form-action
+        ''self'';frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      cross-origin-opener-policy:
+      - same-origin
+      cross-origin-resource-policy:
+      - same-origin
+      origin-agent-cluster:
+      - "?1"
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - '0'
+      access-control-allow-origin:
+      - "*"
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '1'
+      vary:
+      - accept-encoding
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"docs":[{"movieId":229817,"type":"cover","url":"https://image.openmoviedb.com/kinopoisk-images/4486362/5d09b715-6aa9-436b-9d80-18084fd429f4/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/4486362/5d09b715-6aa9-436b-9d80-18084fd429f4/360","height":750,"width":500,"createdAt":"2025-04-06T14:56:52.493Z","updatedAt":"2025-04-06T14:56:52.493Z","id":"67f296348a14296227ec76a4"},{"movieId":699196,"type":"cover","url":"https://image.openmoviedb.com/kinopoisk-images/4486362/68037017-ad8c-49f9-86cd-923a844a8aed/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/4486362/68037017-ad8c-49f9-86cd-923a844a8aed/360","height":1000,"width":684,"createdAt":"2025-04-06T14:50:26.723Z","updatedAt":"2025-04-06T14:50:26.723Z","id":"67f294b28a14296227ec5c35"},{"movieId":447460,"type":"screenshot","url":"https://image.openmoviedb.com/kinopoisk-images/10592371/231cf91c-fae2-42ce-9593-17109c26c87e/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/10592371/231cf91c-fae2-42ce-9593-17109c26c87e/360","height":767,"width":1315,"createdAt":"2025-04-06T14:48:46.123Z","updatedAt":"2025-04-06T14:48:46.123Z","id":"67f2944e8a14296227ec52a8"},{"movieId":447460,"type":"screenshot","url":"https://image.openmoviedb.com/kinopoisk-images/9784475/0627ca2e-850b-438c-a795-af484a844286/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/9784475/0627ca2e-850b-438c-a795-af484a844286/360","height":763,"width":1325,"createdAt":"2025-04-06T14:48:46.118Z","updatedAt":"2025-04-06T14:48:46.118Z","id":"67f2944e8a14296227ec52a5"},{"movieId":447460,"type":"screenshot","url":"https://image.openmoviedb.com/kinopoisk-images/10812607/f6c50270-d36a-4345-a873-3e2d39ad25aa/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/10812607/f6c50270-d36a-4345-a873-3e2d39ad25aa/360","height":765,"width":1325,"createdAt":"2025-04-06T14:48:46.112Z","updatedAt":"2025-04-06T14:48:46.112Z","id":"67f2944e8a14296227ec52a2"},{"movieId":447460,"type":"screenshot","url":"https://image.openmoviedb.com/kinopoisk-images/4486362/b97757e6-4298-4392-8490-2548a55d924f/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/4486362/b97757e6-4298-4392-8490-2548a55d924f/360","height":763,"width":1323,"createdAt":"2025-04-06T14:48:46.106Z","updatedAt":"2025-04-06T14:48:46.106Z","id":"67f2944e8a14296227ec529f"},{"movieId":447460,"type":"screenshot","url":"https://image.openmoviedb.com/kinopoisk-images/10703859/1bfbb3c8-5393-463d-9088-6c2116dd64f1/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/10703859/1bfbb3c8-5393-463d-9088-6c2116dd64f1/360","height":759,"width":1323,"createdAt":"2025-04-06T14:48:46.102Z","updatedAt":"2025-04-06T14:48:46.102Z","id":"67f2944e8a14296227ec529c"},{"movieId":447460,"type":"screenshot","url":"https://image.openmoviedb.com/kinopoisk-images/10953618/50294c2c-66ad-480a-b47b-e4b2d5b2c9d8/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/10953618/50294c2c-66ad-480a-b47b-e4b2d5b2c9d8/360","height":767,"width":1341,"createdAt":"2025-04-06T14:48:46.097Z","updatedAt":"2025-04-06T14:48:46.097Z","id":"67f2944e8a14296227ec5299"},{"movieId":447460,"type":"screenshot","url":"https://image.openmoviedb.com/kinopoisk-images/9784475/39ea1360-2ae4-493b-a3e7-87045c219705/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/9784475/39ea1360-2ae4-493b-a3e7-87045c219705/360","height":761,"width":1329,"createdAt":"2025-04-06T14:48:46.091Z","updatedAt":"2025-04-06T14:48:46.091Z","id":"67f2944e8a14296227ec5296"},{"movieId":447460,"type":"screenshot","url":"https://image.openmoviedb.com/kinopoisk-images/10893610/ab01c98a-ff03-4df7-a61d-a232023cabe0/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/10893610/ab01c98a-ff03-4df7-a61d-a232023cabe0/360","height":763,"width":1319,"createdAt":"2025-04-06T14:48:46.087Z","updatedAt":"2025-04-06T14:48:46.087Z","id":"67f2944e8a14296227ec5293"}],"total":2388466,"limit":10,"page":1,"pages":238847}'
+  recorded_at: Sun, 06 Apr 2025 20:15:16 GMT
+recorded_with: VCR 6.3.1

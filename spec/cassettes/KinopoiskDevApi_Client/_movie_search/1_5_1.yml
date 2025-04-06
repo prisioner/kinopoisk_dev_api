@@ -1,0 +1,206 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kinopoisk.dev/v1.4/movie/search
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.20.1
+      date:
+      - Sun, 06 Apr 2025 19:17:40 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';font-src ''self'' https: data:;form-action
+        ''self'';frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      cross-origin-opener-policy:
+      - same-origin
+      cross-origin-resource-policy:
+      - same-origin
+      origin-agent-cluster:
+      - "?1"
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - '0'
+      access-control-allow-origin:
+      - "*"
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '1'
+      vary:
+      - accept-encoding
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"docs":[{"id":535341,"name":"1+1","alternativeName":"Intouchables","enName":"","type":"movie","year":2011,"description":"Пострадав
+        в результате несчастного случая, богатый аристократ Филипп нанимает в помощники
+        человека, который менее всего подходит для этой работы, – молодого жителя
+        предместья Дрисса, только что освободившегося из тюрьмы. Несмотря на то, что
+        Филипп прикован к инвалидному креслу, Дриссу удается привнести в размеренную
+        жизнь аристократа дух приключений.","shortDescription":"Аристократ на коляске
+        нанимает в сиделки бывшего заключенного. Искрометная французская комедия с
+        Омаром Си","movieLength":112,"isSeries":false,"ticketsOnSale":false,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":"r","ageRating":18,"top10":null,"top250":1,"typeNumber":1,"status":null,"names":[{"name":"无法触碰","language":"CN","type":null},{"name":"Untouchable","language":"GB","type":null},{"name":"最佳拍档","language":"CN","type":null},{"name":"不可触碰","language":"CN","type":null},{"name":"不可触摸","language":"CN","type":null},{"name":"Неприкасаемые","language":"RU","type":"Literal"},{"name":"1+1
+        [Intouchables]","language":"RU","type":null},{"name":"Amigos","language":"CL","type":null},{"name":"Mehubarim
+        la''hayim","language":"IL","type":"Hebrew title"},{"name":"Saikyô no futari","language":"JP","type":null},{"name":"Prijatelja","language":"SI","type":null},{"name":"Amigos
+        para siempre","language":"VE","type":null},{"name":"En oväntad vänskap","language":"SE","type":null},{"name":"Intocáveis","language":"BR","type":null},{"name":"Intouchables
+        – Ziemlich beste Freunde","language":"DE","type":null},{"name":"언터처블 1%의 우정","language":"KR","type":null},{"name":"De
+        Uroerlige","language":"DK","type":null},{"name":"Intouchables","language":"US","type":null},{"name":"Intocable","language":"ES","type":null},{"name":"Недоторканні","language":"UA","type":"Unofficial
+        Title"}],"externalId":{"kpHD":"4127663ed234fa8584aeb969ceb02cd8","imdb":"tt1675434","tmdb":77338},"logo":{"url":"https://image.openmoviedb.com/tmdb-images/original/hvptcK6WmDqu4xZZ0WuBQ3vYInE.png","previewUrl":"https://image.openmoviedb.com/tmdb-images/w500/hvptcK6WmDqu4xZZ0WuBQ3vYInE.png"},"poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/10900341/caf9f155-1a19-42f1-a0f3-9c8773e9083e/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/10900341/caf9f155-1a19-42f1-a0f3-9c8773e9083e/x1000"},"backdrop":{"url":"https://image.openmoviedb.com/kinopoisk-ott-images/2385704/2a00000195040905dea964ff4bcf3e9c3df7/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-ott-images/2385704/2a00000195040905dea964ff4bcf3e9c3df7/x1000"},"rating":{"kp":8.846,"imdb":8.5,"filmCritics":6.8,"russianFilmCritics":100,"await":null},"votes":{"kp":2431363,"imdb":966636,"filmCritics":128,"russianFilmCritics":12,"await":0},"genres":[{"name":"драма"},{"name":"комедия"}],"countries":[{"name":"Франция"}],"releaseYears":[]},{"id":1143242,"name":"Джентльмены","alternativeName":"The
+        Gentlemen","enName":"","type":"movie","year":2019,"description":"Один ушлый
+        американец ещё со студенческих лет приторговывал наркотиками, а теперь придумал
+        схему нелегального обогащения с использованием поместий обедневшей английской
+        аристократии и очень неплохо на этом разбогател. Другой пронырливый журналист
+        приходит к Рэю, правой руке американца, и предлагает тому купить киносценарий,
+        в котором подробно описаны преступления его босса при участии других представителей
+        лондонского криминального мира — партнёра-еврея, китайской диаспоры, чернокожих
+        спортсменов и даже русского олигарха.","shortDescription":"Гангстеры всех
+        мастей делят наркоферму. Закрученная экшен-комедия Гая Ричи с Мэттью Макконахи
+        и Хью Грантом","movieLength":113,"isSeries":false,"ticketsOnSale":false,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":"r","ageRating":18,"top10":null,"top250":7,"typeNumber":1,"status":null,"names":[{"name":"Toff
+        Guys","language":"GB","type":"working title"},{"name":"Los Caballeros de la
+        mafia","language":"ES","type":null},{"name":"Busha","language":"GB","type":"working
+        title"},{"name":"Los caballeros: criminales con clase","language":"AR","type":null},{"name":"紳士追殺令","language":"TW","type":null},{"name":"Джентльмени","language":"UA","type":null},{"name":"Εγκληματίες
+        πρώτης τάξεως","language":"GR","type":null},{"name":"ジェントルメン：2020","language":"JP","type":null},{"name":"The
+        Gentlemen","language":"US","type":null},{"name":"Beyefendiler","language":"TR","type":null}],"externalId":{"kpHD":"47649cf90de74aca8da7eb5b17fc8a8a","imdb":"tt8367814","tmdb":522627},"logo":{"url":"https://image.openmoviedb.com/tmdb-images/original/38ecooyBqaNOdOT0RbRmtw2n0Bn.png","previewUrl":"https://image.openmoviedb.com/tmdb-images/w500/38ecooyBqaNOdOT0RbRmtw2n0Bn.png"},"poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/1599028/637271d5-61b4-4e46-ac83-6d07494c7645/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/1599028/637271d5-61b4-4e46-ac83-6d07494c7645/x1000"},"backdrop":{"url":"https://image.openmoviedb.com/kinopoisk-ott-images/1648503/2a000001711b57abb795e9276957168f83e9/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-ott-images/1648503/2a000001711b57abb795e9276957168f83e9/x1000"},"rating":{"kp":8.626,"imdb":7.8,"filmCritics":6.6,"russianFilmCritics":86.3636,"await":null},"votes":{"kp":2145499,"imdb":427468,"filmCritics":278,"russianFilmCritics":22,"await":0},"genres":[{"name":"криминал"},{"name":"комедия"},{"name":"боевик"}],"countries":[{"name":"США"},{"name":"Великобритания"},{"name":"Франция"},{"name":"Япония"},{"name":"Чехия"}],"releaseYears":[]},{"id":1100777,"name":"Триггер","alternativeName":"","enName":"","type":"tv-series","year":2018,"description":"Психолог
+        Артём Стрелецкий — сторонник шоковой терапии в лечении больных. Он считает,
+        что единственный способ для человека решить свои проблемы — это понять себя
+        и перестать себе врать. Если большинство психологов нянчатся с клиентами,
+        по полгода выслушивают жалобы на жизнь, сочувствуют и получают при этом немалые
+        деньги за цикл сеансов, то Артём постоянно провоцирует клиентов: оскорбляет
+        их, смеется над ними, намеренно выталкивает из зоны комфорта. Практика Артема
+        процветает, пока один из его пациентов не кончает жизнь самоубийством.","shortDescription":"Гениальный
+        психолог или манипулятор? Один из самых популярных российских сериалов","movieLength":0,"isSeries":true,"ticketsOnSale":false,"totalSeriesLength":null,"seriesLength":52,"ratingMpaa":null,"ageRating":18,"top10":null,"top250":24,"typeNumber":2,"status":null,"names":[],"externalId":{"kpHD":"4f3c027cbce13606b74124a9d5b140c7","imdb":"tt9011124","tmdb":99671},"logo":{"url":null,"previewUrl":null},"poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/1898899/5fb7d956-d5fb-4189-9ec9-1a051aaa7f41/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/1898899/5fb7d956-d5fb-4189-9ec9-1a051aaa7f41/x1000"},"backdrop":{"url":"https://image.openmoviedb.com/kinopoisk-ott-images/1531675/2a00000191a3de4db50a9edf96f97cdad896/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-ott-images/1531675/2a00000191a3de4db50a9edf96f97cdad896/x1000"},"rating":{"kp":8.455,"imdb":7.4,"filmCritics":0,"russianFilmCritics":55.5556,"await":null},"votes":{"kp":1849275,"imdb":1148,"filmCritics":0,"russianFilmCritics":9,"await":0},"genres":[{"name":"драма"}],"countries":[{"name":"Россия"}],"releaseYears":[{"start":2018,"end":null}]},{"id":41519,"name":"Брат","alternativeName":"","enName":"","type":"movie","year":1997,"description":"Демобилизовавшись,
+        Данила Багров возвращается в родной городок. Но скучная жизнь провинции его не
+        устраивает, и он отправляется в Петербург, где, по слухам, уже несколько лет процветает
+        его старший брат. Данила находит брата, но всё оказывается не так просто — брат
+        работает наемным убийцей.","shortDescription":"Дембель Данила Багров защищает
+        слабых в Петербурге 1990-х. Фильм, сделавший Сергея Бодрова народным героем","movieLength":96,"isSeries":false,"ticketsOnSale":false,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":null,"ageRating":18,"top10":null,"top250":28,"typeNumber":1,"status":null,"names":[{"name":"Brat","language":"US","type":null},{"name":"Brother","language":"US","type":null}],"externalId":{"kpHD":"492c446642bf8dc88f0abcb9a4b02f7f","imdb":"tt0118767","tmdb":20992},"logo":{"url":"https://image.openmoviedb.com/tmdb-images/original/kmUAw4WkPdgvhov0nxTaXNRC8y4.svg","previewUrl":"https://image.openmoviedb.com/tmdb-images/w500/kmUAw4WkPdgvhov0nxTaXNRC8y4.svg"},"poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/1704946/e9008e2f-433f-43b0-b9b8-2ea8e3fb6c9b/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/1704946/e9008e2f-433f-43b0-b9b8-2ea8e3fb6c9b/x1000"},"backdrop":{"url":"https://image.openmoviedb.com/kinopoisk-ott-images/239697/2a0000016127209a2837f7f55b295ef87323/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-ott-images/239697/2a0000016127209a2837f7f55b295ef87323/x1000"},"rating":{"kp":8.338,"imdb":7.8,"filmCritics":7.6,"russianFilmCritics":0,"await":null},"votes":{"kp":1572786,"imdb":26162,"filmCritics":5,"russianFilmCritics":2,"await":0},"genres":[{"name":"драма"},{"name":"криминал"},{"name":"боевик"}],"countries":[{"name":"Россия"}],"releaseYears":[]},{"id":1318972,"name":"Гнев
+        человеческий","alternativeName":"Wrath of Man","enName":"","type":"movie","year":2021,"description":"Грузовики
+        лос-анджелесской инкассаторской компании Fortico Security часто подвергаются
+        нападениям, и во время очередного ограбления погибают оба охранника. Через
+        некоторое время в компанию устраивается крепкий немногословный британец Патрик
+        Хилл. Он получает от босса прозвище Эйч и, впритык к необходимому минимуму
+        пройдя тесты по фитнесу, стрельбе и вождению, отправляется на первое задание.
+        Вскоре и его грузовик пытаются ограбить вооруженные налётчики, но Эйч в одиночку
+        расправляется с целой бандой и становится героем. Кажется, слава и уважение
+        коллег его совершенно не интересуют, ведь он преследует свои цели.","shortDescription":"Хладнокровный
+        Эйч идет по следу грабителей, убивших его сына. Джейсон Стэйтем в брутальном
+        боевике Гая Ричи","movieLength":119,"isSeries":false,"ticketsOnSale":false,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":"r","ageRating":18,"top10":null,"top250":null,"typeNumber":1,"status":null,"names":[{"name":"Cash
+        Truck","language":"US","type":"working title"},{"name":"运钞车","language":"CN","type":null},{"name":"Un
+        homme en colère","language":"FR","type":null},{"name":"Infiltrado","language":"BR","type":null},{"name":"Гнев
+        человеческий","language":"RU","type":null},{"name":"Justicia Implacable","language":"MX","type":null},{"name":"คนคลั่งแค้น
+        ปล้นผ่านรก","language":"TH","type":null},{"name":"캐시트럭","language":"KR","type":null},{"name":"İntikam
+        Vakti","language":"TR","type":null},{"name":"Para Kamyonu","language":"TR","type":null},{"name":"Cash
+        Truck","language":"NL","type":null},{"name":"La furia di un uomo","language":"IT","type":null},{"name":"玩命鈔劫","language":"HK","type":null},{"name":"خشم
+        مرد","language":"IR","type":null},{"name":"キャッシュトラック：2021","language":"JP","type":null},{"name":"玩命鈔劫","language":"TW","type":null},{"name":"Wrath
+        of Man","language":"KR","type":"Daum Movie"},{"name":"Despierta la furia","language":"ES","type":null},{"name":"캐시트럭:
+        그 남자의 분노","language":"KR","type":null},{"name":"캐시 트럭","language":"KR","type":null},{"name":"Justicia
+        implacable","language":"AR","type":null},{"name":"人之怒","language":"CN","type":"电影"},{"name":"Cash
+        Truck","language":"DE","type":null}],"externalId":{"kpHD":"48de522f4bc591d7baa92c12ce435265","imdb":"tt11083552","tmdb":637649},"logo":{"url":"https://image.openmoviedb.com/tmdb-images/original/y2o7UeSYnhkCHfCLzxopF1VYN1O.png","previewUrl":"https://image.openmoviedb.com/tmdb-images/w500/y2o7UeSYnhkCHfCLzxopF1VYN1O.png"},"poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/6201401/90d57813-387c-44c4-81c1-ecddb3c417a5/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/6201401/90d57813-387c-44c4-81c1-ecddb3c417a5/x1000"},"backdrop":{"url":"https://image.openmoviedb.com/kinopoisk-ott-images/1534341/2a0000017b0699c684cc6e9767efb6d4b678/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-ott-images/1534341/2a0000017b0699c684cc6e9767efb6d4b678/x1000"},"rating":{"kp":7.668,"imdb":7.1,"filmCritics":6.3,"russianFilmCritics":72.2222,"await":null},"votes":{"kp":1548405,"imdb":221419,"filmCritics":260,"russianFilmCritics":36,"await":0},"genres":[{"name":"боевик"},{"name":"триллер"}],"countries":[{"name":"Великобритания"},{"name":"США"}],"releaseYears":[]},{"id":462682,"name":"Волк
+        с Уолл-стрит","alternativeName":"The Wolf of Wall Street","enName":"","type":"movie","year":2013,"description":"1987
+        год. Джордан Белфорт становится брокером в успешном инвестиционном банке.
+        Вскоре банк закрывается после внезапного обвала индекса Доу-Джонса. По совету
+        жены Терезы Джордан устраивается в небольшое заведение, занимающееся мелкими
+        акциями. Его настойчивый стиль общения с клиентами и врождённая харизма быстро
+        даёт свои плоды. Он знакомится с соседом по дому Донни, торговцем, который
+        сразу находит общий язык с Джорданом и решает открыть с ним собственную фирму.
+        В качестве сотрудников они нанимают нескольких друзей Белфорта, его отца Макса
+        и называют компанию «Стрэттон Оукмонт». В свободное от работы время Джордан
+        прожигает жизнь: лавирует от одной вечеринки к другой, вступает в сексуальные
+        отношения с проститутками, употребляет множество наркотических препаратов,
+        в том числе кокаин и кваалюд. Однажды наступает момент, когда быстрым обогащением
+        Белфорта начинает интересоваться агент ФБР...","shortDescription":"Восхождение
+        циника-гедониста на бизнес-олимп 1980-х. Блистательный тандем Леонардо ДиКаприо
+        и Мартина Скорсезе","movieLength":180,"isSeries":false,"ticketsOnSale":false,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":"r","ageRating":18,"top10":null,"top250":36,"typeNumber":1,"status":null,"names":[{"name":"华尔街狼人","language":"HK","type":null},{"name":"Para
+        Avcisi","language":"TR","type":null},{"name":"华尔街之狼","language":"CN","type":null},{"name":"Wilk
+        z Wall Street","language":"PL","type":null},{"name":"더 울프 오브 월 스트리트","language":"KR","type":null},{"name":"คนจะรวย
+        ช่วยไม่ได้","language":"TH","type":null},{"name":"Wall Streeti hunt","language":"EE","type":null}],"externalId":{"kpHD":"4d05a2c799d34ac9bb644af70c8e5dc1","imdb":"tt0993846","tmdb":106646},"logo":{"url":"https://image.openmoviedb.com/tmdb-images/original/mvWTm1p5OCcdyisdD1EYcr5NkYd.png","previewUrl":"https://image.openmoviedb.com/tmdb-images/w500/mvWTm1p5OCcdyisdD1EYcr5NkYd.png"},"poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/1946459/5c758ac0-7a5c-4f00-a94f-1be680a312fb/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/1946459/5c758ac0-7a5c-4f00-a94f-1be680a312fb/x1000"},"backdrop":{"url":"https://image.openmoviedb.com/kinopoisk-ott-images/374297/2a00000178c650387351c4923363500151bd/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-ott-images/374297/2a00000178c650387351c4923363500151bd/x1000"},"rating":{"kp":8.033,"imdb":8.2,"filmCritics":7.8,"russianFilmCritics":77.4194,"await":null},"votes":{"kp":1460341,"imdb":1660210,"filmCritics":284,"russianFilmCritics":31,"await":0},"genres":[{"name":"драма"},{"name":"криминал"},{"name":"биография"},{"name":"комедия"}],"countries":[{"name":"США"}],"releaseYears":[]},{"id":5047468,"name":"Холоп
+        2","alternativeName":"","enName":"","type":"movie","year":2023,"description":"Гриша,
+        бывший мажор, побывавший холопом и ставший человеком, после путешествия в «прошлое»
+        чутко реагирует на любую несправедливость. И, конечно, не может пройти мимо
+        беспредела, который творит наглая и избалованная Катя. Ничего удивительного,
+        что вскоре мажорка обнаруживает себя в другом времени.","shortDescription":"Гриша
+        решает перевоспитать заносчивую мажорку и отправляет ее в 1812 год. В роли
+        Наполеона — Павел Деревянко","movieLength":119,"isSeries":false,"ticketsOnSale":false,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":null,"ageRating":12,"top10":null,"top250":null,"typeNumber":1,"status":null,"names":[{"name":"Холоп
+        2","language":"RU","type":"Russian title on kinopoisk"}],"externalId":{"kpHD":"008e0d83a7cd423a8cba5f0f082891ee","tmdb":1004096},"logo":null,"poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/10592371/ab964fb1-c8d1-4a78-8d49-c754d756d488/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/10592371/ab964fb1-c8d1-4a78-8d49-c754d756d488/x1000"},"backdrop":{"url":"https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a0000018dd0d4e773da22154d134398d333/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a0000018dd0d4e773da22154d134398d333/x1000"},"rating":{"kp":7.159,"imdb":5.7,"filmCritics":0,"russianFilmCritics":40,"await":null},"votes":{"kp":1299618,"imdb":1021,"filmCritics":0,"russianFilmCritics":10,"await":0},"genres":[{"name":"комедия"}],"countries":[{"name":"Россия"}],"releaseYears":[]},{"id":464963,"name":"Игра
+        престолов","alternativeName":"Game of Thrones","enName":"","type":"tv-series","year":2011,"description":"К
+        концу подходит время благоденствия, и лето, длившееся почти десятилетие, угасает.
+        Вокруг средоточия власти Семи королевств, Железного трона, зреет заговор,
+        и в это непростое время король решает искать поддержки у друга юности Эддарда
+        Старка. В мире, где все — от короля до наемника — рвутся к власти, плетут
+        интриги и готовы вонзить нож в спину, есть место и благородству, состраданию
+        и любви. Между тем никто не замечает пробуждение тьмы из легенд далеко на Севере — и
+        лишь Стена защищает живых к югу от нее.","shortDescription":"Рыцари, мертвецы
+        и драконы — в эпической битве за судьбы мира. Сериал, который навсегда изменил
+        телевидение","movieLength":0,"isSeries":true,"ticketsOnSale":false,"totalSeriesLength":null,"seriesLength":55,"ratingMpaa":null,"ageRating":18,"top10":null,"top250":1,"typeNumber":2,"status":"completed","names":[{"name":"Froni
+        i shpatave","language":"AL","type":null},{"name":"El Juego de Tronos","language":"AR","type":null},{"name":"Taxt
+        Oyunları","language":"AZ","type":null},{"name":"A Guerra dos Tronos","language":"BR","type":null},{"name":"冰与火之歌","language":"CN","type":null},{"name":"Juego
+        de Tronos","language":"CO","type":null},{"name":"Game of Thrones: Das Lied
+        von Eis und Feuer","language":"DE","type":null},{"name":"Paihnidi tou stemmatos","language":"DE","type":null},{"name":"Game
+        of Thrones - Le trône de fer","language":"FR","type":null},{"name":"სატახტოთა
+        თამაში","language":"GE","type":null},{"name":"Παιχνίδι Του Στέμματος","language":"GR","type":null},{"name":"權力遊戲","language":"HK","type":null},{"name":"Baziye
+        tajo takht","language":"IR","type":"romanization"},{"name":"گیم آف ترونز","language":"IR","type":null},{"name":"بازی
+        تاج و تخت","language":"IR","type":null},{"name":"왕좌의 게임","language":"KR","type":null},{"name":"Sostų
+        žaidimas","language":"LT","type":null},{"name":"Troņu spēle","language":"LV","type":null},{"name":"Игра
+        на тронови","language":"MK","type":null},{"name":"Gra o Tron","language":"PL","type":null},{"name":"A
+        Guerra dos Tronos","language":"PT","type":"Fantasia"},{"name":"Igra prestolov","language":"SI","type":null},{"name":"มหาศึกชิงบัลลังก์","language":"TH","type":null},{"name":"Taht
+        Oyunları","language":"TR","type":null},{"name":"Гра Престолів","language":"UA","type":null},{"name":"GoT","language":"US","type":"common
+        abbreviation"},{"name":"A Song of Ice and Fire","language":"US","type":"working
+        title"},{"name":"Taxt o''yinlari","language":"UZ","type":null},{"name":"Taxtlar
+        o''yini","language":"UZ","type":null}],"externalId":{"kpHD":"47bab88d43ac0a82ad62bfbbaf302e07","imdb":"tt0944947","tmdb":1399},"logo":{"url":"https://image.openmoviedb.com/tmdb-images/original/6Xog9OYPNg59j3CHo9ijqeTwRbY.png","previewUrl":"https://image.openmoviedb.com/tmdb-images/w500/6Xog9OYPNg59j3CHo9ijqeTwRbY.png"},"poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/1777765/dd78edfd-6a1f-486c-9a86-6acbca940418/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/1777765/dd78edfd-6a1f-486c-9a86-6acbca940418/x1000"},"backdrop":{"url":"https://image.openmoviedb.com/kinopoisk-ott-images/374297/2a0000016a9809ff1d0e4d9ababb6a2085e0/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-ott-images/374297/2a0000016a9809ff1d0e4d9ababb6a2085e0/x1000"},"rating":{"kp":8.999,"imdb":9.2,"filmCritics":0,"russianFilmCritics":90,"await":null},"votes":{"kp":1284341,"imdb":2417653,"filmCritics":0,"russianFilmCritics":20,"await":0},"genres":[{"name":"фэнтези"},{"name":"драма"},{"name":"боевик"},{"name":"мелодрама"},{"name":"приключения"}],"countries":[{"name":"США"},{"name":"Великобритания"}],"releaseYears":[{"start":2011,"end":2019}]},{"id":1108577,"name":"Зеленая
+        книга","alternativeName":"Green Book","enName":"","type":"movie","year":2018,"description":"1960-е
+        годы. После закрытия нью-йоркского ночного клуба на ремонт вышибала Тони по прозвищу
+        Болтун ищет подработку на пару месяцев. Как раз в это время Дон Ширли — утонченный
+        светский лев, богатый и талантливый чернокожий музыкант, исполняющий классическую
+        музыку — собирается в турне по южным штатам, где ещё сильны расистские убеждения
+        и царит сегрегация. Он нанимает Тони в качестве водителя, телохранителя и человека,
+        способного решать текущие проблемы. У этих двоих так мало общего, и эта поездка
+        навсегда изменит жизнь обоих.","shortDescription":"Путешествие итальянца-вышибалы
+        и чернокожего пианиста по Америке 1960-х. «Оскар» за лучший фильм","movieLength":130,"isSeries":false,"ticketsOnSale":false,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":"pg13","ageRating":18,"top10":null,"top250":13,"typeNumber":1,"status":null,"names":[{"name":"Zeljonaja
+        kniga","language":"RU","type":"Translit"},{"name":"Zelenaja kniga","language":"RU","type":"Translit"},{"name":"グリーンブック：2018","language":"JP","type":null},{"name":"幸福綠皮書","language":"TW","type":null}],"externalId":{"kpHD":"436bd5d28aa8fdfca558e95fb58993fe","imdb":"tt6966692","tmdb":490132},"logo":{"url":"https://image.openmoviedb.com/tmdb-images/original/teZDEtsuxhmeyuEyv6Ww5TrdHJi.png","previewUrl":"https://image.openmoviedb.com/tmdb-images/w500/teZDEtsuxhmeyuEyv6Ww5TrdHJi.png"},"poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/1599028/4b27e219-a8a5-4d85-9874-57d6016e0837/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/1599028/4b27e219-a8a5-4d85-9874-57d6016e0837/x1000"},"backdrop":{"url":"https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a00000169233a1e496732daa6f91dc207b9/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-ott-images/224348/2a00000169233a1e496732daa6f91dc207b9/x1000"},"rating":{"kp":8.517,"imdb":8.2,"filmCritics":7.2,"russianFilmCritics":93.3333,"await":null},"votes":{"kp":1277785,"imdb":621397,"filmCritics":362,"russianFilmCritics":15,"await":0},"genres":[{"name":"биография"},{"name":"комедия"},{"name":"драма"}],"countries":[{"name":"США"},{"name":"Китай"}],"releaseYears":[]},{"id":4959134,"name":"По
+        щучьему велению","alternativeName":"","enName":"","type":"movie","year":2023,"description":"Если
+        ты идешь на рыбалку — будь готов к тому, что вытянешь рыбу своей мечты, волшебную
+        Щуку, которая может исполнить три любых твоих желания. Только Емеля спустил
+        два желания на ветер, а третье решил приберечь. Поэтому, чтобы добиться руки
+        царской дочери Анфисы, придется ему действовать без волшебной силы, самому.
+        А помогать ему будет Щука, которая без своей шкурки предстает обычной девушкой
+        Василисой. Вместе им предстоит найти скатерть-самобранку, встретиться с Котом
+        Баюном, отправиться в мрачное царство Кощея и понять, что настоящее чудо — это
+        быть с тем, кого любишь.","shortDescription":"Чудо-рыба помогает непутевому
+        Емеле завоевать сердце царской дочери. Сказочный хит с Никитой Кологривым","movieLength":115,"isSeries":false,"ticketsOnSale":false,"totalSeriesLength":null,"seriesLength":null,"ratingMpaa":null,"ageRating":6,"top10":null,"top250":null,"typeNumber":1,"status":null,"names":[{"name":"Po
+        shchuchyemu veleniyu","language":"RU","type":"Transliteration"}],"externalId":{"kpHD":"aaadb998f8dc489d91226b7f400cb2e2","imdb":"tt23737556","tmdb":1033774},"logo":{"url":"https://image.openmoviedb.com/tmdb-images/original/tmKUQqCx0CxWTIhLHZ2ugi6fPYQ.png","previewUrl":"https://image.openmoviedb.com/tmdb-images/w500/tmKUQqCx0CxWTIhLHZ2ugi6fPYQ.png"},"poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/10900341/b3ed4aa7-c38c-4a35-a505-aaa6372ad9da/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/10900341/b3ed4aa7-c38c-4a35-a505-aaa6372ad9da/x1000"},"backdrop":{"url":"https://image.openmoviedb.com/kinopoisk-ott-images/2439731/2a0000018c5052530175e3a474d96e4e5bcf/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-ott-images/2439731/2a0000018c5052530175e3a474d96e4e5bcf/x1000"},"rating":{"kp":7.757,"imdb":6.2,"filmCritics":0,"russianFilmCritics":0,"await":null},"votes":{"kp":1263019,"imdb":804,"filmCritics":0,"russianFilmCritics":2,"await":0},"genres":[{"name":"фэнтези"},{"name":"приключения"},{"name":"семейный"}],"countries":[{"name":"Россия"}],"releaseYears":[]}],"total":1000,"limit":10,"page":1,"pages":100}'
+  recorded_at: Sun, 06 Apr 2025 19:17:41 GMT
+recorded_with: VCR 6.3.1

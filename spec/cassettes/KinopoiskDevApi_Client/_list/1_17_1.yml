@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kinopoisk.dev/v1.4/list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.20.1
+      date:
+      - Sun, 06 Apr 2025 20:15:15 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';font-src ''self'' https: data:;form-action
+        ''self'';frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      cross-origin-opener-policy:
+      - same-origin
+      cross-origin-resource-policy:
+      - same-origin
+      origin-agent-cluster:
+      - "?1"
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - '0'
+      access-control-allow-origin:
+      - "*"
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '1'
+      vary:
+      - accept-encoding
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"docs":[{"slug":"yakutia_movies","category":"Направления","cover":{"url":"https://avatars.mds.yandex.net/get-bunker/994123/37f53bc45a1bff42bd9c46c008b1eec472677fbc/orig","previewUrl":"https://avatars.mds.yandex.net/get-bunker/994123/37f53bc45a1bff42bd9c46c008b1eec472677fbc/x1000"},"createdAt":"2025-04-01T10:15:46.707Z","moviesCount":20,"name":"Новое
+        якутское кино","updatedAt":"2025-04-01T10:15:47.169Z","id":"67ebbcd25da2d4ce280a5d88"},{"slug":"berlin_school","category":"Направления","cover":{"url":"https://avatars.mds.yandex.net/get-bunker/998550/efa1918ce91dffa8439ba40a079ce46703333730/orig","previewUrl":"https://avatars.mds.yandex.net/get-bunker/998550/efa1918ce91dffa8439ba40a079ce46703333730/x1000"},"createdAt":"2025-04-01T10:15:46.707Z","moviesCount":49,"name":"Берлинская
+        школа","updatedAt":"2025-04-01T10:15:47.169Z","id":"67ebbcd25da2d4ce280a5d87"},{"slug":"taiwanese_new_wave","category":"Направления","cover":{"url":"https://avatars.mds.yandex.net/get-bunker/49769/7b443ec69059b77ba16e63ee375215fd4be6725a/orig","previewUrl":"https://avatars.mds.yandex.net/get-bunker/49769/7b443ec69059b77ba16e63ee375215fd4be6725a/x1000"},"createdAt":"2025-04-01T10:15:46.707Z","moviesCount":20,"name":"Тайваньская
+        новая волна","updatedAt":"2025-04-01T10:15:47.169Z","id":"67ebbcd25da2d4ce280a5d86"},{"slug":"cinema_du_look","category":"Направления","cover":{"url":"https://avatars.mds.yandex.net/get-bunker/120922/873c3e6eef66fb452d3a292437a0e9e4fe31eacf/orig","previewUrl":"https://avatars.mds.yandex.net/get-bunker/120922/873c3e6eef66fb452d3a292437a0e9e4fe31eacf/x1000"},"createdAt":"2025-04-01T10:15:46.707Z","moviesCount":12,"name":"Cinema
+        du look","updatedAt":"2025-04-01T10:15:47.169Z","id":"67ebbcd25da2d4ce280a5d85"},{"slug":"korean_wave","category":"Направления","cover":{"url":"https://avatars.mds.yandex.net/get-bunker/61205/9aac38a1d80a417bb55f9fd3c2fc20b49cf13dcf/orig","previewUrl":"https://avatars.mds.yandex.net/get-bunker/61205/9aac38a1d80a417bb55f9fd3c2fc20b49cf13dcf/x1000"},"createdAt":"2025-04-01T10:15:46.707Z","moviesCount":351,"name":"Корейская
+        волна","updatedAt":"2025-04-01T10:15:47.169Z","id":"67ebbcd25da2d4ce280a5d84"},{"slug":"french_new_transgressive","category":"Направления","cover":{"url":"https://avatars.mds.yandex.net/get-bunker/998550/c9f454c727a04e446566a5606e5bdb6690148f60/orig","previewUrl":"https://avatars.mds.yandex.net/get-bunker/998550/c9f454c727a04e446566a5606e5bdb6690148f60/x1000"},"createdAt":"2025-04-01T10:15:46.707Z","moviesCount":28,"name":"Французское
+        новое трансгрессивное кино","updatedAt":"2025-04-01T10:15:47.169Z","id":"67ebbcd25da2d4ce280a5d83"},{"slug":"french_poetic_realism","category":"Направления","cover":{"url":"https://avatars.mds.yandex.net/get-bunker/56833/a24bdbd3f28f2d21e52d122ea79279b79b60b5a9/orig","previewUrl":"https://avatars.mds.yandex.net/get-bunker/56833/a24bdbd3f28f2d21e52d122ea79279b79b60b5a9/x1000"},"createdAt":"2025-04-01T10:15:46.707Z","moviesCount":22,"name":"Французский
+        поэтический реализм","updatedAt":"2025-04-01T10:15:47.169Z","id":"67ebbcd25da2d4ce280a5d82"},{"slug":"defense","category":"Направления","cover":{"url":"https://avatars.mds.yandex.net/get-bunker/135516/e6772fbf84b6810111268fa4c5d98938c30911ba/orig","previewUrl":"https://avatars.mds.yandex.net/get-bunker/135516/e6772fbf84b6810111268fa4c5d98938c30911ba/x1000"},"createdAt":"2025-04-01T10:15:46.707Z","moviesCount":13,"name":"Оборонные
+        фильмы","updatedAt":"2025-04-01T10:15:47.169Z","id":"67ebbcd25da2d4ce280a5d81"},{"slug":"dogma_95","category":"Направления","cover":{"url":"https://avatars.mds.yandex.net/get-bunker/61205/a944fdda1f09ad12b888587539a434ea2123166a/orig","previewUrl":"https://avatars.mds.yandex.net/get-bunker/61205/a944fdda1f09ad12b888587539a434ea2123166a/x1000"},"createdAt":"2025-04-01T10:15:46.707Z","moviesCount":32,"name":"Догма
+        95","updatedAt":"2025-04-01T10:15:47.169Z","id":"67ebbcd25da2d4ce280a5d80"},{"slug":"first_thaw","category":"Направления","cover":{"url":"https://avatars.mds.yandex.net/get-bunker/60661/e461a85c344c10c5461e8abaa97e65a9b5a30c3d/orig","previewUrl":"https://avatars.mds.yandex.net/get-bunker/60661/e461a85c344c10c5461e8abaa97e65a9b5a30c3d/x1000"},"createdAt":"2025-04-01T10:15:46.707Z","moviesCount":30,"name":"Первая
+        оттепель","updatedAt":"2025-04-01T10:15:47.169Z","id":"67ebbcd25da2d4ce280a5d7f"}],"total":151,"limit":10,"page":1,"pages":16}'
+  recorded_at: Sun, 06 Apr 2025 20:15:16 GMT
+recorded_with: VCR 6.3.1

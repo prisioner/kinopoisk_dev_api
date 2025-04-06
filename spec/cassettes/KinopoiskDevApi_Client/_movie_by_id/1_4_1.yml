@@ -1,0 +1,428 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kinopoisk.dev/v1.4/movie/476
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.20.1
+      date:
+      - Sun, 06 Apr 2025 19:17:40 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';font-src ''self'' https: data:;form-action
+        ''self'';frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      cross-origin-opener-policy:
+      - same-origin
+      cross-origin-resource-policy:
+      - same-origin
+      origin-agent-cluster:
+      - "?1"
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - '0'
+      access-control-allow-origin:
+      - "*"
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '1'
+      vary:
+      - accept-encoding
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"fees":{"world":{"value":381109762,"currency":"$"},"usa":{"value":210609762,"currency":"$"}},"status":null,"externalId":{"imdb":"tt0088763","tmdb":105,"kpHD":"468d3b0de3fd9aeba85fad1010196b86"},"rating":{"kp":8.647,"imdb":8.5,"filmCritics":8.9,"russianFilmCritics":0,"await":null},"votes":{"kp":679593,"imdb":1361351,"filmCritics":111,"russianFilmCritics":2,"await":0},"backdrop":{"url":"https://image.openmoviedb.com/kinopoisk-ott-images/223007/2a0000016128aa9721be7e9d22f4bb2be635/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-ott-images/223007/2a0000016128aa9721be7e9d22f4bb2be635/x1000"},"movieLength":116,"images":{"postersCount":74,"backdropsCount":23,"framesCount":71},"productionCompanies":[{"name":"Universal
+        Pictures","url":"https://www.themoviedb.org/t/p/original/8lvHyhjr8oUKOOy2dKXoALWKdp0.png","previewUrl":"https://www.themoviedb.org/t/p/w500/8lvHyhjr8oUKOOy2dKXoALWKdp0.png"},{"name":"Amblin
+        Entertainment","url":"https://www.themoviedb.org/t/p/original/cEaxANEisCqeEoRvODv2dO1I0iI.png","previewUrl":"https://www.themoviedb.org/t/p/w500/cEaxANEisCqeEoRvODv2dO1I0iI.png"}],"spokenLanguages":[{"name":"English","nameEn":"English"}],"id":476,"type":"movie","name":"Назад
+        в будущее","description":"Подросток Марти с помощью машины времени, сооружённой
+        его другом-профессором доком Брауном, попадает из 80-х в далекие 50-е. Там
+        он встречается со своими будущими родителями, ещё подростками, и другом-профессором,
+        совсем молодым.","distributors":{"distributor":"Другое кино, Иноекино","distributorRelease":"Premier
+        Digital, Юниверсал Пикчерс Рус"},"premiere":{"world":"1985-07-03T00:00:00.000Z","russia":"2013-06-27T00:00:00.000Z","bluray":"2010-11-02T00:00:00.000Z","dvd":"2003-10-07T00:00:00.000Z","cinema":null,"digital":null},"slogan":"Семнадцатилетний
+        Марти МакФлай пришел вчера домой пораньше. На 30 лет раньше","year":1985,"budget":{"value":19000000,"currency":"$"},"poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/1599028/73cf2ed0-fd52-47a2-9e26-74104360786a/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/1599028/73cf2ed0-fd52-47a2-9e26-74104360786a/x1000"},"facts":[{"value":"<a
+        href=\"/name/181/\" class=\"all\">Майкл Джей Фокс</a> изначально был главным
+        кандидатом на получение роли Марти, однако в то время он активно снимался
+        в одном из семейных сериалов и не мог себе позволить съемки в другом проекте.
+        Первые три недели в роли Марти снимался актер <a href=\"/name/7350/\" class=\"all\">Эрик
+        Столц</a>, но он не удовлетворял требованиям режиссера и поэтому вскоре был
+        уволен. Студии пришлось переснимать весь материал с нуля.","type":"FACT","spoiler":false},{"value":"<a
+        href=\"/name/181/\" class=\"all\">Майкл Джей Фокс</a> согласился принять участие
+        в съемках, не отказавшись и от сериального «мыла». Продюсеры сериала «<a href=\"/film/276139/\"
+        class=\"all\">Семейные узы</a>» (1982-1989) отпустили Майкла на съёмки «Назад
+        в будущее» при условии, что работа в кинофильме не повредит его занятости
+        в сериале. Поэтому Фокс снимался в «Узах» днем, а ночью играл в картине <a
+        href=\"/name/2435/\" class=\"all\">Роберта Земекиса</a>. Каждый день после
+        записи очередной серии он тут же мчался на съемочную площадку картины. Съёмки
+        велись 6 часов в день — с 6.30 вечера до 2.30 ночи. Фокс за время съёмок фильма
+        спал лишь 5-6 часов в день.","type":"FACT","spoiler":false},{"value":"Сценаристы
+        долго не могли понять, каким же образом представить машину времени. В первой
+        версии сценария данным устройством являлась лазерная установка в лаборатории
+        доктора Брауна. Также был вариант с холодильником, но эту идею отвергли из-за
+        возникших опасений, что маленькие детишки начнут проверять свои холодильники
+        на наличие в нем похожего устройства и ненароком закроют дверцу за собой.
+        Лишь в третьей версии сценария машина времени стала автомобилем DeLorean.","type":"FACT","spoiler":false},{"value":"Когда
+        <a href=\"/name/2435/\" class=\"all\">Роберт Земекис</a> пытался продать идею
+        своего фильма, он обратился в компанию, знаменитую своими семейными картинами,
+        — компанию <a href=\"/name/180600/\" class=\"all\">Уолта Диснея</a>. Однако
+        они зарубили сценарий на корню, посчитав, что изображение любовных взаимоотношений
+        мамы и сына, пусть даже и через призму времени (кстати, разница в возрасте
+        актеров, исполняющих эти роли, в действительности составляет всего 10 дней)
+        будет довольно рискованным мероприятием для компании, дорожащей своей репутацией.","type":"FACT","spoiler":false},{"value":"Когда
+        <a href=\"/name/56948/\" class=\"all\">Рональд Рейган</a> (действующий президент
+        США) смотрел картину в первый раз, он был настолько поражен репликой Дока:
+        «Да как актер смог стать президентом?», что попросил персонал кинотеатра остановить
+        пленку, перемотать и прокрутить этот момент еще раз.","type":"FACT","spoiler":false},{"value":"Оркестр
+        под управлением <a href=\"/name/553348/\" class=\"all\">Алана Сильвестри</a>,
+        привлеченный для записи звуковой дорожки к фильму, стал самым многочисленным
+        по составу на момент выхода картины в свет.","type":"FACT","spoiler":false},{"value":"В
+        рамках картины состоялось первое появление на экране актера <a href=\"/name/45019/\"
+        class=\"all\">Билли Зейна</a>, впоследствии сыгравшего роль главного злодея
+        в фильме «<a href=\"/film/2213/\" class=\"all\">Титаник</a>» (1997).","type":"FACT","spoiler":false},{"value":"Многие
+        кандидатки на роль Дженнифер были отвергнуты лишь по причине слишком высокого
+        роста — все они были выше <a href=\"/name/181/\" class=\"all\">Майкла Джея
+        Фокса</a> (рост 1,64 м).","type":"FACT","spoiler":false},{"value":"Глава компании
+        Universal Pictures <a href=\"/name/13291/\" class=\"all\">Сид Шейнберг</a>
+        был решительно против использования слова «будущее» в названии картины. Сам же
+        он настаивал на следующем названии — «Пришелец с Плутона», увязывая факт появления
+        именно такого названия с шутками Марти, звучащими по ходу действия.","type":"FACT","spoiler":false},{"value":"На
+        роль Дока пробовался <a href=\"/name/8837/\" class=\"all\">Джон Литгоу</a>.","type":"FACT","spoiler":false},{"value":"<a
+        href=\"/name/3514/\" class=\"all\">Кристофер Ллойд</a> создавал образ своего
+        персонажа — Дока, основываясь на манерах поведения физика <a href=\"/name/231298/\"
+        class=\"all\">Альберта Эйнштейна</a> и дирижера <a href=\"/name/29097/\" class=\"all\">Леопольда
+        Стоковски</a>.","type":"FACT","spoiler":false},{"value":"Несмотря на то, что
+        картина носит вымышленный характер, и в ней активно эксплуатируется тема путешествий
+        во времени, съемочной бригаде пришлось использовать спецэффекты всего 32 раза.","type":"FACT","spoiler":false},{"value":"По
+        ходу съемок было использовано три автомобиля марки DeLorean.","type":"FACT","spoiler":false},{"value":"Актрисе
+        <a href=\"/name/77429/\" class=\"all\">Лие Томпсон</a> пришлось проводить
+        ежедневно порядка 3 часов в гримерке, чтобы из 23-летней девушки превратиться
+        в 47-летнюю.","type":"FACT","spoiler":false},{"value":"Когда первый фильм
+        был закончен, продолжения не планировалось. Вслед за летящим ДеЛореаном сразу
+        шли финальные титры. Когда впоследствии вышли вторая и третья часть, и первая
+        появилась на видео, между финальной сценой и титрами была добавлена вставка
+        «To Be Continued…» (Продолжение следует). Для DVD-версии эту вставку снова
+        убрали, восстановив оригинальную киноверсию.","type":"FACT","spoiler":false},{"value":"<a
+        href=\"/name/181/\" class=\"all\">Майкл Дж. Фокс</a> только на десять дней
+        младше <a href=\"/name/77429/\" class=\"all\">Лии Томпсон</a>, сыгравшей его
+        маму, и почти на три года старше своего экранного отца в исполнении <a href=\"/name/3558/\"
+        class=\"all\">Криспина Гловера</a>.","type":"FACT","spoiler":false},{"value":"На
+        DeLorean стоят шины Good Year.","type":"FACT","spoiler":false},{"value":"Для
+        декораций главной улицы города были использованы декорации фильма «<a href=\"/film/7114/\"
+        class=\"all\">Гремлины</a>» (1984).","type":"FACT","spoiler":false},{"value":"Точно
+        такую же башню с часами можно заметить в фильме «<a href=\"/film/357/\" class=\"all\">Убить
+        пересмешника</a>» (1962).","type":"FACT","spoiler":false},{"value":"«Домашний
+        конвертер энергии мистер Фьюжн» — это на самом деле кофемолка Krups.","type":"FACT","spoiler":false},{"value":"Устройство,
+        к которому Марти подключает свою гитару в лаборатории Дока Брауна, содержит
+        ярлык «CRM-114». Точно так же назывался дешифратор на B-52 в фильме «<a href=\"/film/334/\"
+        class=\"all\">Доктор Стрейнджлав, или Как я научился не волноваться и полюбил
+        атомную бомбу</a>» (1964), такой же серийный номер был у юпитерохода в фильме
+        «<a href=\"/film/380/\" class=\"all\">2001 год: Космическая одиссея</a>» (1968).","type":"FACT","spoiler":false},{"value":"Дата
+        путешествия Марти в прошлое (5 ноября), также была использована в «<a href=\"/film/18442/\"
+        class=\"all\">Гонщик во времени: Приключения Лайла Сванна</a>» (1982).","type":"FACT","spoiler":false},{"value":"<a
+        href=\"/name/45334/\" class=\"all\">Уэнди Джо Спербер</a>, сыгравшая Линду
+        МакФлай, на три года старше <a href=\"/name/77429/\" class=\"all\">Лии Томпсон</a>
+        (Лоррэин МакФлай) и на шесть лет старше своего экранного отца в исполнении
+        <a href=\"/name/3558/\" class=\"all\">Криспина Гловера</a>.","type":"FACT","spoiler":false},{"value":"Сцена,
+        в которой Док Браун повисает на стрелке часов, напоминает сцену из фильма
+        «<a href=\"/film/183135/\" class=\"all\">Грехи господина Дидлбока</a>» (1946)
+        с участием <a href=\"/name/222155/\" class=\"all\">Гарольда Ллойда</a>, которая
+        в свою очередь является ремейком «<a href=\"/film/76976/\" class=\"all\">Наконец
+        в безопасности!</a>» (1923).","type":"FACT","spoiler":false},{"value":"На
+        кровати Марти можно заметить журнал «RQ», что расшифровывается как «Reference
+        Quarterly», и является печатным изданием, предназначенным для библиотекарей.","type":"FACT","spoiler":false},{"value":"В
+        одной из удаленных сцен Марти подсматривает за Лоррэин во время контрольной
+        в школе и видит, что она списывает у соседки.","type":"FACT","spoiler":false},{"value":"Собака
+        Дока Брауна, Эйнштейн, возвращается из первого путешествия во времени в 1:21.
+        Примечательно, что для совершения путешествия во времени требуется 1.21 гигаватта
+        электроэнергии. ","type":"FACT","spoiler":false},{"value":"Автомобильный номер
+        «DeLorean» — 3CZV657 — реально существующий автомобильный номер, зарегистрированный
+        в штате Калифорния.","type":"FACT","spoiler":false},{"value":"Бой часов на
+        башне точь-в-точь совпадает с боем часов в фильме «<a href=\"/film/80881/\"
+        class=\"all\">Машина времени</a>» (1960), снятого по книге <a href=\"/name/39138/\"
+        class=\"all\">Герберта Джорджа Уэллса</a>.","type":"FACT","spoiler":false},{"value":"Эпизод
+        с Дартом Вейдером впервые появился в третьем варианте сценария. Изначально
+        Марти должен был явиться своему отцу Джорджу в «костюме пришельца».","type":"FACT","spoiler":false},{"value":"Имя
+        доктора Брауна — Эмметт (Emmett) является наоборот прочитанным словом «время»
+        (time), только произнесенным по слогам (em-it).","type":"FACT","spoiler":false},{"value":"Инициалы
+        для среднего имени Дока Брауна – «L», однако на протяжении трех фильмов мы
+        так и не узнали, как они расшифровываются. <a href=\"/name/87813/\" class=\"all\">Боб
+        Гейл</a>, сценарист фильма, открыл завесу тайны: среднее имя Брауна – Латроп
+        (Lathrop), что является наоборот прочитанным словом «портал» (portal).","type":"FACT","spoiler":false},{"value":"Одна
+        сцена была удалена из фильма. В промежутке между семейным ужином и звонком
+        Дока Брауна, разбудившим Марти, последний хотел послать аудиокассету в звукозаписывающую
+        компанию. Марти не решался этого сделать и оставлял пустой конверт на столе.
+        В сцене, вошедшей в фильм, он идет на завтрак, держа в руке запечатанный конверт,
+        что говорит о том, что он всё же решился послать свои промо-записи в звукозаписывающую
+        компанию.","type":"FACT","spoiler":false},{"value":"Дом Дока Брауна находится
+        на проспекте Вестморленд в Пасадене, штат Калифорния. До 1966 года дом принадлежал
+        семье Гэмблов. После 1966 года его переоборудовали в Университет Южной  Калифорнии.
+        В настоящее время в данном здании находится исторический музей.","type":"FACT","spoiler":false},{"value":"На
+        роль Марти МакФлая рассматривались кандидатуры <a href=\"/name/425173/\" class=\"all\">Кори
+        Харта</a> и <a href=\"/name/3878/\" class=\"all\">Си Томаса Хауэлла</a>.","type":"FACT","spoiler":false},{"value":"&#171;DeLorean&#187;
+        — DMC-12 модели 1981 года с шестицилиндровым двигателем PRV (Peugeot/Renault/Volvo).
+        Основой для ядерного реактора послужил колпак, закрывающий центральную часть
+        колеса Dodge Polara. В специальном издании фильма на DVD ошибочно утверждается,
+        что у данной модели автомобиля четырехцилиндровый двигатель.","type":"FACT","spoiler":false},{"value":"Фильм
+        настолько понравился <a href=\"/name/56948/\" class=\"all\">Рональду Рейгану</a>,
+        что он включил ссылку на картину <a href=\"/name/2435/\" class=\"all\">Земекиса</a>
+        в своё обращение к нации в 1986 году: «И как было сказано в фильме «Назад
+        в будущее», «Там, куда мы отправляемся, дороги нам не понадобятся».","type":"FACT","spoiler":false},{"value":"В
+        начальной сцене фильма все часы показывают 7:55 (отстают на 25 минут), за
+        исключением одних часов, которые лежат на полу рядом с чемоданом с плутонием:
+        они показывают правильное время (8:20).","type":"FACT","spoiler":false},{"value":"Изначально
+        <a href=\"/name/162834/\" class=\"all\">Рон Кобб</a> должен был создать внешний
+        дизайн «DeLorean». Однако он предпочел поработать над другим проектом, и ему
+        на смену пришел <a href=\"/name/1917588/\" class=\"all\">Эндрю Проберт</a>.","type":"FACT","spoiler":false},{"value":"Во
+        французском дубляже фильма, когда Марти просыпается в 1955, его молодая мама
+        называет его <a href=\"/name/841702/\" class=\"all\">Пьер Карден</a> вместо
+        <a href=\"/name/1406316/\" class=\"all\">Кэлвина Клейна</a>. В итальянском
+        дубляже она зовет его Леви Страусс.","type":"FACT","spoiler":false},{"value":"Кандидатура
+        <a href=\"/name/1396/\" class=\"all\">Джеффа Голдблюма</a> рассматривалась
+        на роль Дока Брауна.","type":"FACT","spoiler":false},{"value":"На поточном
+        конденсаторе можно заметить две надписи: «Отключите поточный конденсатор перед
+        тем, как его открыть» и «Защитите глаза от света».","type":"FACT","spoiler":false},{"value":"Когда
+        Марти является своему отцу в образе Дарта Вейдера с планеты Вулкан, он вставляет
+        в плеер кассету с надписью «<a href=\"/name/1721596/\" class=\"all\">Van Halen</a>».
+        Композиция, под которую просыпается Джордж МакФлай, — неназванная композиция
+        Эдварда Ван Хэлена, написанная для фильма «<a href=\"/film/9608/\" class=\"all\">Без
+        тормозов</a>» (1984), где одну из ролей сыграла <a href=\"/name/77429/\" class=\"all\">Лиа
+        Томпсон</a>.","type":"FACT","spoiler":false},{"value":"По словам <a href=\"/name/87813/\"
+        class=\"all\">Боба Гейла</a>, идея фильма пришла ему в голову, когда он гостил
+        у своих родителей и нашел школьный выпускной фотоальбом своего отца. Он узнал,
+        что тот был старостой класса. Тут он вспомнил старосту своего класса, с которым
+        он не дружил. И он подумал, что если бы он был с отцом одного возраста, они
+        бы стали друзьями.","type":"FACT","spoiler":false},{"value":"В кинотеатре
+        Хилл Вэлли идет фильм под названием «<a href=\"/film/12599/\" class=\"all\">Королева
+        скота из Монтаны</a>» (1954), где главные роли сыграли <a href=\"/name/177182/\"
+        class=\"all\">Барбара Стэнвик</a> и <a href=\"/name/56948/\" class=\"all\">Рональд
+        Рейган</a>. Последний был переизбран на второй срок в президенты США в 1984
+        году. В следующем году «Назад в будущее» вышло в кинопрокат.","type":"FACT","spoiler":false},{"value":"По
+        версии британского канала «Channel 4» фильм занял 7 место в списке «Лучших
+        семейных фильмов».","type":"FACT","spoiler":false},{"value":"В фильме «<a
+        href=\"/film/7669/\" class=\"all\">Марти</a>» (1955) главного героя зовут
+        точно так же, как и Марти МакФлая. Вдобавок владельца кафе также зовут Лу.
+        По словам <a href=\"/name/2435/\" class=\"all\">Роберта Земекиса</a> и <a
+        href=\"/name/87813/\" class=\"all\">Боба Гейла</a>, одинаковые имена персонажей
+        – это всего лишь совпадение.","type":"FACT","spoiler":false},{"value":"<a
+        href=\"/name/13291/\" class=\"all\">Сид Шейнберг</a>, глава студии «Universal
+        Pictures», внес в фильм немало изменений, среди которых были:  — Док Браун
+        вместо профессора Брауна.  — Изначально у Дока в качестве домашнего животного
+        должно было быть шимпанзе. Сид предложил собаку по имени Эйнштейн.  — Первоначальное
+        имя матери Марти – Мэг. Затем его изменили на Айлин. После чего Сид настоял,
+        чтобы его изменили на Лоррэин. Точно так же звали его жену – Лоррэин Гэри.","type":"FACT","spoiler":false},{"value":"Телефонный
+        номер Дока в 1955 году — Klondike 54385. Буквы «K» и «L» находятся на цифре
+        5. Следовательно, номер Дока начинается с префикса 555. Таким образом, получается,
+        что это – вымышленный номер.","type":"FACT","spoiler":false},{"value":"<a
+        href=\"/name/2435/\" class=\"all\">Роберт Земекис</a> специально создал начальную
+        сцену, повторяющую начало фильма «<a href=\"/film/80881/\" class=\"all\">Машина
+        времени</a>» (1960), как дань уважения фильму <a href=\"/name/195844/\" class=\"all\">Джорджа
+        Пэла</a>. Панель, показывающая время, куда ты отправляешься, настоящее время
+        и время последнего путешествия, мигает красными, зелеными и желтыми огоньками
+        соответственно. Точно такие же цвета были использованы для панели управления
+        машиной времени в картине Пэла.","type":"FACT","spoiler":false},{"value":"Для
+        того, чтобы найти координаторов для сцен, где Марти катается на скейтборде,
+        <a href=\"/name/87813/\" class=\"all\">Боб Гейл</a> отправился на пляж в Калифорнии
+        и увидел двух скейтеров, один из которых, Пер Линдер, впоследствии стал чемпионом
+        Европы, а второй из них стал дублером <a href=\"/name/7350/\" class=\"all\">Эрика
+        Столца</a>. Однако после того, как Эрик покинул проект, дублера также заменили.","type":"FACT","spoiler":false},{"value":"Для
+        создания эффекта инея у только что вернувшегося из путешествия автомобиля
+        использовали азот — DeLorean буквально замораживали. Огненные же следы, оставленные
+        умчавшейся машиной, — обычное разлитое топливо, которое поджигали вручную.
+        Кинематографисты решили использовать эти сравнительно дешевые эффекты, хотя
+        долгое время рассматривалась версия с растягивающимся и сжимающимся, как резиновая
+        лента, DeLorean. Но в итоге от такого спецэффекта отказались: делать его было
+        дорого, долго, да и сегодня он наверняка выглядел бы безнадежно устаревшим.","type":"FACT","spoiler":false},{"value":"В
+        первых версиях сценария машина времени получала недостающую для запуска энергию
+        в пустыне Невады на ядерных испытаниях, но продюсерский штаб посчитал, что
+        одна только эта сцена раздует бюджет до астрономических пределов, и остановились
+        на варианте с молнией.","type":"FACT","spoiler":true},{"value":"Когда Марти
+        пытается перезапустить DeLorean, находясь в 1955 году, фары автомобиля азбукой
+        Морзе обозначают команду SOS.","type":"FACT","spoiler":true},{"value":"Когда
+        Марти совершает прыжок в прошлое, то он оказывается на ферме, принадлежащей
+        семье Пибади (фамилию можно прочитать на почтовом ящике). Сына фермера зовут
+        Шерман. Точно так же звали мальчика, путешествовавшего во времени в эпизодах
+        «Peabody''s Improbable History» анимационного шоу «<a href=\"/film/94663/\"
+        class=\"all\">Приключения бельчонка Рокки и лосенка Буллвинкля</a>» (1961-1964).","type":"FACT","spoiler":true},{"value":"Согласно
+        фильму «<a href=\"/film/7103/\" class=\"all\">Назад в будущее 3</a>» (1990),
+        часы на башне начали свой ход в 20:00 пятого сентября 1885 года. В данном
+        фильме молния попадает в башню с часами в 22:04 двенадцатого ноября 1955 года.
+        Таким образом, часы на башне функционировали на протяжении 70 лет, 2 месяцев,
+        7 дней, 2 часов и 4 минут.","type":"FACT","spoiler":true},{"value":"Супермаркет,
+        возле которого встречаются Марти МакФлай и Док Браун, называется «Две сосны».
+        Док говорит, что вся земля в округе принадлежала фермеру Пибади, который выращивал
+        сосны. Когда Марти попадает в прошлое, он сбивает одну из сосен на земле Пибади.
+        Когда Марти возвращается в 1985 год в конце фильма, то на вывеске перед супермаркетом
+        написано: «Одинокая сосна».","type":"FACT","spoiler":true},{"value":"В оригинальном
+        сценарии фильма, датированным 1981 годом, рок-н-ролльное выступление Марти
+        привело к беспорядкам, на подавление которых были брошены силы полиции. Вдобавок
+        Марти рассказывал Доку о «секретном ингредиенте», заставившим работать машину
+        времени, – обычной «Кока-коле». Данные обстоятельства привели к изменению
+        хода течения времени. Когда Марти вернулся обратно, он попал в альтернативные
+        1980-е, которые соответствовали концепции писателей-фантастов 1950-х гг. Причем
+        многие революционные изобретения были созданы Доком Брауном и работали на
+        «Кока-коле». Марти также обнаруживал, что рок-н-ролл так и не был создан,
+        и он намеревался начать отложенную культурную революцию. Отец Марти находил
+        старую газету, в которой была статья о «школьном бунте» в 1950-х, и на фотографии
+        узнавал своего сына.","type":"FACT","spoiler":true},{"value":"К тест-просмотру
+        фильма «Industrial Light and Magic» не успели доделать спецэффекты для последней
+        сцены фильма, где мы видим летающую «DeLorean», поэтому последние минуты картины
+        были показаны в черно-белом формате. Но это было абсолютно неважно, т.к. публике
+        фильм ужасно понравился.","type":"FACT","spoiler":true},{"value":"Гитары,
+        на которых играет Марти: \n<ul>- Erlewine Chiquita (в начальной сцене фильма);
+        </ul>\n<ul>- Ibanez black Strat copy (сцена, где Марти играет со своей группой
+        в 1980-х); </ul>\n<ul>- Gibson ES-335 (сцена на балу).</ul>","type":"FACT","spoiler":true},{"value":"В
+        самом начале фильма в комнате Дока можно увидеть часы, на стрелке которых
+        висит маленький человечек. В сцене с молнией Док так же повисает на стрелке
+        часов.","type":"FACT","spoiler":true},{"value":"В самом начале &laquo;морской&raquo;
+        вечеринки, куда приходит МакФлай, левый напольный громкоговоритель стоит на
+        большом перевернутом деревянном ящике из-под &laquo;Pepsi&raquo;, когда МакФлай
+        играет на гитаре и после этого пинает этот громкоговоритель ногой, ящика из-под
+        &laquo;Pepsi&raquo; уже нет.","type":"BLOOPER","spoiler":true}],"genres":[{"name":"фантастика"},{"name":"комедия"},{"name":"приключения"}],"countries":[{"name":"США"}],"seasonsInfo":[],"persons":[{"id":181,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_181.jpg","name":"Майкл
+        Дж. Фокс","enName":"Michael J. Fox","description":"Marty McFly","profession":"актеры","enProfession":"actor"},{"id":3514,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_3514.jpg","name":"Кристофер
+        Ллойд","enName":"Christopher Lloyd","description":"Dr. Emmett Brown","profession":"актеры","enProfession":"actor"},{"id":77429,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_77429.jpg","name":"Лиа
+        Томпсон","enName":"Lea Thompson","description":"Lorraine Baines","profession":"актеры","enProfession":"actor"},{"id":3558,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_3558.jpg","name":"Криспин
+        Гловер","enName":"Crispin Glover","description":"George McFly","profession":"актеры","enProfession":"actor"},{"id":70021,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_70021.jpg","name":"Томас
+        Ф. Уилсон","enName":"Tom Wilson","description":"Biff Tannen (в титрах: Thomas
+        F. Wilson)","profession":"актеры","enProfession":"actor"},{"id":152914,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_152914.jpg","name":"Клаудия
+        Уэллс","enName":"Claudia Wells","description":"Jennifer Parker","profession":"актеры","enProfession":"actor"},{"id":2648,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_2648.jpg","name":"Марк
+        МакКлюр","enName":"Marc McClure","description":"Dave McFly","profession":"актеры","enProfession":"actor"},{"id":45334,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_45334.jpg","name":"Уэнди
+        Джо Спербер","enName":"Wendie Jo Sperber","description":"Linda McFly","profession":"актеры","enProfession":"actor"},{"id":65045,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_65045.jpg","name":"Джордж
+        ДиЧенцо","enName":"George DiCenzo","description":"Sam Baines","profession":"актеры","enProfession":"actor"},{"id":22972,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_22972.jpg","name":"Фрэнсис
+        Ли МакКейн","enName":"Frances Lee McCain","description":"Stella Baines","profession":"актеры","enProfession":"actor"},{"id":553348,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_553348.jpg","name":"Алан
+        Сильвестри","enName":"Alan Silvestri","description":null,"profession":"композиторы","enProfession":"composer"},{"id":1712669,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_1712669.jpg","name":"Лоуренс
+        Дж. Полл","enName":"Lawrence G. Paull","description":null,"profession":"художники","enProfession":"designer"},{"id":8977,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_8977.jpg","name":"Тодд
+        Халлоуэлл","enName":"Todd Hallowell","description":null,"profession":"художники","enProfession":"designer"},{"id":1238244,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_1238244.jpg","name":"Дебора
+        Линн Скотт","enName":"Deborah L. Scott","description":null,"profession":"художники","enProfession":"designer"},{"id":1994034,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_1994034.jpg","name":"Хэл
+        Гаусман","enName":"Hal Gausman","description":null,"profession":"художники","enProfession":"designer"},{"id":2435,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_2435.jpg","name":"Роберт
+        Земекис","enName":"Robert Zemeckis","description":null,"profession":"режиссеры","enProfession":"director"},{"id":886881,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_886881.jpg","name":"Гарри
+        Керамидас","enName":"Harry Keramidas","description":null,"profession":"монтажеры","enProfession":"editor"},{"id":722591,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_722591.jpg","name":"Артур
+        Шмидт","enName":"Arthur Schmidt","description":null,"profession":"монтажеры","enProfession":"editor"},{"id":101732,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_101732.jpg","name":"Дин
+        Канди","enName":"Dean Cundey","description":null,"profession":"операторы","enProfession":"operator"},{"id":12631,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_12631.jpg","name":"Нил
+        Кэнтон","enName":"Neil Canton","description":null,"profession":"продюсеры","enProfession":"producer"},{"id":87813,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_87813.jpg","name":"Боб
+        Гейл","enName":"Bob Gale","description":null,"profession":"продюсеры","enProfession":"producer"},{"id":20396,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_20396.jpg","name":"Кэтлин
+        Кеннеди","enName":"Kathleen Kennedy","description":null,"profession":"продюсеры","enProfession":"producer"},{"id":20397,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_20397.jpg","name":"Фрэнк
+        Маршалл","enName":"Frank Marshall","description":null,"profession":"продюсеры","enProfession":"producer"},{"id":1653657,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_1653657.jpg","name":"Прохор
+        Чеховской","enName":null,"description":null,"profession":"актеры дубляжа","enProfession":"voice_actor"},{"id":290228,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_290228.jpg","name":"Вячеслав
+        Баранов","enName":null,"description":null,"profession":"актеры дубляжа","enProfession":"voice_actor"},{"id":1649885,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_1649885.jpg","name":"Лариса
+        Некипелова","enName":null,"description":null,"profession":"актеры дубляжа","enProfession":"voice_actor"},{"id":1781077,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_1781077.jpg","name":"Диомид
+        Виноградов","enName":null,"description":null,"profession":"актеры дубляжа","enProfession":"voice_actor"},{"id":1616407,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_1616407.jpg","name":"Всеволод
+        Кузнецов","enName":null,"description":null,"profession":"актеры дубляжа","enProfession":"voice_actor"},{"id":2435,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_2435.jpg","name":"Роберт
+        Земекис","enName":"Robert Zemeckis","description":null,"profession":"сценаристы","enProfession":"writer"},{"id":87813,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_87813.jpg","name":"Боб
+        Гейл","enName":"Bob Gale","description":null,"profession":"сценаристы","enProfession":"writer"},{"id":88001,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_88001.jpg","name":"Джеймс
+        Толкан","enName":"James Tolkan","description":null,"profession":"актеры","enProfession":"actor"},{"id":7237,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_7237.jpg","name":"Дж.Дж.
+        Коэн","enName":"J.J. Cohen","description":null,"profession":"актеры","enProfession":"actor"},{"id":8569,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_8569.jpg","name":"Кейси
+        Семашко","enName":"Casey Siemaszko","description":null,"profession":"актеры","enProfession":"actor"},{"id":45019,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_45019.jpg","name":"Билли
+        Зейн","enName":"Billy Zane","description":null,"profession":"актеры","enProfession":"actor"},{"id":76404,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_76404.jpg","name":"Гарри
+        Уотерс мл.","enName":"Harry Waters Jr.","description":null,"profession":"актеры","enProfession":"actor"},{"id":37029,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_37029.jpg","name":"Дональд
+        Фуллилав","enName":"Donald Fullilove","description":null,"profession":"актеры","enProfession":"actor"},{"id":133984,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_133984.jpg","name":"Лиза
+        Фриман","enName":"Lisa Freeman","description":null,"profession":"актеры","enProfession":"actor"},{"id":28317,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_28317.jpg","name":"Кристен
+        Кауффман","enName":"Cristen Kauffman","description":null,"profession":"актеры","enProfession":"actor"},{"id":43095,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_43095.jpg","name":"Эльза
+        Рэйвен","enName":"Elsa Raven","description":null,"profession":"актеры","enProfession":"actor"},{"id":28991,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_28991.jpg","name":"Уилл
+        Хэр","enName":"Will Hare","description":null,"profession":"актеры","enProfession":"actor"},{"id":31109,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_31109.jpg","name":"Айви
+        Бетьюн","enName":"Ivy Bethune","description":null,"profession":"актеры","enProfession":"actor"},{"id":125647,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_125647.jpg","name":"Джейсон
+        Марин","enName":"Jason Marin","description":null,"profession":"актеры","enProfession":"actor"},{"id":152047,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_152047.jpg","name":"Кэтрин
+        Бриттон","enName":"Katherine Britton","description":null,"profession":"актеры","enProfession":"actor"},{"id":77937,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_77937.jpg","name":"Джейсон
+        Херви","enName":"Jason Hervey","description":null,"profession":"актеры","enProfession":"actor"},{"id":144736,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_144736.jpg","name":"Майа
+        Брутон","enName":"Maia Brewton","description":null,"profession":"актеры","enProfession":"actor"},{"id":39098,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_39098.jpg","name":"Кортни
+        Гейнс","enName":"Courtney Gains","description":null,"profession":"актеры","enProfession":"actor"},{"id":31656,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_31656.jpg","name":"Ричард
+        Л. Дюран","enName":"Richard L. Duran","description":null,"profession":"актеры","enProfession":"actor"},{"id":104780,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_104780.jpg","name":"Джефф
+        О’Хако","enName":"Jeff O''Haco","description":null,"profession":"актеры","enProfession":"actor"},{"id":134630,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_134630.jpg","name":"Джон
+        Грин мл.","enName":"John Green Jr.","description":null,"profession":"актеры","enProfession":"actor"},{"id":152006,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_152006.jpg","name":"Джэми
+        Эбботт","enName":"Jamie Abbott","description":null,"profession":"актеры","enProfession":"actor"},{"id":50731,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_50731.jpg","name":"Норман
+        Элден","enName":"Norman Alden","description":null,"profession":"актеры","enProfession":"actor"},{"id":102506,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_102506.jpg","name":"Рид
+        Морган","enName":"Read Morgan","description":null,"profession":"актеры","enProfession":"actor"},{"id":129103,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_129103.jpg","name":"Сачи
+        Паркер","enName":"Sachi Parker","description":null,"profession":"актеры","enProfession":"actor"},{"id":151822,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_151822.jpg","name":"Роберт
+        Крантц","enName":"Robert Krantz","description":null,"profession":"актеры","enProfession":"actor"},{"id":87658,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_87658.jpg","name":"Гари
+        Райли","enName":"Gary Riley","description":null,"profession":"актеры","enProfession":"actor"},{"id":152915,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_152915.jpg","name":"Карен
+        Петрасек","enName":"Karen Petrasek","description":null,"profession":"актеры","enProfession":"actor"},{"id":28593,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_28593.jpg","name":"Джордж
+        «Бак» Флауэр","enName":"George «Buck» Flower","description":null,"profession":"актеры","enProfession":"actor"},{"id":133986,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_133986.jpg","name":"Томми
+        Томас","enName":"Tommy Thomas","description":null,"profession":"актеры","enProfession":"actor"},{"id":133988,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_133988.jpg","name":"Гранивиль’Дэнни’  Янг","enName":"Granville
+        «Danny» Young","description":null,"profession":"актеры","enProfession":"actor"},{"id":133985,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_133985.jpg","name":"Дэвид
+        Харольд Браун","enName":"David Harold Brown","description":null,"profession":"актеры","enProfession":"actor"},{"id":133987,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_133987.jpg","name":"Ллойд
+        Л. Толберт","enName":"Lloyd L. Tolbert","description":null,"profession":"актеры","enProfession":"actor"},{"id":152916,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_152916.jpg","name":"Пол
+        Хэнсон","enName":"Paul Hanson","description":null,"profession":"актеры","enProfession":"actor"},{"id":152917,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_152917.jpg","name":"Ли
+        Браунфилд","enName":"Lee Brownfield","description":null,"profession":"актеры","enProfession":"actor"},{"id":152918,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_152918.jpg","name":"Роберт
+        ДеЛапп","enName":"Robert DeLapp","description":null,"profession":"актеры","enProfession":"actor"},{"id":6958253,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_6958253.jpg","name":null,"enName":"Bill
+        Baker","description":null,"profession":"актеры","enProfession":"actor"},{"id":152920,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_152920.jpg","name":"Чарльз
+        Л. Кэмпбелл","enName":"Charles L. Campbell","description":null,"profession":"актеры","enProfession":"actor"},{"id":456239,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_456239.jpg","name":"Кики
+        Эбсен","enName":"Kiki Ebsen","description":null,"profession":"актеры","enProfession":"actor"},{"id":4494132,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_4494132.jpg","name":null,"enName":"Randy
+        Feelgood","description":null,"profession":"актеры","enProfession":"actor"},{"id":152921,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_152921.jpg","name":"Дебора
+        Хэрмон","enName":"Deborah Harmon","description":null,"profession":"актеры","enProfession":"actor"},{"id":1824212,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_1824212.jpg","name":"Наталья
+        Грачёва","enName":null,"description":null,"profession":"актеры дубляжа","enProfession":"voice_actor"},{"id":1608429,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_1608429.jpg","name":"Александр
+        Носков","enName":null,"description":null,"profession":"актеры дубляжа","enProfession":"voice_actor"},{"id":1643257,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_1643257.jpg","name":"Пётр
+        Иващенко","enName":null,"description":null,"profession":"актеры дубляжа","enProfession":"voice_actor"},{"id":1649301,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_1649301.jpg","name":"Ольга
+        Голованова","enName":null,"description":null,"profession":"актеры дубляжа","enProfession":"voice_actor"},{"id":281190,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_281190.jpg","name":"Сергей
+        Вещев","enName":null,"description":null,"profession":"актеры дубляжа","enProfession":"voice_actor"},{"id":231213,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_231213.jpg","name":"Александр
+        Новиков","enName":null,"description":null,"profession":"актеры дубляжа","enProfession":"voice_actor"},{"id":1620788,"photo":"https://image.openmoviedb.com/kinopoisk-st-images//actor_iphone/iphone360_1620788.jpg","name":"Владимир
+        Герасимов","enName":null,"description":null,"profession":"актеры дубляжа","enProfession":"voice_actor"}],"lists":["top250","top500","popular-films","theme_family_comedy","theme_action_comdey","theme_kids_films","hd-family","hd-revise","box-usa-all-time","box-world-not-usa","box-total","box-usa-inflation","saturn-best-sci-fi-fantasy-horror","rotten-tomatoes","top_500_by_empire","best_1001","best_501","top_100_scifi_by_total_scifi_online","top-250-2020"],"typeNumber":1,"alternativeName":"Back
+        to the Future","enName":null,"names":[{"name":"Назад в будущее"},{"name":"Back
+        to the Future"},{"name":"Aftur til framtíðar","language":"IS","type":null},{"name":"Vrnitev
+        v prihodnost","language":"SI","type":null},{"name":"Terug naar de Toekomst","language":"NL","type":null},{"name":"Назад
+        в будущee","language":"RU","type":null},{"name":"Zurück in die Zukunft","language":"DE","type":null},{"name":"Back
+        to the Future 1","language":"US","type":"Series Title"},{"name":"Повратак
+        у будућност","language":"RS","type":null},{"name":"Back to the Future Part
+        1","language":"US","type":null},{"name":"Space Man From Pluto","language":"US","type":"Rejected
+        Title"},{"name":"빽 투 더 퓨쳐","language":"KR","type":null},{"name":"빽 투 더 퓨처","language":"KR","type":null},{"name":"백
+        투 더 퓨처","language":"KR","type":null},{"name":"백 투 더 퓨쳐","language":"KR","type":null},{"name":"バック・トゥ・ザ・フューチャー","language":"JP","type":null},{"name":"バック・トゥ・ザ・フューチャー：1985","language":"JP","type":null},{"name":"Regreso
+        al futuro","language":"ES","type":"Castilian Spanish"},{"name":"Volver al
+        Futuro","language":"AR","type":null},{"name":"Gələcəyə Dönüş","language":"AZ","type":null},{"name":"Retour
+        vers le futur","language":"FR","type":null},{"name":"Retour vers le futur
+        1","language":"FR","type":null},{"name":"Retour vers le futur I","language":"FR","type":null}],"updatedAt":"2025-04-06T01:34:32.320Z","similarMovies":[{"id":527,"name":"День
+        сурка","enName":null,"alternativeName":"Groundhog Day","type":"movie","poster":{"url":"https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/ed4f90cb-188b-4cac-a41a-c175ff9b9e48/orig","previewUrl":"https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/ed4f90cb-188b-4cac-a41a-c175ff9b9e48/x1000"},"year":1993,"rating":{"kp":8.139,"imdb":8,"filmCritics":7.9,"russianFilmCritics":0,"await":null}},{"id":5167,"name":"Эффект
+        бабочки","enName":null,"alternativeName":"The Butterfly Effect","type":"movie","poster":{"url":"https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/9cc3a3d5-d6fe-4f41-a22f-05cdff66e968/orig","previewUrl":"https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/9cc3a3d5-d6fe-4f41-a22f-05cdff66e968/x1000"},"year":2003,"rating":{"kp":8.169,"imdb":7.6,"filmCritics":4.8,"russianFilmCritics":75,"await":null}},{"id":3563,"name":"Трасса
+        60","enName":null,"alternativeName":"Interstate 60","type":"movie","poster":{"url":"https://avatars.mds.yandex.net/get-kinopoisk-image/4716873/8d669692-92f0-402d-83da-7da41eec56f2/orig","previewUrl":"https://avatars.mds.yandex.net/get-kinopoisk-image/4716873/8d669692-92f0-402d-83da-7da41eec56f2/x1000"},"year":2001,"rating":{"kp":8.031,"imdb":7.6,"filmCritics":6.5,"russianFilmCritics":0,"await":null}},{"id":2987,"name":"Плезантвиль","enName":null,"alternativeName":"Pleasantville","type":"movie","poster":{"url":"https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/706359e3-79c4-4f40-be9f-741cec47fbd6/orig","previewUrl":"https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/706359e3-79c4-4f40-be9f-741cec47fbd6/x1000"},"year":1998,"rating":{"kp":7.812,"imdb":7.5,"filmCritics":7.7,"russianFilmCritics":0,"await":null}},{"id":42664,"name":"Иван
+        Васильевич меняет профессию","enName":null,"alternativeName":null,"type":"movie","poster":{"url":"https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/a7ef44b8-1983-4992-a889-da6f87a3f559/orig","previewUrl":"https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/a7ef44b8-1983-4992-a889-da6f87a3f559/x1000"},"year":1973,"rating":{"kp":8.787,"imdb":8.2,"filmCritics":0,"russianFilmCritics":0,"await":null}},{"id":463354,"name":"Петля
+        времени","enName":null,"alternativeName":"Looper","type":"movie","poster":{"url":"https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/dc1062b4-a0e7-48df-9b50-ec01636afc35/orig","previewUrl":"https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/dc1062b4-a0e7-48df-9b50-ec01636afc35/x1000"},"year":2012,"rating":{"kp":6.999,"imdb":7.4,"filmCritics":8.1,"russianFilmCritics":81.8182,"await":null}},{"id":455773,"name":"Люди
+        в черном 3","enName":null,"alternativeName":"Men in Black 3","type":"movie","poster":{"url":"https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/4f336d75-7b0f-4645-ae21-b30375a6baa2/orig","previewUrl":"https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/4f336d75-7b0f-4645-ae21-b30375a6baa2/x1000"},"year":2012,"rating":{"kp":7.235,"imdb":6.8,"filmCritics":6,"russianFilmCritics":83.3333,"await":null}},{"id":675,"name":"Радиоволна","enName":null,"alternativeName":"Frequency","type":"movie","poster":{"url":"https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/b1dc6dd9-616f-4a74-905b-7185edb92dfc/orig","previewUrl":"https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/b1dc6dd9-616f-4a74-905b-7185edb92dfc/x1000"},"year":2000,"rating":{"kp":7.825,"imdb":7.4,"filmCritics":6.5,"russianFilmCritics":0,"await":null}},{"id":450289,"name":"Машина
+        времени в джакузи","enName":null,"alternativeName":"Hot Tub Time Machine","type":"movie","poster":{"url":"https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/e3cbddb1-40c3-4502-8574-fd34cd92d782/orig","previewUrl":"https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/e3cbddb1-40c3-4502-8574-fd34cd92d782/x1000"},"year":2010,"rating":{"kp":6.255,"imdb":6.4,"filmCritics":6.1,"russianFilmCritics":66.6667,"await":null}},{"id":8109,"name":"Машина
+        времени","enName":null,"alternativeName":"The Time Machine","type":"movie","poster":{"url":"https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/c39e41f6-89fb-41bc-9b39-01ef43ffd4a1/orig","previewUrl":"https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/c39e41f6-89fb-41bc-9b39-01ef43ffd4a1/x1000"},"year":2002,"rating":{"kp":7.088,"imdb":6,"filmCritics":4.8,"russianFilmCritics":66.6667,"await":null}}],"sequelsAndPrequels":[{"id":5502,"name":"Назад
+        в будущее 2","alternativeName":"Back to the Future Part II","enName":null,"type":"movie","poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/1777765/01c1d758-900b-446a-8e0a-c76514b7afae/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/1777765/01c1d758-900b-446a-8e0a-c76514b7afae/x1000"},"rating":{"kp":8.315,"imdb":7.8,"filmCritics":6.2,"russianFilmCritics":0,"await":null},"year":1989},{"id":7103,"name":"Назад
+        в будущее 3","alternativeName":"Back to the Future Part III","enName":null,"type":"movie","poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/1704946/57049ca3-eb4e-4b9b-bfac-5fc732722b83/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/1704946/57049ca3-eb4e-4b9b-bfac-5fc732722b83/x1000"},"rating":{"kp":8.193,"imdb":7.4,"filmCritics":6.7,"russianFilmCritics":0,"await":null},"year":1990},{"id":229404,"name":"Назад
+        в будущее","alternativeName":"Back to the Future","enName":null,"type":"animated-series","poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/1898899/bd12c915-d219-4668-aa46-20fb81931b76/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/1898899/bd12c915-d219-4668-aa46-20fb81931b76/x1000"},"rating":{"kp":6.574,"imdb":6.4,"filmCritics":0,"russianFilmCritics":0,"await":null},"year":1991},{"id":455752,"name":"Переиграть
+        судьбу","alternativeName":"Action Replayy","enName":null,"type":"movie","poster":{"url":"https://image.openmoviedb.com/kinopoisk-images/1946459/b3877b26-575f-4299-9a5e-23e17b19f894/orig","previewUrl":"https://image.openmoviedb.com/kinopoisk-images/1946459/b3877b26-575f-4299-9a5e-23e17b19f894/x1000"}}],"imagesInfo":{"framesCount":0},"ratingMpaa":"pg","shortDescription":"Безумный
+        ученый и 17-летний оболтус тестируют машину времени, наводя шороху в 1950-х.
+        Классика кинофантастики","technology":{"hasImax":false,"has3D":false},"ticketsOnSale":false,"ageRating":12,"logo":{"url":"https://avatars.mds.yandex.net/get-ott/223007/2a0000016eadd2590232b1f0f0ea7b27b0b0/orig"},"top10":null,"top250":32,"audience":[{"count":59050700,"country":"США"},{"count":4988980,"country":"Германия
+        (ФРГ)"},{"count":4017000,"country":"Италия"}],"deletedAt":null,"isSeries":false,"seriesLength":null,"totalSeriesLength":null,"networks":null,"videos":{"trailers":[{"url":"https://www.youtube.com/embed/ou8w0gQHlRE","name":"Трейлер
+        №1 (Субтитры)","site":"youtube","type":"TRAILER"},{"url":"https://www.youtube.com/embed/U71BvFM7Wpw","name":"BACK
+        TO THE FUTURE Trailer [1985] 4K","site":"youtube","type":"TRAILER"},{"url":"https://www.youtube.com/embed/WRrCVyT09ow","name":"Theatrical
+        Trailer","site":"youtube","type":"TRAILER"},{"url":"https://www.youtube.com/embed/C-4Pr9kBtGc","name":"Official
+        Digital Remaster Trailer","site":"youtube","type":"TRAILER"},{"url":"https://www.youtube.com/embed/lGSvuOvRYPw","name":"30th
+        Anniversary Trailer","site":"youtube","type":"TRAILER"},{"url":"https://www.youtube.com/embed/qvsgGtivCgs","name":"Theatrical
+        Trailer","site":"youtube","type":"TRAILER"},{"url":"https://www.youtube.com/embed/qb7Fd0l_BRo","name":"2010
+        Re-Release Trailer","site":"youtube","type":"TRAILER"}]},"isTmdbChecked":true,"watchability":{"items":[]}}'
+  recorded_at: Sun, 06 Apr 2025 19:17:41 GMT
+recorded_with: VCR 6.3.1

@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.kinopoisk.dev/v1.4/person/awards
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-API-KEY:
+      - "<X_API_KEY>"
+      User-Agent:
+      - Faraday v2.12.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/1.20.1
+      date:
+      - Sun, 06 Apr 2025 19:55:49 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      content-security-policy:
+      - 'default-src ''self'';base-uri ''self'';font-src ''self'' https: data:;form-action
+        ''self'';frame-ancestors ''self'';img-src ''self'' data:;object-src ''none'';script-src
+        ''self'';script-src-attr ''none'';style-src ''self'' https: ''unsafe-inline'';upgrade-insecure-requests'
+      cross-origin-opener-policy:
+      - same-origin
+      cross-origin-resource-policy:
+      - same-origin
+      origin-agent-cluster:
+      - "?1"
+      referrer-policy:
+      - no-referrer
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-dns-prefetch-control:
+      - 'off'
+      x-download-options:
+      - noopen
+      x-frame-options:
+      - SAMEORIGIN
+      x-permitted-cross-domain-policies:
+      - none
+      x-xss-protection:
+      - '0'
+      access-control-allow-origin:
+      - "*"
+      x-ratelimit-limit:
+      - '5'
+      x-ratelimit-remaining:
+      - '4'
+      x-ratelimit-reset:
+      - '1'
+      vary:
+      - accept-encoding
+      content-encoding:
+      - gzip
+    body:
+      encoding: UTF-8
+      string: '{"docs":[{"nomination":{"award":{"title":"Премия Гильдии актеров","year":2025},"title":"Лучшая
+        женская роль второго плана"},"winning":false,"personId":2402655,"movie":{"id":4673797,"name":"Урок
+        фортепиано","rating":6.114},"createdAt":"2025-04-06T14:45:54.068Z","updatedAt":"2025-04-06T14:45:54.068Z","id":"67f293a28a14296227ec4589"},{"nomination":{"award":{"title":"Сатурн","year":2025},"title":"Лучший
+        режиссер"},"winning":false,"personId":21459,"movie":{"id":623807,"name":"Битлджус
+        Битлджус","rating":7.015},"createdAt":"2025-04-06T14:39:49.710Z","updatedAt":"2025-04-06T14:39:49.710Z","id":"67f292358a14296227ec2487"},{"nomination":{"award":{"title":"Оскар","year":1937},"title":"Лучшая
+        работа художника"},"winning":false,"personId":2001460,"movie":{"rating":6.298},"createdAt":"2025-04-06T14:31:59.909Z","updatedAt":"2025-04-06T14:31:59.909Z","id":"67f2905f8a14296227ebfb40"},{"nomination":{"award":{"title":"Оскар","year":1937},"title":"Лучшая
+        работа художника"},"winning":false,"personId":2001460,"movie":{"rating":6.406},"createdAt":"2025-04-06T14:31:59.900Z","updatedAt":"2025-04-06T14:31:59.900Z","id":"67f2905f8a14296227ebfb3d"},{"nomination":{"award":{"title":"Оскар","year":1937},"title":"Лучшая
+        работа художника"},"winning":false,"personId":2001460,"movie":{"rating":6.298},"createdAt":"2025-04-06T14:30:25.836Z","updatedAt":"2025-04-06T14:30:25.836Z","id":"67f290018a14296227ebf2e5"},{"nomination":{"award":{"title":"Оскар","year":1937},"title":"Лучшая
+        работа художника"},"winning":false,"personId":2001460,"movie":{"rating":6.406},"createdAt":"2025-04-06T14:30:25.831Z","updatedAt":"2025-04-06T14:30:25.831Z","id":"67f290018a14296227ebf2e2"},{"nomination":{"award":{"title":"Оскар","year":1960},"title":"Лучший
+        короткометражный игровой фильм"},"winning":false,"personId":180600,"movie":{"rating":0},"createdAt":"2025-04-06T14:30:19.791Z","updatedAt":"2025-04-06T14:30:19.791Z","id":"67f28ffb8a14296227ebf28a"},{"nomination":{"award":{"title":"Оскар","year":1961},"title":"Лучший
+        короткометражный игровой фильм"},"winning":false,"personId":180600,"movie":{"rating":0},"createdAt":"2025-04-06T14:30:19.763Z","updatedAt":"2025-04-06T14:30:19.763Z","id":"67f28ffb8a14296227ebf285"},{"nomination":{"award":{"title":"Оскар","year":1946},"title":"Лучшая
+        песня"},"winning":false,"personId":611994,"movie":{"rating":5.659},"createdAt":"2025-04-06T14:30:07.647Z","updatedAt":"2025-04-06T14:30:07.647Z","id":"67f28fef8a14296227ebf0c8"},{"nomination":{"award":{"title":"Эмми","year":1980},"title":"Лучшая
+        мужская роль в мини-сериале или телефильме"},"winning":false,"personId":166531,"movie":{"rating":6.019},"createdAt":"2025-04-06T13:42:47.765Z","updatedAt":"2025-04-06T13:42:47.765Z","id":"67f284d78a14296227eb07e9"}],"total":137216,"limit":10,"page":1,"pages":13722}'
+  recorded_at: Sun, 06 Apr 2025 19:55:50 GMT
+recorded_with: VCR 6.3.1
