@@ -14,8 +14,6 @@ task :parse_schema do
         attribute[:type] = property_schema.any_of.map { |item| property_schema.name || item.name || item.type }.uniq
       end
 
-      # Input File is literally just a string for our purpose
-      attribute[:type]&.delete("InputFile")
       attribute[:type] = attribute[:type].join if attribute[:type]&.length == 1
 
       attribute[:required] = true if required_keys(schema).include?(property_name)
@@ -49,8 +47,9 @@ task :parse_schema do
     [type_name, type_schema]
   end
 
-  # Input File is literally just a string for our purpose
-  File.write "#{__dir__}/../data/type_attributes.json", JSON.pretty_generate(result.except("InputFile"))
+  # Drop Error Response Schemas
+  result.reject! { |type| type.end_with?("ErrorResponseDto") }
+  File.write "#{__dir__}/../data/type_attributes.json", JSON.pretty_generate(result)
 end
 
 def required_keys(schema)

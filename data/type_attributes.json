@@ -426,48 +426,6 @@
       "type": "string"
     }
   },
-  "UnauthorizedErrorResponseDto": {
-    "statusCode": {
-      "type": "number",
-      "required": true
-    },
-    "message": {
-      "type": "string",
-      "required": true
-    },
-    "error": {
-      "type": "string",
-      "required": true
-    }
-  },
-  "ForbiddenErrorResponseDto": {
-    "statusCode": {
-      "type": "number",
-      "required": true
-    },
-    "message": {
-      "type": "string",
-      "required": true
-    },
-    "error": {
-      "type": "string",
-      "required": true
-    }
-  },
-  "ErrorResponseDto": {
-    "statusCode": {
-      "type": "number",
-      "required": true
-    },
-    "message": {
-      "type": "string",
-      "required": true
-    },
-    "error": {
-      "type": "string",
-      "required": true
-    }
-  },
   "MovieDocsResponseDtoV1_4": {
     "docs": {
       "type": "array",
