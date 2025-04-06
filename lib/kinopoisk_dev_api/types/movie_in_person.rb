@@ -3,7 +3,7 @@
 module KinopoiskDevApi
   module Types
     class MovieInPerson < Base
-      attribute :id, Types::Float | Types::Integer
+      attribute? :id, Types::Float | Types::Integer
       attribute? :name, Types::Coercible::String.optional
       attribute? :alternativeName, Types::Coercible::String.optional
       attribute? :rating, Types::Float | Types::Integer.optional

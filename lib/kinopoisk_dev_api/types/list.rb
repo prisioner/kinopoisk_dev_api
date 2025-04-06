@@ -7,9 +7,9 @@ module KinopoiskDevApi
       attribute? :slug, Types::Coercible::String.optional
       attribute? :moviesCount, Types::Float | Types::Integer.optional
       attribute? :cover, ShortImage.optional
-      attribute :name, Types::Coercible::String
-      attribute :updatedAt, Types::Coercible::String
-      attribute :createdAt, Types::Coercible::String
+      attribute? :name, Types::Coercible::String
+      attribute? :updatedAt, Types::Coercible::String
+      attribute? :createdAt, Types::Coercible::String
     end
   end
 end

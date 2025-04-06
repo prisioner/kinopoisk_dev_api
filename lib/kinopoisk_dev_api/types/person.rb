@@ -3,7 +3,7 @@
 module KinopoiskDevApi
   module Types
     class Person < Base
-      attribute :id, Types::Float | Types::Integer
+      attribute? :id, Types::Float | Types::Integer
       attribute? :name, Types::Coercible::String.optional
       attribute? :enName, Types::Coercible::String.optional
       attribute? :photo, Types::Coercible::String.optional
@@ -15,12 +15,12 @@ module KinopoiskDevApi
       attribute? :birthPlace, Types::Array.of(BirthPlace)
       attribute? :deathPlace, Types::Array.of(DeathPlace)
       attribute? :spouses, Types::Array.of(Spouses)
-      attribute? :countAwards, Types::Float | Types::Integer
+      attribute? :countAwards, Types::Float | Types::Integer.optional
       attribute? :profession, Types::Array.of(Profession)
       attribute? :facts, Types::Array.of(FactInPerson)
       attribute? :movies, Types::Array.of(MovieInPerson)
-      attribute :updatedAt, Types::Coercible::String
-      attribute :createdAt, Types::Coercible::String
+      attribute? :updatedAt, Types::Coercible::String
+      attribute? :createdAt, Types::Coercible::String
     end
   end
 end

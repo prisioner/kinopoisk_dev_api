@@ -8,7 +8,9 @@ module KinopoiskDevApi
     <% end %>
     class <%= name %> < Base
     <% attributes.each_pair do |name, properties| %>
-      <%= "#{properties[:required] ? 'attribute' : 'attribute?'} :#{name}, #{properties[:type]}" %>
+      <%# FIXME: dirty hack in case of https://github.com/mdwitr0/kinopoiskdev/issues/173 %>
+      <%= "attribute? :#{name}, #{properties[:type]}" %>
+      <%#= "#{properties[:required] ? 'attribute' : 'attribute?'} :#{name}, #{properties[:type]}" %>
     <% end %>
     end
     <% if name.to_s.include?('_') %>

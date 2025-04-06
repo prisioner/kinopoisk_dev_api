@@ -5,7 +5,7 @@ module KinopoiskDevApi
     ## Just for classes consistency
     # rubocop:disable Naming/ClassAndModuleCamelCase
     class LinkedMovieV1_4 < Base
-      attribute :id, Types::Float | Types::Integer
+      attribute? :id, Types::Float | Types::Integer
       attribute? :name, Types::Coercible::String.optional
       attribute? :enName, Types::Coercible::String.optional
       attribute? :alternativeName, Types::Coercible::String.optional

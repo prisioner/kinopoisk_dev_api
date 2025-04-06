@@ -1153,7 +1153,7 @@
     },
     "countAwards": {
       "type": "number",
-      "nullable": false
+      "nullable": true
     },
     "profession": {
       "type": "array",
@@ -1387,8 +1387,9 @@
       "nullable": false
     },
     "movies": {
-      "type": "MovieFromStudio",
-      "nullable": false
+      "type": "array",
+      "nullable": false,
+      "items": "MovieFromStudio"
     },
     "updatedAt": {
       "type": "string",
@@ -1447,8 +1448,9 @@
       "nullable": true
     },
     "movies": {
-      "type": "MovieFromKeyword",
-      "nullable": false
+      "type": "array",
+      "nullable": false,
+      "items": "MovieFromKeyword"
     },
     "updatedAt": {
       "type": "string",

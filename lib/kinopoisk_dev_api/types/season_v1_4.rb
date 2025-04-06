@@ -5,7 +5,7 @@ module KinopoiskDevApi
     ## Just for classes consistency
     # rubocop:disable Naming/ClassAndModuleCamelCase
     class SeasonV1_4 < Base
-      attribute :movieId, Types::Float | Types::Integer
+      attribute? :movieId, Types::Float | Types::Integer
       attribute? :number, Types::Float | Types::Integer
       attribute? :episodesCount, Types::Float | Types::Integer
       attribute? :episodes, Types::Array.of(EpisodeV1_4)

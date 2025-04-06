@@ -41,6 +41,13 @@ task :parse_schema do
         attribute[:items] = { type: "array", items: property_schema.items.items.name }
       end
 
+      # FIXME: dirty hack in case of https://github.com/mdwitr0/kinopoiskdev/issues/173
+      attribute[:nullable] = true if type_name == 'Person' && property_name == 'countAwards'
+      if %w[Studio Keyword].include?(type_name) && property_name == 'movies'
+        attribute[:items] = attribute[:type]
+        attribute[:type] = "array"
+      end
+
       attribute = apply_default_schema(attribute, property_schema)
       [property_name, attribute]
     end
