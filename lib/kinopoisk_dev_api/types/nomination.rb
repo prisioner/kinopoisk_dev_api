@@ -3,7 +3,7 @@
 module KinopoiskDevApi
   module Types
     class Nomination < Base
-      attribute? :award, Award
+      attribute? :award, NominationAward
       attribute? :title, Types::String
     end
   end

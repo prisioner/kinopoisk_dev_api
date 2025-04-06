@@ -6,7 +6,7 @@ module KinopoiskDevApi
     # rubocop:disable Naming/ClassAndModuleCamelCase
     class MovieDtoV1_4 < Base
       attribute? :id, Types::Float
-      attribute? :externalId, Externalid
+      attribute? :externalId, ExternalId
       attribute? :name, Types::String
       attribute? :alternativeName, Types::String
       attribute? :enName, Types::String
@@ -48,7 +48,7 @@ module KinopoiskDevApi
       attribute? :isSeries, Types::Bool
       attribute? :audience, Types::Array.of(Audience)
       attribute? :lists, Types::Array.of(Types::String)
-      attribute? :networks, Networks
+      attribute? :networks, NetworksV1_4
       attribute? :updatedAt, Types::String
       attribute? :createdAt, Types::String
     end

@@ -6,7 +6,7 @@ module KinopoiskDevApi
       attribute? :category, Types::String
       attribute? :slug, Types::String
       attribute? :moviesCount, Types::Float
-      attribute? :cover, Cover
+      attribute? :cover, ShortImage
       attribute :name, Types::String
       attribute :updatedAt, Types::String
       attribute :createdAt, Types::String

@@ -10,7 +10,7 @@ module KinopoiskDevApi
       attribute? :enName, Types::String
       attribute? :alternativeName, Types::String
       attribute? :type, Types::String
-      attribute? :poster, Poster
+      attribute? :poster, ShortImage
       attribute? :rating, Rating
       attribute? :year, Types::Float
     end

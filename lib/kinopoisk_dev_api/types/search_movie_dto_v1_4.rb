@@ -15,10 +15,10 @@ module KinopoiskDevApi
       attribute? :shortDescription, Types::String
       attribute? :movieLength, Types::Float
       attribute? :names, Types::Array.of(Name)
-      attribute? :externalId, Externalid
+      attribute? :externalId, ExternalId
       attribute? :logo, Logo
-      attribute? :poster, Poster
-      attribute? :backdrop, Backdrop
+      attribute? :poster, ShortImage
+      attribute? :backdrop, ShortImage
       attribute? :rating, Rating
       attribute? :votes, Votes
       attribute? :genres, Types::Array.of(ItemName)
