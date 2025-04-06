@@ -2,6 +2,7 @@
 
 require "openapi3_parser"
 
+# rubocop:disable Metrics/BlockLength
 desc "Parse types from public json, should be up to date https://api.kinopoisk.dev/documentation-json"
 task :parse_schema do
   document = Openapi3Parser.load_url("https://api.kinopoisk.dev/documentation-json")
@@ -53,6 +54,7 @@ task :parse_schema do
   result.reject! { |type| type.end_with?("ErrorResponseDto") }
   File.write "#{__dir__}/../data/type_attributes.json", JSON.pretty_generate(result)
 end
+# rubocop:enable Metrics/BlockLength
 
 def required_keys(schema)
   schema.required.to_a || []

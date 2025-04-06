@@ -8,19 +8,19 @@ module KinopoiskDevApi
       def initialize(response:)
         @response = response
 
-        super("Kinopoisk.dev API has returned the error. (#{data.map { |k, v| %(#{k}: #{v.inspect}) }.join(', ')})")
+        super("Kinopoisk.dev API has returned the error. (#{data.map { |k, v| %(#{k}: #{v.inspect}) }.join(", ")})")
       end
 
       def error_code
-        data[:statusCode] || data['statusCode']
+        data[:statusCode] || data["statusCode"]
       end
 
       def error_type
-        data[:error] || data['error']
+        data[:error] || data["error"]
       end
 
       def error_message
-        data[:message] || data['message']
+        data[:message] || data["message"]
       end
 
       def data

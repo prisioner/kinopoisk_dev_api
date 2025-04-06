@@ -4,15 +4,15 @@ module KinopoiskDevApi
   class Client
     attr_reader :api_key, :url
 
-    API_VERSION = 'v1.4'
+    API_VERSION = "v1.4"
 
-    def initialize(api_key, url: 'https://api.kinopoisk.dev')
+    def initialize(api_key, url: "https://api.kinopoisk.dev")
       @api_key = api_key
       @url = url
     end
 
-    def connection
-      @connection ||= Faraday.new(url: url, headers: {'X-API-KEY' => api_key}) do |faraday|
+    def connection # rubocop:disable Metrics/AbcSize
+      @connection ||= Faraday.new(url: url, headers: { "X-API-KEY" => api_key }) do |faraday|
         faraday.response :logger
         faraday.adapter KinopoiskDevApi.configuration.adapter
         faraday.options.timeout = KinopoiskDevApi.configuration.connection_timeout
@@ -52,15 +52,15 @@ module KinopoiskDevApi
       response_type = endpoint[:response_type]
       return response_type unless response_type.is_a?(String)
 
-      version = (endpoint[:version] || API_VERSION).tr('.', '_').upcase
-      KinopoiskDevApi.const_get(response_type.sub('<VERSION>', version))
+      version = (endpoint[:version] || API_VERSION).tr(".", "_").upcase
+      KinopoiskDevApi.const_get(response_type.sub("<VERSION>", version))
     end
 
     def build_params(raw_params)
       params = raw_params.dup
 
       params.transform_keys! do |key|
-        words = key.to_s.split('_')
+        words = key.to_s.split("_")
         words.drop(1).map(&:camelize!)
         words.join
       end
@@ -75,24 +75,24 @@ module KinopoiskDevApi
       path = (+"/").concat(version, endpoint[:path])
 
       path.gsub(/:(\w+)/) do |path_param|
-        params.key?($1) ? params.delete($1) : path_param
+        params.key?(::Regexp.last_match(1)) ? params.delete(::Regexp.last_match(1)) : path_param
       end
     end
 
-    def transform_value(raw_value)
+    def transform_value(raw_value) # rubocop:disable Metrics/CyclomaticComplexity, Metrics/MethodLength
       case raw_value
       when Array
         raw_value.map { |e| transform_value(e) }
       when String
-        raw_value = raw_value.sub('!', '%21') if raw_value.start_with?('!')
-        raw_value = raw_value.sub('+', '%2B') if raw_value.start_with?('+')
+        raw_value = raw_value.sub("!", "%21") if raw_value.start_with?("!")
+        raw_value = raw_value.sub("+", "%2B") if raw_value.start_with?("+")
         raw_value
       when Date, Time, DateTime
-        raw_value.strftime('%d.%m.%Y')
+        raw_value.strftime("%d.%m.%Y")
       when TrueClass, FalseClass
-        raw_value ? 'true' : 'false'
+        raw_value ? "true" : "false"
       when Range
-        transform_value([raw_value.start, raw_value.end]).join('-')
+        transform_value([raw_value.start, raw_value.end]).join("-")
       else
         raw_value.to_s
       end

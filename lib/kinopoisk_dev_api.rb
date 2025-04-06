@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'json'
-require 'faraday'
-require 'zeitwerk'
+require "json"
+require "faraday"
+require "zeitwerk"
 require "dry-struct"
 require "kinopoisk_dev_api/inflector"
 
