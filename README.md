@@ -2,12 +2,15 @@
 
 Ruby wrapper for [Unofficial Kinopoisk Dev API](https://api.kinopoisk.dev/documentation).
 
+[![Gem Version](https://badge.fury.io/rb/kinopoisk_dev_api.svg)](http://badge.fury.io/rb/kinopoisk_dev_api)
+[![Build Status](https://github.com/prisioner/kinopoisk_dev_api/actions/workflows/main.yml/badge.svg)](https://github.com/prisioner/kinopoisk_dev_api/actions)
+
 ## Installation
 
 Add following line to your Gemfile:
 
 ```ruby
-gem 'kinopoisk_dev_api', '~> 0.1.0'
+gem 'kinopoisk_dev_api', '~> 1.4.0'
 ```
 
 And then execute:

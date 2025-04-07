@@ -1,5 +1,5 @@
 # Changelog
 
-## [0.1.0] - 2025-04-05
+## [1.4.0] - 2025-04-07
 
-- Initial release
+- Initial release v1.4.0 (API v1.4 supported)
